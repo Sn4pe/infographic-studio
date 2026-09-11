@@ -6,9 +6,9 @@ Turn technical content into figures that combine drawings, spatial relationships
 
 An agent develops the explanation and authors the scene. The engine lays out text, composes vector artwork and local images, checks mechanical issues, and exports **SVG, PNG and PDF**. Correct a label without generating the illustration again.
 
-![An optical fibre cutaway with editable annotations and a vector explanation of total internal reflection](examples/fiber-study/hybrid/rendered/figure.png)
+![A hybrid optical-fibre cutaway with editable annotations and vector reflection geometry](examples/fiber-study/hybrid/rendered/figure.png)
 
-[Compare three visual directions for the same explanation](examples/fiber-study/README.md) · [Editable hybrid scene](examples/fiber-study/hybrid/scene.json) · [PDF](examples/fiber-study/hybrid/rendered/figure.pdf)
+[Explore the three visual directions](examples/fiber-study/README.md) · [Editable hybrid scene](examples/fiber-study/hybrid/scene.json) · [PDF](examples/fiber-study/hybrid/rendered/figure.pdf)
 
 **Alpha preview — 0.1.0-alpha.2.** Suitable for experimentation and reviewed figures. The API and layout contract may change before a stable release. Automatic checks do not establish scientific correctness or visual quality. See the [changelog](CHANGELOG.md) for scope and known limitations.
 
@@ -45,15 +45,14 @@ These commands install from the checkout and do not require a published npm pack
 - Hybrid compositions: generated or supplied PNG/JPEG artwork with editable vector text, callouts and geometry.
 - Consistent figures across a report, with shared color tokens and bundled typography.
 
-Author spatial layouts directly in a scene, or use automatic illustrated-object layout for related objects and processes. The [fibre study](examples/fiber-study/README.md) keeps nine claims and labels constant across an engraved editorial composition, a technical blueprint and a hybrid cutaway. Each has its own layout, rather than just a palette change.
+Author spatial layouts directly in a scene, or use automatic illustrated-object layout for related objects and processes. The [fibre study](examples/fiber-study/README.md) holds the claims, labels and sources constant across three complete visual directions. This makes their differences in presentation and composition easy to compare.
 
-The original optics and environmental monitoring examples cover additional subjects:
+| Editorial | Technical | Hybrid |
+| --- | --- | --- |
+| [![Engraved fibre end view and a ray detail](examples/fiber-study/editorial/rendered/figure.png)](examples/fiber-study/editorial/scene.json) | [![Blueprint fibre end and longitudinal views](examples/fiber-study/technical/rendered/figure.png)](examples/fiber-study/technical/scene.json) | [![Glass fibre cutaway with vector annotations](examples/fiber-study/hybrid/rendered/figure.png)](examples/fiber-study/hybrid/scene.json) |
+| [SVG](examples/fiber-study/editorial/rendered/figure.svg) · [PDF](examples/fiber-study/editorial/rendered/figure.pdf) | [SVG](examples/fiber-study/technical/rendered/figure.svg) · [PDF](examples/fiber-study/technical/rendered/figure.pdf) | [SVG](examples/fiber-study/hybrid/rendered/figure.svg) · [PDF](examples/fiber-study/hybrid/rendered/figure.pdf) |
 
-![A warm-paper environmental monitoring figure showing a solar-powered station, soil probe, synthetic signal and observation context](examples/sensing/rendered/figure.png)
-
-[Editable scene](examples/sensing/scene.json) · [SVG](examples/sensing/rendered/figure.svg) · [PDF](examples/sensing/rendered/figure.pdf)
-
-The optics and monitoring artwork is built from [readable construction code](scripts/build-example-scenes.js). The optics figure is schematic; the environmental signal is synthetic. The fibre study combines [vector construction code](scripts/build-fiber-study.js) with one generated illustration whose [prompt and provenance](examples/fiber-study/hybrid/assets/generation-prompt.md) are included. Content references are stored in each scene.
+The optics and monitoring scenes remain included as editable starters. The fibre study combines [vector construction code](scripts/build-fiber-study.js) with one generated illustration whose [prompt and provenance](examples/fiber-study/hybrid/assets/generation-prompt.md) are included. Content references are stored in each scene.
 
 ## How it works
 
