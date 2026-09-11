@@ -14,7 +14,7 @@ The initial release line is experimental. Use an annotated prerelease tag such a
 
 Local commits and tags do not publish the repository. The maintainer controls the remote, visibility and release separately.
 
-After the intended GitHub remote is configured, push `main` and the specific reviewed tag. Wait for the Windows and Linux CI jobs to pass on that revision. Create a GitHub release marked **prerelease**, using the corresponding changelog entry. Verify that the README images and relative links work on GitHub.
+After the intended GitHub remote is configured, push `main` and the specific reviewed tag. Pushing the tag triggers the `Release` workflow, which runs the same checks as CI and creates a GitHub release from the matching `CHANGELOG.md` section, marked **prerelease** for any `alpha`, `beta` or `rc` tag. Verify that the README images and relative links work on GitHub.
 
 Publishing to npm is optional and separate from making the source public. Verify ownership of the package scope and inspect the packed files before publishing. If an alpha is published to npm, use the `alpha` distribution tag rather than `latest`.
 
