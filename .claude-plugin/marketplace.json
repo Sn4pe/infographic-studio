@@ -1,5 +1,6 @@
 {
   "name": "sn4pe",
+  "description": "Sn4pe's Claude Code plugins.",
   "owner": { "name": "Sn4pe", "url": "https://github.com/Sn4pe" },
   "plugins": [
     {
