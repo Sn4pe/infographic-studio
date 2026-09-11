@@ -9,7 +9,7 @@ Create a figure that explains its subject through objects, spatial relationships
 
 ## Runtime
 
-Use `infographic-studio --help` when the CLI is installed. With a repository checkout, run `node <repo>/bin/cli.js` after `npm ci` in the repository. For a global CLI, run `npm install -g <repo>` when installing dependencies is in scope. This is a local development preview with no published release. If only this skill folder was imported, locate the separately supplied runtime; do not invent a public installation URL or assume a skill-only import bundles Node.js or the engine.
+Use `infographic-studio --help` when the CLI is installed. With a repository checkout, run `node <repo>/bin/cli.js` after `npm ci` in the repository. For a global CLI, run `npm install -g <repo>` when installing dependencies is in scope. This is an alpha preview; the API and layout contract may change. If only this skill folder was imported, locate the separately supplied runtime; do not invent a public installation URL or assume a skill-only import bundles Node.js or the engine.
 
 Read [scene-format.md](references/scene-format.md) when authoring or modifying a scene. Read [illustration-workflow.md](references/illustration-workflow.md) when the figure needs raster artwork or supplied visual references.
 

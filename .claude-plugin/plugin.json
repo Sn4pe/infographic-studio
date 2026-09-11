@@ -1,6 +1,6 @@
 {
   "name": "infographic-studio",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.1",
   "description": "Illustrated technical figures with editable text and offline SVG, PNG and PDF exports.",
   "author": { "name": "Sn4pe" },
   "repository": "https://github.com/Sn4pe/infographic-studio",

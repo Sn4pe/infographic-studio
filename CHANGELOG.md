@@ -1,0 +1,24 @@
+# Changelog
+
+## 0.1.0-alpha.1 — 2026-09-11
+
+First experimental release of the standalone composition engine and reusable agent skill.
+
+### Included
+
+- Offline SVG, PNG and PDF exports with editable vector text and embedded assets.
+- Versioned scene and document schemas, CLI and JavaScript API.
+- Automatic sizing and orthogonal routing for illustrated objects in rows, columns, grids and four-object cycles.
+- Generic vector components, an Editorial flat illustration family, 17 Tabler icons and bundled Source Sans 3 fonts.
+- Anchored callouts, label revision, print-size checks and geometric collision reports.
+- Scientific and engineering examples, including a hybrid illustration with recorded generation provenance.
+- A capability-aware skill and plugin manifests for Codex and Claude Code.
+
+### Known limitations
+
+- This is an alpha: APIs and document layout may change. Host plugin installation and AgentOS deployment have not been verified end to end.
+- Models can produce incorrect relationships or overfill a fixed canvas. Checks do not verify facts; content and visual review remain required.
+- Automatic relationships stay within one section and have no edge labels. Dense graphs can share routes or have crossings. There is no automatic pagination.
+- Collision checks do not cover all curved paths, rotations, raster transparency or arrowhead outlines.
+- The font coverage is limited to supported Latin, Greek and Cyrillic characters. LaTeX and native draw.io import/export are not implemented.
+- Image generation is supplied by the host, not by the engine. The engine never calls a model provider.

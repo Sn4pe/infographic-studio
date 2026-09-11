@@ -10,11 +10,11 @@ An agent develops the explanation and authors the scene. The engine lays out tex
 
 [Compare three visual directions for the same explanation](examples/fiber-study/README.md) · [Editable hybrid scene](examples/fiber-study/hybrid/scene.json) · [PDF](examples/fiber-study/hybrid/rendered/figure.pdf)
 
-**Local development preview.** No remote repository, release tag or npm package has been published. The commands below use this local checkout.
+**Alpha preview — 0.1.0-alpha.1.** Suitable for experimentation and reviewed figures. The API and layout contract may change before a stable release. Automatic checks do not establish scientific correctness or visual quality. See the [changelog](CHANGELOG.md) for scope and known limitations.
 
 ## Try it
 
-Requires **Node.js 22+**. The included examples run entirely offline after installation. No browser, API key or image-generation service is needed.
+Requires **Node.js 22+**. Start from a cloned or downloaded copy of this repository. The included examples run entirely offline after installation. No browser, API key or image-generation service is needed.
 
 ```sh
 cd infographic-studio
@@ -36,7 +36,7 @@ infographic-studio init my-figure --example sensing
 infographic-studio render my-figure/scene.json --out output
 ```
 
-The install uses the local project. A public installation URL will be documented when a release exists.
+These commands install from the checkout and do not require a published npm package.
 
 ## What you can build
 
@@ -45,7 +45,7 @@ The install uses the local project. A public installation URL will be documented
 - Hybrid compositions: generated or supplied PNG/JPEG artwork with editable vector text, callouts and geometry.
 - Consistent figures across a report, with shared color tokens and bundled typography.
 
-Layouts are authored in the scene, not selected from a fixed catalog. The [fibre study](examples/fiber-study/README.md) keeps nine claims and labels constant across an engraved editorial composition, a technical blueprint and a hybrid cutaway. Each has its own layout, rather than just a palette change.
+Author spatial layouts directly in a scene, or use automatic illustrated-object layout for related objects and processes. The [fibre study](examples/fiber-study/README.md) keeps nine claims and labels constant across an engraved editorial composition, a technical blueprint and a hybrid cutaway. Each has its own layout, rather than just a palette change.
 
 The original optics and environmental monitoring examples cover additional subjects:
 
@@ -90,7 +90,7 @@ Read the [scene format guide](skills/infographic-studio/references/scene-format.
 | `revise <scene.json> --labels changes.json --out revision --strict` | Create a separate project with corrected text and copied images |
 | `render <scene.json> --print-width 180 --min-font 8` | Export a PDF at 180 mm width and report text below 8 pt |
 | `icons payment --json` | Search the bundled outline catalog by name and tags |
-| `compose <specification.json> --out scene.json` | Expand JSON component placements into a new scene; refuse overwrite |
+| `compose <specification.json> --out scene.json` | Lay out a semantic document or expand explicit component placements into a new scene; refuse overwrite |
 
 `render` replaces the named exports in the output directory. `--strict` makes warnings fail the command, and errors always fail. Exit codes are `0` for success and `1` for invalid input or failed checks/exports.
 
@@ -257,9 +257,12 @@ Source Sans 3 covers the Latin, Greek and Cyrillic glyphs used by these examples
 npm ci
 npm test
 npm run examples
+npm run verify:package
 ```
 
-Tests cover text correction without artwork changes, anchored callout movement, consistent content across styles, reflection geometry, font metrics, Unicode in PDF, PNG dimensions, raster/vector composition, validation failures and the CLI workflow. CI is configured for Windows and Linux; remote runs have not yet been exercised. After visual changes, inspect the generated examples as well as running tests.
+Tests cover text correction without artwork changes, anchored callout movement, consistent content across styles, reflection geometry, font metrics, Unicode in PDF, PNG dimensions, raster/vector composition, validation failures and the CLI workflow. `verify:package` packs the project, installs the tarball into an isolated temporary directory and exercises the shipped CLI, examples and semantic composer. It installs dependencies but does not publish anything. CI is configured for Windows and Linux; remote runs have not yet been exercised. After visual changes, inspect the generated examples as well as running tests.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development conventions and [RELEASING.md](RELEASING.md) for the release procedure.
 
 To regenerate the example source scenes after changing their construction code:
 

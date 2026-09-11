@@ -1,6 +1,6 @@
 {
   "name": "@sn4pe/infographic-studio",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.1",
   "description": "An agent-friendly composition engine for illustrated technical figures.",
   "type": "module",
   "bin": {
@@ -21,6 +21,7 @@
     ".codex-plugin",
     ".claude-plugin",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "scripts": {
@@ -29,7 +30,8 @@
     "study": "node scripts/build-fiber-study.js",
     "study:components": "node scripts/build-component-study.js",
     "study:document": "node scripts/build-document-example.js",
-    "check": "node bin/cli.js check examples/optics/scene.json --strict"
+    "check": "node bin/cli.js check examples/optics/scene.json --strict",
+    "verify:package": "node scripts/verify-package.js"
   },
   "engines": {
     "node": ">=22"
