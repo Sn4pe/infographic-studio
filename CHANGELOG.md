@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.0-alpha.3 — 2026-09-11
+
+### Fixed
+
+- Renamed the top-level `bin/` directory to `cli/`. claude.ai-hosted plugin installs reject a top-level `bin/`, since it is added to PATH on the CLI without going through the admin approval surface.
+
 ## 0.1.0-alpha.2 — 2026-09-11
 
 ### Added

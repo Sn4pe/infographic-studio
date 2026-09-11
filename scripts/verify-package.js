@@ -28,7 +28,7 @@ try {
 
   const [packed] = JSON.parse(npm(['pack', '--json', '--pack-destination', temporary], root));
   const files = new Set(packed.files.map(({ path }) => path));
-  for (const required of ['LICENSE', 'CHANGELOG.md', 'bin/cli.js', 'src/index.js',
+  for (const required of ['LICENSE', 'CHANGELOG.md', 'cli/cli.js', 'src/index.js',
     'schema/document.schema.json', 'assets/fonts/LICENSE.md', 'assets/icons/tabler/LICENSE',
     'skills/infographic-studio/SKILL.md', '.codex-plugin/plugin.json', '.claude-plugin/plugin.json']) {
     assert.ok(files.has(required), `Missing packed file: ${required}`);
@@ -42,7 +42,7 @@ try {
   const installed = join(consumer, 'node_modules', ...pkg.name.split('/'));
   assert.equal((await json(join(installed, 'package.json'))).version, pkg.version);
   assert.match(npm(['exec', '--offline', '--', 'infographic-studio', '--help'], consumer), /Infographic Studio/);
-  const cli = (...args) => execFileSync(process.execPath, [join(installed, 'bin/cli.js'), ...args], {
+  const cli = (...args) => execFileSync(process.execPath, [join(installed, 'cli/cli.js'), ...args], {
     cwd: consumer, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], timeout: 60_000,
   });
   assert.ok(JSON.parse(cli('icons', '--json')).length >= 17);

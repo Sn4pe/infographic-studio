@@ -45,7 +45,7 @@ npm run examples
 Change a callout's `text` in the hybrid `scene.json`, then render just that scene:
 
 ```sh
-node bin/cli.js render examples/fiber-study/hybrid/scene.json --out output/fibre-revision --strict
+node cli/cli.js render examples/fiber-study/hybrid/scene.json --out output/fibre-revision --strict
 ```
 
 The label is editable SVG/PDF text, while the image is embedded unchanged. The regression suite verifies that a label correction changes the text without changing the artwork bytes or asset hash.
@@ -57,8 +57,8 @@ For changes to the shared construction, edit `scripts/build-fiber-study.js` or `
 The 1440 px canvas is intended for 180 mm report width. At that width, 24–26 px body labels correspond to approximately 8.5–9.2 pt; the 16 px source footer is approximately 5.7 pt and should be enlarged or moved into the report caption if the publication requires larger source text. The committed example PDFs retain native canvas dimensions. Export an explicitly sized version and inspect its text-size report with:
 
 ```sh
-node bin/cli.js render examples/fiber-study/hybrid/scene.json --out output/fibre-print --print-width 180
-node bin/cli.js check examples/fiber-study/hybrid/scene.json --print-width 180 --min-font 8 --json
+node cli/cli.js render examples/fiber-study/hybrid/scene.json --out output/fibre-print --print-width 180
+node cli/cli.js check examples/fiber-study/hybrid/scene.json --print-width 180 --min-font 8 --json
 ```
 
 The PDF page is 180 × 140 mm. SVG and PNG dimensions are unchanged. Small text is reported honestly; adding `--strict` rejects the current example at an 8 pt minimum until those labels are adjusted.
@@ -66,9 +66,9 @@ The PDF page is 180 × 140 mm. SVG and PNG dimensions are unchanged. Small text 
 ## Try a text revision
 
 ```sh
-node bin/cli.js init my-fibre --example hybrid
-node bin/cli.js revise my-fibre/scene.json --labels examples/fiber-study/revisions/core-label.json --out revised-fibre --strict
-node bin/cli.js render revised-fibre/scene.json --out output/revised-fibre --strict
+node cli/cli.js init my-fibre --example hybrid
+node cli/cli.js revise my-fibre/scene.json --labels examples/fiber-study/revisions/core-label.json --out revised-fibre --strict
+node cli/cli.js render revised-fibre/scene.json --out output/revised-fibre --strict
 ```
 
 The [sample correction](revisions/core-label.json) changes only the core label. Both project folders must be new. The commands preserve the original project, copy the image bytes and validate the revised layout. Use `labels my-fibre/scene.json` to discover IDs for further corrections or translation.

@@ -10,7 +10,7 @@ An agent develops the explanation and authors the scene. The engine lays out tex
 
 [Explore the shared visual system](examples/component-study/README.md) · [Editable sensing scene](examples/component-study/sensing/scene.json) · [PDF](examples/component-study/sensing/rendered/figure.pdf)
 
-**Alpha preview — 0.1.0-alpha.2.** Suitable for experimentation and reviewed figures. The API and layout contract may change before a stable release. Automatic checks do not establish scientific correctness or visual quality. See the [changelog](CHANGELOG.md) for scope and known limitations.
+**Alpha preview — 0.1.0-alpha.3.** Suitable for experimentation and reviewed figures. The API and layout contract may change before a stable release. Automatic checks do not establish scientific correctness or visual quality. See the [changelog](CHANGELOG.md) for scope and known limitations.
 
 ## Try it
 
@@ -20,8 +20,8 @@ Requires **Node.js 22+**. Start from a cloned or downloaded copy of this reposit
 cd infographic-studio
 npm ci
 
-node bin/cli.js init my-figure
-node bin/cli.js render my-figure/scene.json --out output --strict
+node cli/cli.js init my-figure
+node cli/cli.js render my-figure/scene.json --out output --strict
 ```
 
 Open `output/figure.png` or `output/figure.pdf`. Change a label, a shape or the theme in `my-figure/scene.json`, then render again. The exports contain embedded fonts and images; they do not depend on remote resources.
@@ -156,10 +156,10 @@ scene.panels[0].elements.push(...createIllustration('wallet', {
 ## Correct text without redrawing
 
 ```sh
-node bin/cli.js labels my-figure/scene.json --out labels.json
+node cli/cli.js labels my-figure/scene.json --out labels.json
 # Edit values in labels.json. Keep only the IDs you want to change if preferred.
-node bin/cli.js revise my-figure/scene.json --labels labels.json --out revised-figure --strict
-node bin/cli.js render revised-figure/scene.json --out output/revised --strict
+node cli/cli.js revise my-figure/scene.json --labels labels.json --out revised-figure --strict
+node cli/cli.js render revised-figure/scene.json --out output/revised --strict
 ```
 
 The map includes the figure header, panel headings, text elements and callouts. Unknown IDs, empty values and invalid scene data fail explicitly. `--strict` also rejects layout warnings before creating the revision. Artwork geometry, sources and image bytes are preserved; callout leaders can adjust to changed text wrapping. The original project is never overwritten. The revision contains a new `scene.json` and local assets; exporting it is a separate render step.
@@ -167,8 +167,8 @@ The map includes the figure header, panel headings, text elements and callouts. 
 ## Export at report size
 
 ```sh
-node bin/cli.js check my-figure/scene.json --print-width 180 --min-font 8 --json
-node bin/cli.js render my-figure/scene.json --out output/print --print-width 180
+node cli/cli.js check my-figure/scene.json --print-width 180 --min-font 8 --json
+node cli/cli.js render my-figure/scene.json --out output/print --print-width 180
 ```
 
 `--print-width` is in millimetres and preserves the aspect ratio. It sets the PDF's physical page size; SVG coordinates and PNG pixel dimensions stay unchanged. Without it, PDF dimensions use the original 96 px/in canvas scale. `--min-font` defaults to 8 pt and requires a print width. The report records every label's resulting point size and flags smaller text; `--strict` makes those warnings fail the operation.

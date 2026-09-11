@@ -1,10 +1,10 @@
 {
   "name": "@sn4pe/infographic-studio",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "description": "An agent-friendly composition engine for illustrated technical figures.",
   "type": "module",
   "bin": {
-    "infographic-studio": "./bin/cli.js"
+    "infographic-studio": "./cli/cli.js"
   },
   "exports": {
     ".": "./src/index.js",
@@ -12,7 +12,7 @@
     "./document-schema": "./schema/document.schema.json"
   },
   "files": [
-    "bin",
+    "cli",
     "src",
     "schema",
     "assets",
@@ -30,7 +30,7 @@
     "study": "node scripts/build-fiber-study.js",
     "study:components": "node scripts/build-component-study.js",
     "study:document": "node scripts/build-document-example.js",
-    "check": "node bin/cli.js check examples/optics/scene.json --strict",
+    "check": "node cli/cli.js check examples/optics/scene.json --strict",
     "verify:package": "node scripts/verify-package.js"
   },
   "engines": {

@@ -45,9 +45,9 @@ People preserve their aspect ratio; other objects occupy the specified box. Obje
 Placements are appended after the panel's primitives, in array order. Include backgrounds and connectors in `scene`, keeping connectors clear of illustration and label boxes. The compiler preserves wording, coordinates and order, adds artwork metadata and rejects duplicate IDs. It does not repair or approve a design.
 
 ```sh
-node <repo>/bin/cli.js compose specification.json --out scene.json
-node <repo>/bin/cli.js check scene.json --strict --json --print-width 180 --min-font 8
-node <repo>/bin/cli.js render scene.json --out output --strict --print-width 180 --min-font 8
+node <repo>/cli/cli.js compose specification.json --out scene.json
+node <repo>/cli/cli.js check scene.json --strict --json --print-width 180 --min-font 8
+node <repo>/cli/cli.js render scene.json --out output --strict --print-width 180 --min-font 8
 ```
 
 Use the actual target print size. `compose` refuses an existing output. With assets, keep the output beside the specification so relative paths stay valid. The host API is `composeSpecification(specification)`.

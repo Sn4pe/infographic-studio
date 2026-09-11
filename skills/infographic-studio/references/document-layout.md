@@ -50,9 +50,9 @@ The orthogonal router avoids complete object bounds and penalizes reusing existi
 ## Compose and revise
 
 ```sh
-node <repo>/bin/cli.js compose document.json --out scene.json
-node <repo>/bin/cli.js check scene.json --strict --print-width 180 --min-font 8
-node <repo>/bin/cli.js render scene.json --out output --strict --print-width 180 --min-font 8
+node <repo>/cli/cli.js compose document.json --out scene.json
+node <repo>/cli/cli.js check scene.json --strict --print-width 180 --min-font 8
+node <repo>/cli/cli.js render scene.json --out output --strict --print-width 180 --min-font 8
 ```
 
 Programmatic entry point: `composeDocument(document)`, also supported by `composeSpecification({document})`. Output is an ordinary version-1 scene. Preserve the input document alongside exports: edit its wording or relationships and compose to a new scene to recompute sizes. Directly editing the compiled scene does not automatically reflow it.

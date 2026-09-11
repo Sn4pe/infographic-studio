@@ -65,7 +65,7 @@ test('CLI composes JSON without overwriting files and strict check rejects the r
   try {
     const input=join(dir,'input.json'), output=join(dir,'scene.json');
     await writeFile(input,JSON.stringify(specification()));
-    const cli=fileURLToPath(new URL('../bin/cli.js',import.meta.url));
+    const cli=fileURLToPath(new URL('../cli/cli.js',import.meta.url));
     const run=(...args)=>spawnSync(process.execPath,[cli,...args],{encoding:'utf8'});
     assert.equal(run('compose',input,'--out',output).status,0);
     const original=await readFile(output,'utf8');

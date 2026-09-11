@@ -245,7 +245,7 @@ test('CLI init refuses overwrite; check failures have nonzero status; render pro
   const root = await mkdtemp(join(tmpdir(), 'infographic-cli-'));
   const dir = join(root, 'project');
   t.after(() => rm(root, { recursive: true, force: true }));
-  const cli = (args) => spawnSync(process.execPath, ['bin/cli.js', ...args], { encoding: 'utf8' });
+  const cli = (args) => spawnSync(process.execPath, ['cli/cli.js', ...args], { encoding: 'utf8' });
   assert.equal(cli(['init', dir]).status, 0);
   assert.notEqual(cli(['init', dir]).status, 0);
   assert.equal(cli(['check', join(dir, 'scene.json'), '--strict']).status, 0);
@@ -325,7 +325,7 @@ test('hybrid project copies source image bytes and refuses existing destinations
 test('CLI supports a hybrid text revision and strict print failures without replacing source files', async (t) => {
   const root = await mkdtemp(join(tmpdir(), 'infographic-revision-'));
   t.after(() => rm(root, { recursive: true, force: true }));
-  const cli = (args) => spawnSync(process.execPath, ['bin/cli.js', ...args], { encoding: 'utf8' });
+  const cli = (args) => spawnSync(process.execPath, ['cli/cli.js', ...args], { encoding: 'utf8' });
   const project = join(root, 'hybrid');
   const initialized = cli(['init', project, '--example', 'hybrid']);
   assert.equal(initialized.status, 0, initialized.stderr);
