@@ -47,12 +47,15 @@ These commands install from the checkout and do not require a published npm pack
 
 Author spatial layouts directly in a scene, or use automatic illustrated-object layout for related objects and processes. The following examples use one shared editorial system: ivory background, navy outlines, teal accent colour, consistent typography and a common component vocabulary.
 
-| Optics | Environmental sensing | Optical fibre |
-| --- | --- | --- |
-| [![Wave propagation, dispersion and internal reflection](examples/component-study/optics/rendered/figure.png)](examples/component-study/optics/scene.json) | [![Environmental monitoring station, signal and evidence panels](examples/component-study/sensing/rendered/figure.png)](examples/component-study/sensing/scene.json) | [![Optical fibre end view, reflection detail and equations](examples/component-study/fiber-study-editorial/rendered/figure.png)](examples/component-study/fiber-study-editorial/scene.json) |
-| [SVG](examples/component-study/optics/rendered/figure.svg) · [PDF](examples/component-study/optics/rendered/figure.pdf) | [SVG](examples/component-study/sensing/rendered/figure.svg) · [PDF](examples/component-study/sensing/rendered/figure.pdf) | [SVG](examples/component-study/fiber-study-editorial/rendered/figure.svg) · [PDF](examples/component-study/fiber-study-editorial/rendered/figure.pdf) |
+| Optics | Environmental sensing |
+| --- | --- |
+| [![Wave propagation, dispersion and internal reflection](examples/component-study/optics/rendered/figure.png)](examples/component-study/optics/scene.json) | [![Environmental monitoring station, signal and evidence panels](examples/component-study/sensing/rendered/figure.png)](examples/component-study/sensing/scene.json) |
+| [SVG](examples/component-study/optics/rendered/figure.svg) · [PDF](examples/component-study/optics/rendered/figure.pdf) | [SVG](examples/component-study/sensing/rendered/figure.svg) · [PDF](examples/component-study/sensing/rendered/figure.pdf) |
+| Optical fibre — editorial | Optical fibre — hybrid |
+| [![Optical fibre end view, reflection detail and equations](examples/component-study/fiber-study-editorial/rendered/figure.png)](examples/component-study/fiber-study-editorial/scene.json) | [![Glass fibre cutaway with editable vector annotations](examples/component-study/fiber-study-hybrid/rendered/figure.png)](examples/component-study/fiber-study-hybrid/scene.json) |
+| [SVG](examples/component-study/fiber-study-editorial/rendered/figure.svg) · [PDF](examples/component-study/fiber-study-editorial/rendered/figure.pdf) | [SVG](examples/component-study/fiber-study-hybrid/rendered/figure.svg) · [PDF](examples/component-study/fiber-study-hybrid/rendered/figure.pdf) |
 
-These scenes are editable starters and preserve their scientific geometry, signal treatment and annotations. The fibre study also includes a separate [hybrid direction](examples/fiber-study/README.md#hybrid), with its generated illustration and [recorded provenance](examples/fiber-study/hybrid/assets/generation-prompt.md). Content references are stored in each scene.
+These scenes are editable starters and preserve their scientific geometry, signal treatment and annotations. The hybrid example keeps its generated cutaway while using the same typography, palette and vector annotation rules; its [prompt and provenance](examples/fiber-study/hybrid/assets/generation-prompt.md) are included. Content references are stored in each scene.
 
 ## How it works
 
