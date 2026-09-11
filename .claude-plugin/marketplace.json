@@ -1,0 +1,17 @@
+{
+  "name": "sn4pe",
+  "owner": { "name": "Sn4pe", "url": "https://github.com/Sn4pe" },
+  "plugins": [
+    {
+      "name": "infographic-studio",
+      "source": "./",
+      "description": "Illustrated technical figures with editable text and offline SVG, PNG and PDF exports.",
+      "version": "0.1.0-alpha.1",
+      "license": "MIT",
+      "author": { "name": "Sn4pe" },
+      "homepage": "https://github.com/Sn4pe/infographic-studio",
+      "keywords": ["infographic", "svg", "pdf", "illustration"],
+      "category": "productivity"
+    }
+  ]
+}

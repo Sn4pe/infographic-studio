@@ -177,6 +177,15 @@ This checks text size, not visual legibility or image resolution. At 180 mm, the
 
 The [infographic-studio skill](skills/infographic-studio/SKILL.md) guides an agent from a brief to a reviewed figure. It includes composition decisions, the scene contract, illustration handling and iteration rules.
 
+In Claude Code, install the engine and the skill together as a plugin:
+
+```sh
+/plugin marketplace add Sn4pe/infographic-studio
+/plugin install infographic-studio@sn4pe
+```
+
+The host clones the repository but does not install npm dependencies. The skill runs `npm ci --omit=dev` inside the plugin directory on first use, which needs network access once.
+
 For a skill-only installation, copy `skills/infographic-studio` to the host's supported skills directory and install the CLI separately. For example, Codex can discover it under `~/.agents/skills/infographic-studio`, and Claude Code under `~/.claude/skills/infographic-studio` (the equivalent user-profile directories on Windows). Plugin manifests for both hosts are included at the repository root. Installing the skill alone does **not** install the engine or Node.js.
 
 Example request:
