@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.0-alpha.2 — 2026-09-11
+
+### Added
+
+- A marketplace manifest, so the repository installs directly as a Claude Code plugin.
+- A first-use dependency bootstrap in the skill, since plugin hosts clone the repository without installing npm dependencies.
+
+### Known limitations
+
+- Carried over from 0.1.0-alpha.1, except that Claude Code plugin installation is now supported. AgentOS deployment remains unverified.
+
 ## 0.1.0-alpha.1 — 2026-09-11
 
 First experimental release of the standalone composition engine and reusable agent skill.
