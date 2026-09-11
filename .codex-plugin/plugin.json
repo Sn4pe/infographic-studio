@@ -1,0 +1,21 @@
+{
+  "name": "infographic-studio",
+  "version": "0.1.0",
+  "description": "Compose illustrated technical figures with editable labels and verified SVG, PNG and PDF exports.",
+  "author": {
+    "name": "Sn4pe",
+    "url": "https://github.com/Sn4pe"
+  },
+  "skills": "./skills/",
+  "repository": "https://github.com/Sn4pe/infographic-studio",
+  "license": "MIT",
+  "interface": {
+    "displayName": "Infographic Studio",
+    "shortDescription": "Illustrated figures with editable, precise labels.",
+    "longDescription": "Turn technical content into layered figure scenes, combine vector artwork with local illustrations, check typography and export figures offline.",
+    "developerName": "Sn4pe",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "defaultPrompt": ["Create an illustrated technical figure with editable labels."]
+  }
+}

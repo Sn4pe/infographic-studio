@@ -1,0 +1,11 @@
+node_modules/
+.idea/
+.vscode/
+output/
+.test-output/
+*.tgz
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

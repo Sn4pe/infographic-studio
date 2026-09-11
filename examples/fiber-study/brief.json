@@ -1,0 +1,37 @@
+{
+  "subject": "How an optical fibre guides light",
+  "audience": "Readers of a technical project report without specialist optics training",
+  "takeaway": "A core with a higher refractive index than its cladding can guide light by total internal reflection; the external coating has a protective role.",
+  "sameAcrossVariants": {
+    "canvas": [1440, 1120],
+    "targetPrintWidthMm": 180,
+    "requiredText": [
+      "Core · n₁",
+      "Cladding · n₂",
+      "Protective coating",
+      "n₁ > n₂",
+      "θ > θc",
+      "sin θc = n₂ / n₁",
+      "θ is measured from the normal.",
+      "Total internal reflection occurs at the core–cladding boundary.",
+      "The coating protects the glass; index contrast guides the light."
+    ],
+    "scope": "Straight ideal step-index fibre, ray model. Geometry and index contrast are illustrative; no dimensions, numerical aperture, dispersion or performance claims. The condition θ > θc applies to incidence at the internal boundary, not directly to the launch angle."
+  },
+  "directions": {
+    "editorial": "A large engraved cross-section, a linked longitudinal detail, warm paper and open typography. The physical structure provides the visual anchor.",
+    "technical": "Orthographic end and side views on a restrained blueprint grid, precise ray geometry and a normal at the point of reflection.",
+    "hybrid": "A generated text-free glass cutaway as the hero, anchored editable annotations and a separate vector inset that carries the ray geometry."
+  },
+  "review": [
+    "Can the reader identify the three regions?",
+    "Does every leader end on its intended material?",
+    "Does the ray remain inside the core and reflect at its boundary?",
+    "Is θ clearly measured relative to the normal?",
+    "Do the same claims survive at 180 mm print width?",
+    "Can a label be changed without regenerating the artwork?"
+  ],
+  "sources": [
+    { "title": "OpenStax University Physics, Volume 3: Total Internal Reflection", "url": "https://openstax.org/books/university-physics-volume-3/pages/1-4-total-internal-reflection" }
+  ]
+}

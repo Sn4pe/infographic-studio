@@ -1,0 +1,1264 @@
+{
+  "version": 1,
+  "title": "From field conditions to usable evidence",
+  "eyebrow": "FIELD NOTES     /     02 — ENVIRONMENTAL SENSING",
+  "description": "An illustrated environmental station shows solar power, acquisition electronics and a buried probe. Two companion panels explain signal smoothing and the record needed to interpret a measurement.",
+  "subtitle": "A conceptual monitoring station, its signal and the context that makes a reading useful.",
+  "width": 1440,
+  "height": 1090,
+  "theme": "paper",
+  "footer": "Concept design · synthetic signal · no performance claims · illustration is not an installation drawing",
+  "sources": [
+    {
+      "title": "W3C Semantic Sensor Network Ontology",
+      "url": "https://www.w3.org/TR/vocab-ssn/"
+    }
+  ],
+  "panels": [
+    {
+      "id": "field",
+      "x": 52,
+      "y": 182,
+      "width": 822,
+      "height": 826,
+      "title": "Inside a monitoring station",
+      "kicker": "01 / PHYSICAL SYSTEM",
+      "grid": false,
+      "elements": [
+        {
+          "id": "landscape-1",
+          "type": "ellipse",
+          "x": 685,
+          "y": 154,
+          "rx": 38,
+          "ry": 38,
+          "fill": "$warm",
+          "opacity": 0.8
+        },
+        {
+          "id": "landscape-2",
+          "type": "path",
+          "d": "M20 319 L127 226 L213 286 L346 188 L453 276 L545 235 L800 331 L800 390 L20 390 Z",
+          "fill": "$secondary",
+          "opacity": 0.1
+        },
+        {
+          "id": "landscape-3",
+          "type": "path",
+          "d": "M20 350 L189 299 L337 329 L490 260 L670 307 L800 290 L800 427 L20 427 Z",
+          "fill": "$secondary",
+          "opacity": 0.18
+        },
+        {
+          "id": "landscape-4",
+          "type": "path",
+          "d": "M20 393 C144 353 220 384 352 354 C475 327 646 349 800 333 L800 603 L20 603 Z",
+          "fill": "$warm",
+          "opacity": 0.14
+        },
+        {
+          "id": "landscape-5",
+          "type": "path",
+          "d": "M20 450 C158 438 267 493 420 460 S667 447 800 422 L800 603 L20 603 Z",
+          "fill": "$warm",
+          "opacity": 0.13
+        },
+        {
+          "id": "landscape-6",
+          "type": "path",
+          "d": "M20 525 C240 485 266 563 422 526 S649 528 800 502 L800 603 L20 603 Z",
+          "fill": "$secondary",
+          "opacity": 0.18
+        },
+        {
+          "id": "landscape-7",
+          "type": "ellipse",
+          "x": 38,
+          "y": 438,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-8",
+          "type": "ellipse",
+          "x": 111,
+          "y": 481,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-9",
+          "type": "ellipse",
+          "x": 184,
+          "y": 524,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-10",
+          "type": "ellipse",
+          "x": 257,
+          "y": 567,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-11",
+          "type": "ellipse",
+          "x": 330,
+          "y": 451,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-12",
+          "type": "ellipse",
+          "x": 403,
+          "y": 494,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-13",
+          "type": "ellipse",
+          "x": 476,
+          "y": 537,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-14",
+          "type": "ellipse",
+          "x": 549,
+          "y": 580,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-15",
+          "type": "ellipse",
+          "x": 622,
+          "y": 464,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-16",
+          "type": "ellipse",
+          "x": 695,
+          "y": 507,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-17",
+          "type": "ellipse",
+          "x": 768,
+          "y": 550,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-18",
+          "type": "ellipse",
+          "x": 93,
+          "y": 593,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-19",
+          "type": "ellipse",
+          "x": 166,
+          "y": 477,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-20",
+          "type": "ellipse",
+          "x": 239,
+          "y": 520,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-21",
+          "type": "ellipse",
+          "x": 312,
+          "y": 563,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-22",
+          "type": "ellipse",
+          "x": 385,
+          "y": 447,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-23",
+          "type": "ellipse",
+          "x": 458,
+          "y": 490,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-24",
+          "type": "ellipse",
+          "x": 531,
+          "y": 533,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-25",
+          "type": "ellipse",
+          "x": 604,
+          "y": 576,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-26",
+          "type": "ellipse",
+          "x": 677,
+          "y": 460,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-27",
+          "type": "ellipse",
+          "x": 750,
+          "y": 503,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-28",
+          "type": "ellipse",
+          "x": 75,
+          "y": 546,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-29",
+          "type": "ellipse",
+          "x": 148,
+          "y": 589,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-30",
+          "type": "ellipse",
+          "x": 221,
+          "y": 473,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-31",
+          "type": "ellipse",
+          "x": 294,
+          "y": 516,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-32",
+          "type": "ellipse",
+          "x": 367,
+          "y": 559,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-33",
+          "type": "ellipse",
+          "x": 440,
+          "y": 443,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-34",
+          "type": "ellipse",
+          "x": 513,
+          "y": 486,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-35",
+          "type": "ellipse",
+          "x": 586,
+          "y": 529,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-36",
+          "type": "ellipse",
+          "x": 659,
+          "y": 572,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-37",
+          "type": "ellipse",
+          "x": 732,
+          "y": 456,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-38",
+          "type": "ellipse",
+          "x": 57,
+          "y": 499,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-39",
+          "type": "ellipse",
+          "x": 130,
+          "y": 542,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-40",
+          "type": "ellipse",
+          "x": 203,
+          "y": 585,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-41",
+          "type": "ellipse",
+          "x": 276,
+          "y": 469,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-42",
+          "type": "ellipse",
+          "x": 349,
+          "y": 512,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-43",
+          "type": "ellipse",
+          "x": 422,
+          "y": 555,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-44",
+          "type": "ellipse",
+          "x": 495,
+          "y": 439,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-45",
+          "type": "ellipse",
+          "x": 568,
+          "y": 482,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-46",
+          "type": "ellipse",
+          "x": 641,
+          "y": 525,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-47",
+          "type": "ellipse",
+          "x": 714,
+          "y": 568,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-48",
+          "type": "ellipse",
+          "x": 39,
+          "y": 452,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-49",
+          "type": "ellipse",
+          "x": 112,
+          "y": 495,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-50",
+          "type": "ellipse",
+          "x": 185,
+          "y": 538,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-51",
+          "type": "ellipse",
+          "x": 258,
+          "y": 581,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-52",
+          "type": "ellipse",
+          "x": 331,
+          "y": 465,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-53",
+          "type": "ellipse",
+          "x": 404,
+          "y": 508,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-54",
+          "type": "ellipse",
+          "x": 477,
+          "y": 551,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-55",
+          "type": "ellipse",
+          "x": 550,
+          "y": 594,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-56",
+          "type": "ellipse",
+          "x": 623,
+          "y": 478,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-57",
+          "type": "ellipse",
+          "x": 696,
+          "y": 521,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-58",
+          "type": "ellipse",
+          "x": 769,
+          "y": 564,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-59",
+          "type": "ellipse",
+          "x": 94,
+          "y": 448,
+          "rx": 3.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-60",
+          "type": "ellipse",
+          "x": 167,
+          "y": 491,
+          "rx": 4.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-61",
+          "type": "ellipse",
+          "x": 240,
+          "y": 534,
+          "rx": 2.5,
+          "ry": 1.5,
+          "fill": "$warm",
+          "opacity": 0.28
+        },
+        {
+          "id": "landscape-62",
+          "type": "line",
+          "x": 337,
+          "y": 243,
+          "x2": 337,
+          "y2": 377,
+          "stroke": "$ink",
+          "strokeWidth": 6
+        },
+        {
+          "id": "landscape-63",
+          "type": "polygon",
+          "points": [
+            [
+              242,
+              194
+            ],
+            [
+              354,
+              211
+            ],
+            [
+              322,
+              259
+            ],
+            [
+              210,
+              242
+            ]
+          ],
+          "fill": "$background",
+          "stroke": "$secondary",
+          "strokeWidth": 2
+        },
+        {
+          "id": "landscape-64",
+          "type": "line",
+          "x": 264.4,
+          "y": 197.4,
+          "x2": 232.4,
+          "y2": 245.4,
+          "stroke": "$secondary",
+          "strokeWidth": 1
+        },
+        {
+          "id": "landscape-65",
+          "type": "line",
+          "x": 286.8,
+          "y": 200.8,
+          "x2": 254.8,
+          "y2": 248.8,
+          "stroke": "$secondary",
+          "strokeWidth": 1
+        },
+        {
+          "id": "landscape-66",
+          "type": "line",
+          "x": 309.2,
+          "y": 204.2,
+          "x2": 277.2,
+          "y2": 252.2,
+          "stroke": "$secondary",
+          "strokeWidth": 1
+        },
+        {
+          "id": "landscape-67",
+          "type": "line",
+          "x": 331.6,
+          "y": 207.6,
+          "x2": 299.6,
+          "y2": 255.6,
+          "stroke": "$secondary",
+          "strokeWidth": 1
+        },
+        {
+          "id": "landscape-68",
+          "type": "line",
+          "x": 226,
+          "y": 218,
+          "x2": 338,
+          "y2": 235,
+          "stroke": "$secondary",
+          "strokeWidth": 1
+        },
+        {
+          "id": "landscape-69",
+          "type": "rect",
+          "x": 308,
+          "y": 292,
+          "width": 57,
+          "height": 73,
+          "fill": "$panel",
+          "stroke": "$ink",
+          "strokeWidth": 2,
+          "rx": 3
+        },
+        {
+          "id": "landscape-70",
+          "type": "rect",
+          "x": 319,
+          "y": 305,
+          "width": 35,
+          "height": 16,
+          "fill": "$secondary",
+          "opacity": 0.3
+        },
+        {
+          "id": "landscape-71",
+          "type": "ellipse",
+          "x": 327,
+          "y": 339,
+          "rx": 3,
+          "ry": 3,
+          "fill": "$accent"
+        },
+        {
+          "id": "landscape-72",
+          "type": "line",
+          "x": 353,
+          "y": 292,
+          "x2": 353,
+          "y2": 263,
+          "stroke": "$ink",
+          "strokeWidth": 2
+        },
+        {
+          "id": "landscape-73",
+          "type": "path",
+          "d": "M340.4 246.4 A18 18 0 0 1 365.6 246.4",
+          "stroke": "$secondary",
+          "strokeWidth": 2,
+          "opacity": 0.75
+        },
+        {
+          "id": "landscape-74",
+          "type": "path",
+          "d": "M331.3 237.3 A31 31 0 0 1 374.7 237.3",
+          "stroke": "$secondary",
+          "strokeWidth": 2,
+          "opacity": 0.75
+        },
+        {
+          "id": "landscape-75",
+          "type": "path",
+          "d": "M322.2 228.2 A44 44 0 0 1 383.8 228.2",
+          "stroke": "$secondary",
+          "strokeWidth": 2,
+          "opacity": 0.75
+        },
+        {
+          "id": "landscape-76",
+          "type": "path",
+          "d": "M308 344 H271 V421 H203 V538",
+          "stroke": "$warm",
+          "strokeWidth": 3
+        },
+        {
+          "id": "landscape-77",
+          "type": "rect",
+          "x": 188,
+          "y": 508,
+          "width": 30,
+          "height": 63,
+          "fill": "$background",
+          "stroke": "$secondary",
+          "strokeWidth": 2,
+          "rx": 7
+        },
+        {
+          "id": "landscape-78",
+          "type": "line",
+          "x": 192,
+          "y": 539,
+          "x2": 214,
+          "y2": 539,
+          "stroke": "$secondary",
+          "strokeWidth": 2
+        },
+        {
+          "id": "landscape-79",
+          "type": "line",
+          "x": 192,
+          "y": 545,
+          "x2": 214,
+          "y2": 545,
+          "stroke": "$secondary",
+          "strokeWidth": 2
+        },
+        {
+          "id": "landscape-80",
+          "type": "line",
+          "x": 192,
+          "y": 551,
+          "x2": 214,
+          "y2": 551,
+          "stroke": "$secondary",
+          "strokeWidth": 2
+        },
+        {
+          "id": "landscape-81",
+          "type": "line",
+          "x": 192,
+          "y": 557,
+          "x2": 214,
+          "y2": 557,
+          "stroke": "$secondary",
+          "strokeWidth": 2
+        },
+        {
+          "id": "landscape-82",
+          "type": "line",
+          "x": 98,
+          "y": 370,
+          "x2": 98,
+          "y2": 294,
+          "stroke": "$muted",
+          "strokeWidth": 3
+        },
+        {
+          "id": "landscape-83",
+          "type": "polygon",
+          "points": [
+            [
+              72,
+              350
+            ],
+            [
+              98,
+              285
+            ],
+            [
+              124,
+              350
+            ]
+          ],
+          "fill": "$secondary",
+          "opacity": 0.55
+        },
+        {
+          "id": "landscape-84",
+          "type": "line",
+          "x": 655,
+          "y": 342,
+          "x2": 655,
+          "y2": 281.2,
+          "stroke": "$muted",
+          "strokeWidth": 3
+        },
+        {
+          "id": "landscape-85",
+          "type": "polygon",
+          "points": [
+            [
+              634.2,
+              326
+            ],
+            [
+              655,
+              274
+            ],
+            [
+              675.8,
+              326
+            ]
+          ],
+          "fill": "$secondary",
+          "opacity": 0.55
+        },
+        {
+          "id": "landscape-86",
+          "type": "line",
+          "x": 731,
+          "y": 332,
+          "x2": 731,
+          "y2": 286.4,
+          "stroke": "$muted",
+          "strokeWidth": 3
+        },
+        {
+          "id": "landscape-87",
+          "type": "polygon",
+          "points": [
+            [
+              715.4,
+              320
+            ],
+            [
+              731,
+              281
+            ],
+            [
+              746.6,
+              320
+            ]
+          ],
+          "fill": "$secondary",
+          "opacity": 0.55
+        },
+        {
+          "id": "landscape-88",
+          "type": "text",
+          "text": "SOLAR POWER",
+          "x": 38,
+          "y": 121,
+          "width": 218,
+          "fontSize": 16,
+          "weight": "semibold",
+          "fill": "$secondary"
+        },
+        {
+          "id": "landscape-89",
+          "type": "line",
+          "x": 190,
+          "y": 151,
+          "x2": 250,
+          "y2": 188,
+          "stroke": "$muted",
+          "strokeWidth": 1
+        },
+        {
+          "id": "landscape-90",
+          "type": "text",
+          "text": "LOCAL ACQUISITION",
+          "x": 414,
+          "y": 221,
+          "width": 350,
+          "fontSize": 16,
+          "weight": "semibold",
+          "fill": "$secondary"
+        },
+        {
+          "id": "landscape-91",
+          "type": "line",
+          "x": 412,
+          "y": 250,
+          "x2": 365,
+          "y2": 302,
+          "stroke": "$muted",
+          "strokeWidth": 1
+        },
+        {
+          "id": "landscape-92",
+          "type": "text",
+          "text": "SOIL PROFILE",
+          "x": 420,
+          "y": 452,
+          "width": 300,
+          "fontSize": 16,
+          "fill": "$muted",
+          "weight": "semibold"
+        },
+        {
+          "id": "landscape-93",
+          "type": "text",
+          "text": "MOISTURE PROBE",
+          "x": 38,
+          "y": 610,
+          "width": 310,
+          "fontSize": 16,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "landscape-94",
+          "type": "line",
+          "x": 165,
+          "y": 603,
+          "x2": 198,
+          "y2": 580,
+          "stroke": "$muted",
+          "strokeWidth": 1
+        },
+        {
+          "id": "landscape-95",
+          "type": "text",
+          "text": "A physical measurement becomes a traceable observation.",
+          "x": 38,
+          "y": 662,
+          "width": 725,
+          "fontSize": 24
+        }
+      ]
+    },
+    {
+      "id": "signal",
+      "x": 896,
+      "y": 182,
+      "width": 492,
+      "height": 358,
+      "title": "Reading a noisy signal",
+      "kicker": "02 / SIGNAL",
+      "grid": false,
+      "elements": [
+        {
+          "id": "signal-1",
+          "type": "line",
+          "x": 48,
+          "y": 226,
+          "x2": 454,
+          "y2": 226,
+          "stroke": "$muted",
+          "strokeWidth": 1
+        },
+        {
+          "id": "signal-2",
+          "type": "line",
+          "x": 48,
+          "y": 100,
+          "x2": 48,
+          "y2": 226,
+          "stroke": "$muted",
+          "strokeWidth": 1
+        },
+        {
+          "id": "signal-3",
+          "type": "line",
+          "x": 48,
+          "y": 125,
+          "x2": 454,
+          "y2": 125,
+          "stroke": "$line",
+          "strokeWidth": 1,
+          "dash": [
+            3,
+            5
+          ]
+        },
+        {
+          "id": "signal-4",
+          "type": "line",
+          "x": 48,
+          "y": 175,
+          "x2": 454,
+          "y2": 175,
+          "stroke": "$line",
+          "strokeWidth": 1,
+          "dash": [
+            3,
+            5
+          ]
+        },
+        {
+          "id": "signal-5",
+          "type": "path",
+          "d": "M48 198 L72 183 L96 187 L120 163 L144 170 L168 157 L192 149 L216 159 L240 128 L264 144 L288 137 L312 112 L336 127 L360 122 L384 112 L408 118 L432 106 L454 114",
+          "stroke": "$secondary",
+          "strokeWidth": 2
+        },
+        {
+          "id": "signal-6",
+          "type": "path",
+          "d": "M48 195 C118 174 159 165 216 153 S354 120 454 110",
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "signal-7",
+          "type": "text",
+          "text": "Time →",
+          "x": 352,
+          "y": 237,
+          "width": 116,
+          "fontSize": 16,
+          "fill": "$muted",
+          "align": "right"
+        },
+        {
+          "id": "signal-8",
+          "type": "text",
+          "text": "ILLUSTRATIVE SIGNAL · NOT MEASURED DATA",
+          "x": 48,
+          "y": 277,
+          "width": 430,
+          "fontSize": 16,
+          "fill": "$muted"
+        },
+        {
+          "id": "signal-9",
+          "type": "line",
+          "x": 48,
+          "y": 324,
+          "x2": 88,
+          "y2": 324,
+          "stroke": "$secondary",
+          "strokeWidth": 2
+        },
+        {
+          "id": "signal-10",
+          "type": "text",
+          "text": "Raw",
+          "x": 100,
+          "y": 309,
+          "width": 120,
+          "fontSize": 18
+        },
+        {
+          "id": "signal-11",
+          "type": "line",
+          "x": 242,
+          "y": 324,
+          "x2": 282,
+          "y2": 324,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "signal-12",
+          "type": "text",
+          "text": "Smoothed",
+          "x": 296,
+          "y": 309,
+          "width": 180,
+          "fontSize": 18
+        }
+      ]
+    },
+    {
+      "id": "record",
+      "x": 896,
+      "y": 562,
+      "width": 492,
+      "height": 446,
+      "title": "Preserve the context",
+      "kicker": "03 / EVIDENCE",
+      "grid": false,
+      "elements": [
+        {
+          "id": "record-1",
+          "type": "text",
+          "text": "01",
+          "x": 26,
+          "y": 105,
+          "width": 60,
+          "fontSize": 32,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "record-2",
+          "type": "text",
+          "text": "Capture",
+          "x": 106,
+          "y": 103,
+          "width": 353,
+          "fontSize": 24,
+          "weight": "semibold"
+        },
+        {
+          "id": "record-3",
+          "type": "text",
+          "text": "Keep the raw reading and timestamp.",
+          "x": 106,
+          "y": 144,
+          "width": 353,
+          "fontSize": 19,
+          "fill": "$muted"
+        },
+        {
+          "id": "record-4",
+          "type": "line",
+          "x": 26,
+          "y": 201,
+          "x2": 467,
+          "y2": 201,
+          "stroke": "$line"
+        },
+        {
+          "id": "record-5",
+          "type": "text",
+          "text": "02",
+          "x": 26,
+          "y": 222,
+          "width": 60,
+          "fontSize": 32,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "record-6",
+          "type": "text",
+          "text": "Calibrate",
+          "x": 106,
+          "y": 220,
+          "width": 353,
+          "fontSize": 24,
+          "weight": "semibold"
+        },
+        {
+          "id": "record-7",
+          "type": "text",
+          "text": "Record units and calibration version.",
+          "x": 106,
+          "y": 261,
+          "width": 353,
+          "fontSize": 19,
+          "fill": "$muted"
+        },
+        {
+          "id": "record-8",
+          "type": "line",
+          "x": 26,
+          "y": 317,
+          "x2": 467,
+          "y2": 317,
+          "stroke": "$line"
+        },
+        {
+          "id": "record-9",
+          "type": "text",
+          "text": "03",
+          "x": 26,
+          "y": 338,
+          "width": 60,
+          "fontSize": 32,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "record-10",
+          "type": "text",
+          "text": "Interpret",
+          "x": 106,
+          "y": 336,
+          "width": 353,
+          "fontSize": 24,
+          "weight": "semibold"
+        },
+        {
+          "id": "record-11",
+          "type": "text",
+          "text": "Carry quality flags into the report.",
+          "x": 106,
+          "y": 377,
+          "width": 353,
+          "fontSize": 19,
+          "fill": "$muted"
+        }
+      ]
+    }
+  ]
+}

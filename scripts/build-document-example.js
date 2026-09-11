@@ -1,0 +1,30 @@
+import { mkdir, writeFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import { composeSpecification, renderFile } from '../src/index.js';
+
+const specification = { document: {
+  title: 'From field observations to useful evidence',
+  description: 'A conceptual monitoring workflow with illustrated objects and an explicit review cycle.',
+  width: 1600, fontSize: 26, theme: 'paper',
+  palette: {background:'#FFFEFA',panel:'#FFFEFA',ink:'#243752',muted:'#516478',secondary:'#197C78',accent:'#197C78',line:'#B8CBC7',warm:'#896130'},
+  sources: [{ title:'USGS — Continuous water-quality monitoring guidance', url:'https://pubs.usgs.gov/tm/2006/tm1D3/' }],
+  sections: [
+    {id:'field',title:'01 / Establish the observation context',description:'Illustrative workflow; no measured values or installation details are asserted.',layout:'row',items:[
+      {id:'site',component:'plant',title:'Observation site',description:'Record the location and the conditions that help explain a reading.'},
+      {id:'instrument',component:'device',title:'Monitoring instrument',description:'Preserve the measurement time, units and instrument identity.'},
+      {id:'record',component:'document',title:'Observation record',description:'Keep the reading with calibration and maintenance information.'}
+    ],relations:[{id:'instrument-record',from:'instrument',to:'record'}]},
+    {id:'quality',title:'02 / Review before reuse',layout:'cycle',items:[
+      {id:'capture',component:'device',title:'Capture',description:'Collect readings together with the context needed to interpret them.'},
+      {id:'check',component:'person',title:'Check',description:'Review calibration, unusual values and gaps; retain flags and uncertainty.'},
+      {id:'preserve',component:'container',title:'Preserve',description:'Store the original observations and the documented review decisions.'},
+      {id:'learn',component:'network',title:'Improve the next capture',description:'Use review findings to plan maintenance and future observations.'}
+    ],relations:[{id:'capture-check',from:'capture',to:'check'},{id:'check-preserve',from:'check',to:'preserve'},{id:'preserve-learn',from:'preserve',to:'learn'},{id:'learn-capture',from:'learn',to:'capture'}]}
+  ]
+}};
+const dir = new URL('../examples/document-layout/',import.meta.url);
+await mkdir(dir,{recursive:true});
+await writeFile(new URL('document.json',dir),JSON.stringify(specification,null,2)+'\n');
+await writeFile(new URL('scene.json',dir),JSON.stringify(composeSpecification(specification),null,2)+'\n');
+await renderFile(fileURLToPath(new URL('scene.json',dir)),{outDir:fileURLToPath(new URL('rendered/',dir)),scale:1,strict:true,printWidthMm:180,minFontPt:8});
+console.log('Illustrated document example composed and rendered with strict checks.');

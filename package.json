@@ -1,0 +1,60 @@
+{
+  "name": "@sn4pe/infographic-studio",
+  "version": "0.1.0",
+  "description": "An agent-friendly composition engine for illustrated technical figures.",
+  "type": "module",
+  "bin": {
+    "infographic-studio": "./bin/cli.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./schema": "./schema/scene.schema.json",
+    "./document-schema": "./schema/document.schema.json"
+  },
+  "files": [
+    "bin",
+    "src",
+    "schema",
+    "assets",
+    "skills",
+    "examples",
+    ".codex-plugin",
+    ".claude-plugin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "examples": "node scripts/build-examples.js",
+    "study": "node scripts/build-fiber-study.js",
+    "study:components": "node scripts/build-component-study.js",
+    "study:document": "node scripts/build-document-example.js",
+    "check": "node bin/cli.js check examples/optics/scene.json --strict"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "author": "Sn4pe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sn4pe/infographic-studio.git"
+  },
+  "keywords": [
+    "infographic",
+    "scientific-illustration",
+    "svg",
+    "agent-skills",
+    "pdf"
+  ],
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "ajv": "^8.17.1",
+    "fontkit": "^2.0.4",
+    "pdfkit": "^0.17.2",
+    "svg-to-pdfkit": "^0.1.8"
+  },
+  "devDependencies": {
+    "pdfjs-dist": "^6.3.289"
+  }
+}

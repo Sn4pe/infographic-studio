@@ -1,0 +1,35 @@
+{
+  "name": "sensing",
+  "slug": "sensing",
+  "contentIdentical": true,
+  "labelPlacementIdentical": true,
+  "scientificPathGeometryIdentical": true,
+  "components": [
+    {
+      "component": "grid",
+      "id": "generic-grid-63"
+    },
+    {
+      "component": "device",
+      "id": "generic-device-69"
+    },
+    {
+      "component": "device",
+      "id": "generic-device-77"
+    },
+    {
+      "component": "plant",
+      "id": "generic-plant-82"
+    },
+    {
+      "component": "plant",
+      "id": "generic-plant-84"
+    },
+    {
+      "component": "plant",
+      "id": "generic-plant-86"
+    }
+  ],
+  "rasterArtworkUnchanged": false,
+  "notes": "Scientific geometry retained. This is a visual comparison, not scientific validation."
+}

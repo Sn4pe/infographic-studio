@@ -1,0 +1,412 @@
+{
+  "version": 1,
+  "title": "How an optical fibre guides light",
+  "description": "A core with a higher refractive index than its cladding can guide light by total internal reflection; the external coating has a protective role. Orthographic end and side views on a restrained blueprint grid, precise ray geometry and a normal at the point of reflection.",
+  "eyebrow": "FIBRE STUDY / TECHNICAL",
+  "subtitle": "One explanation, three visual directions. A conceptual step-index fibre in the ray model.",
+  "width": 1440,
+  "height": 1120,
+  "theme": "blueprint",
+  "footer": "Conceptual geometry, not to scale · θ is the internal incidence angle · source: OpenStax, University Physics Vol. 3, §1.4",
+  "sources": [
+    {
+      "title": "OpenStax University Physics, Volume 3: Total Internal Reflection",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/1-4-total-internal-reflection"
+    }
+  ],
+  "panels": [
+    {
+      "id": "technical-composition",
+      "x": 52,
+      "y": 182,
+      "width": 1336,
+      "height": 858,
+      "framed": false,
+      "grid": true,
+      "elements": [
+        {
+          "id": "technical-1",
+          "type": "text",
+          "text": "A / END VIEW",
+          "x": 28,
+          "y": 24,
+          "width": 350,
+          "fontSize": 18,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "technical-2",
+          "type": "text",
+          "text": "B / LONGITUDINAL SECTION",
+          "x": 442,
+          "y": 24,
+          "width": 790,
+          "fontSize": 18,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "tech-end-coating",
+          "type": "ellipse",
+          "x": 189,
+          "y": 225,
+          "rx": 117,
+          "ry": 117,
+          "fill": "$secondary",
+          "opacity": 0.18,
+          "stroke": "$secondary",
+          "strokeWidth": 2
+        },
+        {
+          "id": "tech-end-cladding",
+          "type": "ellipse",
+          "x": 189,
+          "y": 225,
+          "rx": 91.26,
+          "ry": 91.26,
+          "fill": "$background",
+          "stroke": "$secondary",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "technical-3",
+          "type": "ellipse",
+          "x": 189,
+          "y": 225,
+          "rx": 91.26,
+          "ry": 91.26,
+          "fill": "$secondary",
+          "opacity": 0.06
+        },
+        {
+          "id": "tech-end-core",
+          "type": "ellipse",
+          "x": 189,
+          "y": 225,
+          "rx": 36.27,
+          "ry": 36.27,
+          "fill": "$warm",
+          "opacity": 0.5,
+          "stroke": "$warm",
+          "strokeWidth": 2
+        },
+        {
+          "id": "technical-4",
+          "type": "line",
+          "x": 36,
+          "y": 225,
+          "x2": 342,
+          "y2": 225,
+          "stroke": "$muted",
+          "strokeWidth": 1,
+          "dash": [
+            4,
+            8
+          ]
+        },
+        {
+          "id": "technical-5",
+          "type": "line",
+          "x": 189,
+          "y": 79,
+          "x2": 189,
+          "y2": 371,
+          "stroke": "$muted",
+          "strokeWidth": 1,
+          "dash": [
+            4,
+            8
+          ]
+        },
+        {
+          "id": "tech-side-coating",
+          "type": "rect",
+          "x": 442,
+          "y": 138,
+          "width": 825,
+          "height": 202,
+          "fill": "$secondary",
+          "opacity": 0.16,
+          "stroke": "$secondary"
+        },
+        {
+          "id": "tech-side-cladding",
+          "type": "rect",
+          "x": 442,
+          "y": 154,
+          "width": 825,
+          "height": 170,
+          "fill": "$secondary",
+          "opacity": 0.1,
+          "stroke": "$secondary",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "tech-side-core",
+          "type": "rect",
+          "x": 442,
+          "y": 196.5,
+          "width": 825,
+          "height": 85,
+          "fill": "$warm",
+          "opacity": 0.13
+        },
+        {
+          "id": "technical-6",
+          "type": "line",
+          "x": 442,
+          "y": 196.5,
+          "x2": 1267,
+          "y2": 196.5,
+          "stroke": "$secondary",
+          "strokeWidth": 2
+        },
+        {
+          "id": "technical-7",
+          "type": "line",
+          "x": 442,
+          "y": 281.5,
+          "x2": 1267,
+          "y2": 281.5,
+          "stroke": "$secondary",
+          "strokeWidth": 2
+        },
+        {
+          "id": "technical-8",
+          "type": "arrow",
+          "x": 452,
+          "y": 238.30652680652682,
+          "x2": 557.5,
+          "y2": 196.5,
+          "stroke": "$accent",
+          "strokeWidth": 3.5
+        },
+        {
+          "id": "technical-9",
+          "type": "arrow",
+          "x": 557.5,
+          "y": 196.5,
+          "x2": 772,
+          "y2": 281.5,
+          "stroke": "$accent",
+          "strokeWidth": 3.5
+        },
+        {
+          "id": "technical-10",
+          "type": "arrow",
+          "x": 772,
+          "y": 281.5,
+          "x2": 986.5,
+          "y2": 196.5,
+          "stroke": "$accent",
+          "strokeWidth": 3.5
+        },
+        {
+          "id": "technical-11",
+          "type": "arrow",
+          "x": 986.5,
+          "y": 196.5,
+          "x2": 1201,
+          "y2": 281.5,
+          "stroke": "$accent",
+          "strokeWidth": 3.5
+        },
+        {
+          "id": "technical-12",
+          "type": "arrow",
+          "x": 1201,
+          "y": 281.5,
+          "x2": 1259,
+          "y2": 258.51631701631703,
+          "stroke": "$accent",
+          "strokeWidth": 3.5
+        },
+        {
+          "id": "technical-13",
+          "type": "line",
+          "x": 986.5,
+          "y": 128,
+          "x2": 986.5,
+          "y2": 295.5,
+          "stroke": "$muted",
+          "dash": [
+            5,
+            6
+          ],
+          "strokeWidth": 1.2
+        },
+        {
+          "id": "technical-14",
+          "type": "path",
+          "d": "M986.5,238.5 A42,42 0 0 1 947.45396511462,211.97278771681724",
+          "stroke": "$ink",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "technical-15",
+          "type": "text",
+          "text": "θ",
+          "x": 955,
+          "y": 244.5,
+          "width": 35,
+          "fontSize": 25
+        },
+        {
+          "id": "technical-16",
+          "type": "text",
+          "text": "NORMAL",
+          "x": 946.5,
+          "y": 98,
+          "width": 180,
+          "fontSize": 18,
+          "fill": "$muted"
+        },
+        {
+          "id": "core-label",
+          "type": "callout",
+          "text": "Core · n₁",
+          "x": 28,
+          "y": 398,
+          "width": 286,
+          "target": {
+            "element": "tech-end-core",
+            "at": [
+              0.5,
+              0.5
+            ]
+          },
+          "fontSize": 25,
+          "weight": "semibold",
+          "side": "top"
+        },
+        {
+          "id": "cladding-label",
+          "type": "callout",
+          "text": "Cladding · n₂",
+          "x": 402,
+          "y": 392,
+          "width": 340,
+          "target": {
+            "element": "tech-side-cladding",
+            "at": [
+              0.25,
+              0.95
+            ]
+          },
+          "fontSize": 25,
+          "weight": "semibold",
+          "side": "top"
+        },
+        {
+          "id": "coating-label",
+          "type": "callout",
+          "text": "Protective coating",
+          "x": 951,
+          "y": 392,
+          "width": 345,
+          "target": {
+            "element": "tech-side-coating",
+            "at": [
+              0.88,
+              0.97
+            ]
+          },
+          "fontSize": 25,
+          "weight": "semibold",
+          "side": "top"
+        },
+        {
+          "id": "technical-17",
+          "type": "line",
+          "x": 28,
+          "y": 464,
+          "x2": 1308,
+          "y2": 464,
+          "stroke": "$line",
+          "strokeWidth": 1
+        },
+        {
+          "id": "technical-18",
+          "type": "text",
+          "text": "01 / INDEX CONTRAST",
+          "x": 28,
+          "y": 486,
+          "width": 600,
+          "fontSize": 18,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "technical-19",
+          "type": "text",
+          "text": "n₁ > n₂",
+          "x": 28,
+          "y": 520,
+          "width": 500,
+          "fontSize": 42,
+          "weight": "semibold"
+        },
+        {
+          "id": "technical-20",
+          "type": "text",
+          "text": "Total internal reflection occurs at the core–cladding boundary.",
+          "x": 28,
+          "y": 590,
+          "width": 565,
+          "fontSize": 25
+        },
+        {
+          "id": "technical-21",
+          "type": "text",
+          "text": "02 / INCIDENCE AT THE BOUNDARY",
+          "x": 736,
+          "y": 486,
+          "width": 570,
+          "fontSize": 18,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "technical-22",
+          "type": "text",
+          "text": "θ > θc",
+          "x": 736,
+          "y": 520,
+          "width": 500,
+          "fontSize": 42,
+          "weight": "semibold"
+        },
+        {
+          "id": "technical-23",
+          "type": "text",
+          "text": "sin θc = n₂ / n₁",
+          "x": 736,
+          "y": 584,
+          "width": 560,
+          "fontSize": 32
+        },
+        {
+          "id": "technical-24",
+          "type": "text",
+          "text": "θ is measured from the normal.",
+          "x": 736,
+          "y": 637,
+          "width": 560,
+          "fontSize": 24,
+          "fill": "$muted"
+        },
+        {
+          "id": "technical-25",
+          "type": "text",
+          "text": "The coating protects the glass; index contrast guides the light.",
+          "x": 28,
+          "y": 714,
+          "width": 1240,
+          "fontSize": 24,
+          "fill": "$muted"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "fiber-study/editorial",
+  "slug": "fiber-study-editorial",
+  "contentIdentical": true,
+  "labelPlacementIdentical": true,
+  "scientificPathGeometryIdentical": true,
+  "components": [
+    {
+      "component": "section",
+      "id": "editorial-end-coating",
+      "view": "end"
+    },
+    {
+      "component": "section",
+      "id": "editorial-end-cladding",
+      "view": "end"
+    },
+    {
+      "component": "section",
+      "id": "editorial-end-core",
+      "view": "end"
+    },
+    {
+      "component": "section",
+      "id": "editorial-side-cladding",
+      "view": "side"
+    },
+    {
+      "component": "section",
+      "id": "editorial-side-core",
+      "view": "side"
+    }
+  ],
+  "rasterArtworkUnchanged": false,
+  "notes": "Scientific geometry retained. This is a visual comparison, not scientific validation."
+}

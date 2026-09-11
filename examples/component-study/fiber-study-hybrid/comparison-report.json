@@ -1,0 +1,21 @@
+{
+  "name": "fiber-study/hybrid",
+  "slug": "fiber-study-hybrid",
+  "contentIdentical": true,
+  "labelPlacementIdentical": true,
+  "scientificPathGeometryIdentical": true,
+  "components": [
+    {
+      "component": "section",
+      "id": "hybrid-ray-cladding",
+      "view": "side"
+    },
+    {
+      "component": "section",
+      "id": "hybrid-ray-core",
+      "view": "side"
+    }
+  ],
+  "rasterArtworkUnchanged": true,
+  "notes": "Raster illustration retained byte-for-byte; its perspective and palette are outside the vector component profile."
+}
