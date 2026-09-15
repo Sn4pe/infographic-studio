@@ -1,0 +1,33 @@
+{
+  "infographic": {
+    "title": "Ceramic frit band and dot matrix",
+    "description": "Two black markings at the glass edge serve different physical functions.",
+    "width": 1600,
+    "fontSize": 24,
+    "theme": "paper",
+    "sources": [
+      {"title": "Sika Auto Glass Replacement Guideline — ceramic frit", "url": "https://usa.sika.com/dam/dms/us01/c/SIKA-Auto-Glass-Replacement-AGR-Guideline-5-2026.pdf"}
+    ],
+    "structure": {
+      "type": "comparison",
+      "title": "The band protects; the dots make the transition gradual",
+      "description": "Both are fired ceramic enamel, but they do not perform exactly the same role.",
+      "sides": [
+        {
+          "id": "band", "title": "Solid black band", "description": "It surrounds the glass bonding zone.",
+          "items": [
+            {"id": "uv", "title": "UV protection", "description": "It protects the polyurethane adhesive from sunlight."},
+            {"id": "mask", "title": "Hidden bond", "description": "It visually covers the adhesive line and body flange."}
+          ]
+        },
+        {
+          "id": "dots", "title": "Dot matrix", "description": "It fades into the clear glass.",
+          "items": [
+            {"id": "thermal", "title": "Thermal ramp", "description": "It reduces the heat-absorption step between black and clear glass during manufacture."},
+            {"id": "visual", "title": "Visual ramp", "description": "It makes the transition from opaque edge to clear glass less abrupt."}
+          ]
+        }
+      ]
+    }
+  }
+}

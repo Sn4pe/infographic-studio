@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "title": "Why windshield edges fade into black dots",
+  "description": "A ceramic frit band protects the polyurethane bond from ultraviolet exposure and conceals the mounting zone. Its dot matrix makes the transition into clear glass more gradual.",
+  "eyebrow": "AUTOMOTIVE GLASS / CERAMIC FRIT",
+  "subtitle": "The opaque band and dot matrix are fired ceramic enamel, but they solve different problems at the glass edge.",
+  "width": 1600,
+  "height": 1000,
+  "theme": "blueprint",
+  "footer": "Conceptual cutaway · not an installation specification · illustration is not to scale",
+  "sources": [
+    {
+      "title": "Sika Auto Glass Replacement Guideline — ceramic frit",
+      "url": "https://usa.sika.com/dam/dms/us01/c/SIKA-Auto-Glass-Replacement-AGR-Guideline-5-2026.pdf"
+    }
+  ],
+  "assets": {
+    "windshield-frit": {
+      "path": "assets/windshield-frit-v1.png",
+      "description": "Conceptual corner cutaway of a windshield showing transparent glass, a dark ceramic frit band, a dot matrix, polyurethane adhesive and mounting flange. It contains no text or labels and is not to scale.",
+      "prompt": "Use case: scientific-educational. Asset type: text-free hero illustration for an explanatory windshield infographic. Primary request: Create one refined editorial scientific cutaway of the lower corner of an automotive windshield, viewed almost straight-on. Show a transparent laminated glass pane with its dark opaque ceramic frit band along the outer edge and a visible gradual dot-matrix transition from dense black dots into clear glass. Behind the glass edge, subtly show a simplified dark mounting flange and a continuous bead of polyurethane adhesive, so their relationship is understandable. The center must remain calm and transparent, with the frit transition clearly visible near the bottom and right edge. Style/medium: premium technical editorial illustration, dark navy blueprint background, warm ivory glass highlights, restrained teal and coral accents, fine crisp material edges; elegant but physically plausible. Composition/framing: landscape 1536 by 1024, the windshield corner occupies roughly the right two-thirds, with generous empty negative space on the left for vector labels and callouts. Isolate the object on a genuinely transparent background; no ground plane. Scientific constraints: the black band is a ceramic enamel on the glass surface; dot density decreases gradually toward the transparent viewing area; the adhesive is behind the opaque band. This is a conceptual explanatory cross-section, not an installation drawing. Constraints: no text, letters, numbers, formulas, labels, arrows, logos, borders or watermarks anywhere. Do not depict a person, vehicle interior, dashboard, road or scenery. Preserve actual transparent alpha.",
+      "provenance": "Built-in image-generation tool, 2026-09-14. No source image supplied. Model identifier and cost were not exposed. Original output copied unchanged into this example."
+    }
+  },
+  "panels": [
+    {
+      "id": "frit-explainer",
+      "x": 52,
+      "y": 202,
+      "width": 1496,
+      "height": 690,
+      "framed": false,
+      "grid": false,
+      "elements": [
+        {
+          "id": "hero-zone",
+          "type": "rect",
+          "x": 620,
+          "y": 0,
+          "width": 876,
+          "height": 690,
+          "fill": "#101419",
+          "rx": 18
+        },
+        {
+          "id": "windshield-corner",
+          "type": "image",
+          "x": 620,
+          "y": 0,
+          "width": 876,
+          "height": 690,
+          "asset": "windshield-frit",
+          "fit": "contain",
+          "artworkId": "windshield-artwork",
+          "artworkBounds": {"x": 620, "y": 0, "width": 876, "height": 690}
+        },
+        {
+          "id": "main-claim",
+          "type": "text",
+          "text": "The black marks are a functional ceramic coating, not a decorative print.",
+          "x": 34,
+          "y": 38,
+          "width": 520,
+          "fontSize": 33,
+          "weight": "semibold",
+          "fill": "$ink"
+        },
+        {
+          "id": "uv-card",
+          "type": "rect",
+          "x": 34,
+          "y": 210,
+          "width": 520,
+          "height": 132,
+          "rx": 12,
+          "fill": "$panel",
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "uv-title",
+          "type": "text",
+          "text": "1  Gradual transition",
+          "x": 60,
+          "y": 232,
+          "width": 450,
+          "fontSize": 23,
+          "weight": "semibold",
+          "fill": "$accent",
+          "container": "uv-card"
+        },
+        {
+          "id": "uv-copy",
+          "type": "text",
+          "text": "The dots shrink toward clear glass, making the visual and thermal change less abrupt.",
+          "x": 60,
+          "y": 270,
+          "width": 450,
+          "fontSize": 21,
+          "fill": "$ink",
+          "container": "uv-card"
+        },
+        {
+          "id": "dot-card",
+          "type": "rect",
+          "x": 34,
+          "y": 370,
+          "width": 520,
+          "height": 152,
+          "rx": 12,
+          "fill": "$panel",
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "dot-title",
+          "type": "text",
+          "text": "2  Opaque band protects the bond",
+          "x": 60,
+          "y": 392,
+          "width": 450,
+          "fontSize": 23,
+          "weight": "semibold",
+          "fill": "$accent",
+          "container": "dot-card"
+        },
+        {
+          "id": "dot-copy",
+          "type": "text",
+          "text": "It blocks ultraviolet light before it reaches the polyurethane adhesive.",
+          "x": 60,
+          "y": 430,
+          "width": 450,
+          "fontSize": 21,
+          "fill": "$ink",
+          "container": "dot-card"
+        },
+        {
+          "id": "hide-card",
+          "type": "rect",
+          "x": 34,
+          "y": 550,
+          "width": 520,
+          "height": 130,
+          "rx": 12,
+          "fill": "$panel",
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "hide-title",
+          "type": "text",
+          "text": "3  Hides the mounting zone",
+          "x": 60,
+          "y": 572,
+          "width": 450,
+          "fontSize": 23,
+          "weight": "semibold",
+          "fill": "$accent",
+          "container": "hide-card"
+        },
+        {
+          "id": "hide-copy",
+          "type": "text",
+          "text": "It conceals the adhesive bead and body flange from normal view.",
+          "x": 60,
+          "y": 610,
+          "width": 450,
+          "fontSize": 21,
+          "fill": "$ink",
+          "container": "hide-card"
+        },
+        {
+          "id": "dots-arrow",
+          "type": "arrow",
+          "x": 554,
+          "y": 288,
+          "x2": 1235,
+          "y2": 360,
+          "stroke": "$warm",
+          "strokeWidth": 3
+        },
+        {
+          "id": "bond-arrow",
+          "type": "arrow",
+          "x": 554,
+          "y": 448,
+          "x2": 1408,
+          "y2": 530,
+          "stroke": "$warm",
+          "strokeWidth": 3
+        },
+        {
+          "id": "mounting-arrow",
+          "type": "arrow",
+          "x": 554,
+          "y": 622,
+          "x2": 1420,
+          "y2": 588,
+          "stroke": "$warm",
+          "strokeWidth": 3
+        }
+      ]
+    }
+  ]
+}

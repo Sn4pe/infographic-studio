@@ -46,17 +46,18 @@ try {
     cwd: consumer, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], timeout: 60_000,
   });
   assert.ok(JSON.parse(cli('icons', '--json')).length >= 17);
-  for (const example of ['optics', 'sensing', 'editorial', 'technical', 'hybrid']) {
+  for (const example of ['windshield', 'kubernetes', 'jwst', 'heat-pump', 'crispr', 'ligo', 'kafka']) {
     cli('init', example, '--example', example);
     cli('check', `${example}/scene.json`, '--strict');
   }
-  cli('render', 'hybrid/scene.json', '--out', 'hybrid-output', '--scale', '1', '--strict');
+  cli('render', 'windshield/scene.json', '--out', 'windshield-output', '--scale', '1', '--strict');
   for (const format of ['svg', 'png', 'pdf']) {
-    assert.ok((await stat(join(consumer, 'hybrid-output', `figure.${format}`))).size > 100);
+    assert.ok((await stat(join(consumer, 'windshield-output', `figure.${format}`))).size > 100);
   }
-  cli('compose', join(installed, 'examples/document-layout/document.json'), '--out', 'document-scene.json');
-  cli('check', 'document-scene.json', '--strict', '--print-width', '180', '--min-font', '8');
-  console.log(`Package ${pkg.version}: isolated install, CLI, five starters, hybrid SVG/PNG/PDF and document composition passed.`);
+  await writeFile(join(consumer, 'compose-input.json'), JSON.stringify({ scene: await json(join(consumer, 'kubernetes/scene.json')), placements: [] }));
+  cli('compose', 'compose-input.json', '--out', 'kubernetes-scene.json');
+  cli('check', 'kubernetes-scene.json', '--strict', '--print-width', '320', '--min-font', '8');
+  console.log(`Package ${pkg.version}: isolated install, CLI, seven illustrated starters, windshield SVG/PNG/PDF and editable composition passed.`);
   console.log(`Packed ${packed.files.length} files (${(packed.size / 1048576).toFixed(1)} MiB compressed). Nothing published.`);
 } finally {
   // Remove only the unique directory allocated by this check, never a caller-supplied path.

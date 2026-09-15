@@ -6,9 +6,9 @@ Turn technical content into figures that combine drawings, spatial relationships
 
 An agent develops the explanation and authors the scene. The engine lays out text, composes vector artwork and local images, checks mechanical issues, and exports **SVG, PNG and PDF**. Correct a label without generating the illustration again.
 
-![An environmental monitoring station with editable annotations, signal geometry and evidence panels](examples/component-study/sensing/rendered/figure.png)
+![Webb: deployed mirror, thermal shield and optical commissioning](examples/space/jwst-deployment/rendered/figure.png)
 
-[Explore the shared visual system](examples/component-study/README.md) · [Editable sensing scene](examples/component-study/sensing/scene.json) · [PDF](examples/component-study/sensing/rendered/figure.pdf)
+[Editable Webb scene](examples/space/jwst-deployment/scene.json) · [PNG](examples/space/jwst-deployment/rendered/figure.png) · [PDF](examples/space/jwst-deployment/rendered/figure.pdf)
 
 **Alpha preview — 0.1.0-alpha.3.** Suitable for experimentation and reviewed figures. The API and layout contract may change before a stable release. Automatic checks do not establish scientific correctness or visual quality. See the [changelog](CHANGELOG.md) for scope and known limitations.
 
@@ -26,13 +26,15 @@ node cli/cli.js render my-figure/scene.json --out output --strict
 
 Open `output/figure.png` or `output/figure.pdf`. Change a label, a shape or the theme in `my-figure/scene.json`, then render again. The exports contain embedded fonts and images; they do not depend on remote resources.
 
-Use `init my-figure --example hybrid` to start with the complete illustrated fibre scene. `editorial` and `technical` are also available. Initialization copies the scene and its image assets into a **new directory** and refuses any existing destination. Image prompts and provenance remain in the scene.
+Use `init my-figure --example windshield` for a physical cutaway, `--example jwst` for telescope geometry and optical commissioning, `--example heat-pump` for a refrigerant circuit with an energy balance and feedback, or `--example kubernetes` for control, execution, traffic and recovery views. `windshield` is the default starter; `thermostat` remains an alias for `heat-pump`. Initialization copies the editable scene and its image assets into a **new directory** and refuses any existing destination. Image prompts and provenance remain in the scene.
+
+For the light series, use `--example crispr` for molecular recognition and DNA repair, `--example ligo` for an optical interferometer and phase comparison, or `--example kafka` for partition replication, consumer progress and KRaft metadata.
 
 For a global CLI install from the local checkout:
 
 ```sh
 npm install -g .
-infographic-studio init my-figure --example sensing
+infographic-studio init my-figure --example kubernetes
 infographic-studio render my-figure/scene.json --out output
 ```
 
@@ -45,17 +47,36 @@ These commands install from the checkout and do not require a published npm pack
 - Hybrid compositions: generated or supplied PNG/JPEG artwork with editable vector text, callouts and geometry.
 - Consistent figures across a report, with shared color tokens and bundled typography.
 
-Author spatial layouts directly in a scene, or use automatic illustrated-object layout for related objects and processes. The following examples use one shared editorial system: ivory background, navy outlines, teal accent colour, consistent typography and a common component vocabulary.
+Author spatial layouts directly in a scene, or use automatic illustrated-object layout for related objects and processes. The gallery shares Source Sans 3 typography, a consistent outline vocabulary and numbered editorial sections across two coordinated directions: **technical blueprint** uses a navy ground and ivory text; **paper atlas** uses a warm light ground and dark teal ink. Both use teal structure, coral emphasis and ochre annotations. Semantic documents default to blueprint unless a source chooses another theme.
 
-| Optics | Environmental sensing |
+| Physical cutaway | Space engineering |
 | --- | --- |
-| [![Wave propagation, dispersion and internal reflection](examples/component-study/optics/rendered/figure.png)](examples/component-study/optics/scene.json) | [![Environmental monitoring station, signal and evidence panels](examples/component-study/sensing/rendered/figure.png)](examples/component-study/sensing/scene.json) |
-| [SVG](examples/component-study/optics/rendered/figure.svg) · [PDF](examples/component-study/optics/rendered/figure.pdf) | [SVG](examples/component-study/sensing/rendered/figure.svg) · [PDF](examples/component-study/sensing/rendered/figure.pdf) |
-| Optical fibre — editorial | Optical fibre — hybrid |
-| [![Optical fibre end view, reflection detail and equations](examples/component-study/fiber-study-editorial/rendered/figure.png)](examples/component-study/fiber-study-editorial/scene.json) | [![Glass fibre cutaway with editable vector annotations](examples/component-study/fiber-study-hybrid/rendered/figure.png)](examples/component-study/fiber-study-hybrid/scene.json) |
-| [SVG](examples/component-study/fiber-study-editorial/rendered/figure.svg) · [PDF](examples/component-study/fiber-study-editorial/rendered/figure.pdf) | [SVG](examples/component-study/fiber-study-hybrid/rendered/figure.svg) · [PDF](examples/component-study/fiber-study-hybrid/rendered/figure.pdf) |
+| [![Windshield ceramic frit cutaway](examples/windshield-frit/rendered/figure.png)](examples/windshield-frit/scene.json) | [![Webb: unfold, cool, focus](examples/space/jwst-deployment/rendered/figure.png)](examples/space/jwst-deployment/scene.json) |
+| [SVG](examples/windshield-frit/rendered/figure.svg) · [PDF](examples/windshield-frit/rendered/figure.pdf) | [SVG](examples/space/jwst-deployment/rendered/figure.svg) · [PDF](examples/space/jwst-deployment/rendered/figure.pdf) |
 
-These scenes are editable starters and preserve their scientific geometry, signal treatment and annotations. The hybrid example keeps its generated cutaway while using the same typography, palette and vector annotation rules; its [prompt and provenance](examples/fiber-study/hybrid/assets/generation-prompt.md) are included. Content references are stored in each scene.
+| Refrigerant circuit, energy and control | Public-project architecture |
+| --- | --- |
+| [![How a heat pump warms a room](examples/physical/heat-pump/rendered/figure.png)](examples/physical/heat-pump/scene.json) | [![Kubernetes: from declared replicas to live traffic](examples/architectures/kubernetes-cluster/rendered/figure.png)](examples/architectures/kubernetes-cluster/scene.json) |
+| [SVG](examples/physical/heat-pump/rendered/figure.svg) · [PDF](examples/physical/heat-pump/rendered/figure.pdf) | [SVG](examples/architectures/kubernetes-cluster/rendered/figure.svg) · [PDF](examples/architectures/kubernetes-cluster/rendered/figure.pdf) |
+
+The [Kubernetes figure](examples/architectures/kubernetes-cluster/scene.json) follows one three-replica workload through four views: API resources and controllers, containers nested inside Pods and nodes, Service forwarding, and replacement of a lost Pod. It is based on the official [architecture](https://kubernetes.io/docs/concepts/architecture/) and [Service networking](https://kubernetes.io/docs/reference/networking/virtual-ips/) documentation. It illustrates a kube-proxy-based configuration, not every possible cluster topology.
+
+The [Webb figure](examples/space/jwst-deployment/scene.json) combines an eighteen-segment mirror and deployed sunshield, an annotated thermal section, and changes from launch configuration to an aligned aperture. Sources include NASA's [sunshield explanation](https://science.nasa.gov/mission/webb/webbs-sunshield/) and [deployment record](https://science.nasa.gov/mission/webb/deployment/).
+
+The [heat-pump figure](examples/physical/heat-pump/scene.json) follows refrigerant through both coils, the compressor and expansion valve. An illustrative energy balance and a separate thermostat loop explain heat transfer and regulation. It follows the U.S. Department of Energy's [HVAC guide](https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/hvac_guide.pdf). Each example has a `brief.json` describing its thesis, visual evidence, sources and deliberate simplifications.
+
+### Paper atlas: complex subjects in a light theme
+
+| Molecular recognition and repair | Precision optical measurement | Distributed event storage |
+| --- | --- | --- |
+| [![CRISPR–Cas9 molecular recognition and alternative DNA repairs](examples/biology/crispr-cas9/rendered/figure.png)](examples/biology/crispr-cas9/scene.json) | [![LIGO optical cavities, differential strain and phase readout](examples/physical/ligo-interferometer/rendered/figure.png)](examples/physical/ligo-interferometer/scene.json) | [![Apache Kafka replica placement, consumer offsets and KRaft quorum](examples/architectures/apache-kafka/rendered/figure.png)](examples/architectures/apache-kafka/scene.json) |
+| [SVG](examples/biology/crispr-cas9/rendered/figure.svg) · [PDF](examples/biology/crispr-cas9/rendered/figure.pdf) | [SVG](examples/physical/ligo-interferometer/rendered/figure.svg) · [PDF](examples/physical/ligo-interferometer/rendered/figure.pdf) | [SVG](examples/architectures/apache-kafka/rendered/figure.svg) · [PDF](examples/architectures/apache-kafka/rendered/figure.pdf) |
+
+**CRISPR–Cas9** combines an original molecular schematic, a locally opened DNA duplex and a comparison of repair outcomes. Abstract sequence units explain the mechanism without representing an actual target. Based on [Addgene's CRISPR guide](https://www.addgene.org/guides/crispr/) and [NHGRI](https://www.genome.gov/genetics-glossary/CRISPR).
+
+**LIGO** follows light through two perpendicular arm cavities, compares alternating strain states and illustrates how optical fields combine. Beam separation and deformation are exaggerated; the waveforms are conceptual. Based on the LIGO Lab explanations of [interferometry](https://www.ligo.caltech.edu/MIT/page/what-is-interferometer) and [LIGO's instrument](https://www.ligo.caltech.edu/WA/page/ligos-ifo).
+
+**Apache Kafka** uses a broker-by-partition matrix, an expanded replication path, aligned consumer cursors and a separate metadata quorum. It illustrates a three-broker cluster with standard consumer groups, using the public project's [4.3 design](https://kafka.apache.org/43/design/design/), [KRaft](https://kafka.apache.org/43/operations/kraft/) and [topic configuration](https://kafka.apache.org/43/configuration/topic-configs/) documentation.
 
 ## How it works
 
@@ -81,8 +102,8 @@ Read the [scene format guide](skills/infographic-studio/references/scene-format.
 
 | Command | Result |
 | --- | --- |
-| `init <directory> --example optics` | Copy an editable starting scene; never overwrite an existing scene |
-| `init <directory> --example hybrid` | Copy the illustrated scene and its local assets into a new project |
+| `init <directory> --example windshield` | Copy the default editable physical cutaway; never overwrite an existing scene |
+| `init <directory> --example kubernetes` | Copy an editable architecture figure with control and traffic views |
 | `check <scene.json> --strict` | Check schema, panel geometry, text layout and local assets |
 | `check <scene.json> --json` | Machine-readable check report |
 | `render <scene.json> --out output` | Export SVG, PNG, PDF and a report |
@@ -92,7 +113,7 @@ Read the [scene format guide](skills/infographic-studio/references/scene-format.
 | `revise <scene.json> --labels changes.json --out revision --strict` | Create a separate project with corrected text and copied images |
 | `render <scene.json> --print-width 180 --min-font 8` | Export a PDF at 180 mm width and report text below 8 pt |
 | `icons payment --json` | Search the bundled outline catalog by name and tags |
-| `compose <specification.json> --out scene.json` | Lay out a semantic document or expand explicit component placements into a new scene; refuse overwrite |
+| `compose <specification.json> --out scene.json` | Compile a semantic infographic/document or expand explicit component placements into a new scene; refuse overwrite |
 
 `render` replaces the named exports in the output directory. `--strict` makes warnings fail the command, and errors always fail. Exit codes are `0` for success and `1` for invalid input or failed checks/exports.
 
@@ -135,9 +156,7 @@ const section = createSection({
 
 `createComponent(name, options)` creates one object, and `listComponents()` lists the vocabulary. Every part needs its own stable ID. Device variants are `teal` (display with status marks), `blank` (display ready for another component), and `sealed` (housing without a screen). Person variants remain `teal`, `warm` and `elder`. Other objects use the default variant. Component bounds describe the illustration's area; people preserve their aspect ratio. Sections accept author-supplied ratios for end views and `from`/`to` fractions for side views. These proportions are geometry inputs, not physical models.
 
-Open the [before/after comparison](examples/component-study/compare.html) for optics, environmental sensing and all three fibre variants. Run `npm run study:components` to rebuild only the derived variants. The originals remain intact. Text, callout placement, ray and signal path geometry are checked against the originals. Spectrum colours and signal line weights retain their meaning. The hybrid image is copied unchanged and remains outside the vector style profile.
-
-This trial does not replace the original illustration catalog. Generic objects improve reuse, while recognizable conventional symbols and specialist scientific geometry remain useful. A uniform catalog alone cannot guarantee an equally effective explanation.
+Generic objects improve reuse, while recognizable conventional symbols and specialist scientific geometry remain useful. A uniform catalog alone cannot guarantee an equally effective explanation.
 
 ## Keep richer illustrations consistent
 
@@ -173,7 +192,7 @@ node cli/cli.js render my-figure/scene.json --out output/print --print-width 180
 
 `--print-width` is in millimetres and preserves the aspect ratio. It sets the PDF's physical page size; SVG coordinates and PNG pixel dimensions stay unchanged. Without it, PDF dimensions use the original 96 px/in canvas scale. `--min-font` defaults to 8 pt and requires a print width. The report records every label's resulting point size and flags smaller text; `--strict` makes those warnings fail the operation.
 
-This checks text size, not visual legibility or image resolution. At 180 mm, the fibre study's small headings and source footer need review; enlarge or relocate them in the scene to meet a publication's requirements. The tool does not silently shrink, remove or rewrite content to pass a check.
+This checks text size, not visual legibility or image resolution. The detailed gallery figures are intended for screen zoom or large-format output: at 180 mm their smaller annotations need adaptation. Enlarge or relocate labels for a publication's requirements. The tool does not silently shrink, remove or rewrite content to pass a check.
 
 ## Use with an agent
 
@@ -198,7 +217,7 @@ Any host that supports skills and a Node.js filesystem runtime can adopt this wo
 
 ## Bring your own illustrations
 
-Declare an asset with a description and optional prompt, then place it with an `image` element. `assets` prepares a text-free illustration brief. Generate the artwork with your agent's available image tool or supply an existing illustration. Save it inside the scene directory, set its relative `path`, and compose annotations as text or anchored `callout` elements. The [completed hybrid example](examples/fiber-study/README.md#hybrid) includes the original transparent PNG, exact prompt, editable scene and all exports.
+Declare an asset with a description and optional prompt, then place it with an `image` element. `assets` prepares a text-free illustration brief. Generate the artwork with your agent's available image tool or supply an existing illustration. Save it inside the scene directory, set its relative `path`, and compose annotations as text or anchored `callout` elements. The [completed windshield cutaway](examples/windshield-frit/scene.json) includes the local image, its recorded prompt, editable scene and all exports.
 
 The engine never calls an image API, downloads images or silently incurs generation costs. It accepts local PNG/JPEG files up to 20 MB each and embeds them in exports. Missing assets fail explicitly. See the [illustration workflow](skills/infographic-studio/references/illustration-workflow.md).
 
@@ -226,7 +245,7 @@ console.log(report);
 
 ## Models with fewer capabilities
 
-For architectures and processes, use **automatic illustrated-object layout**. Each object has a component, title and optional description. The engine measures text, reserves separate illustration and label space, grows rows and sections, and routes explicit relationships around complete objects. Row, column, grid and four-object cycle arrangements are available; cycle edges are always supplied by the author.
+For architectures and processes, use **automatic illustrated-object layout**. Each object has a component, title and optional description. The engine measures text, reserves separate illustration and label space, grows rows and sections, and routes explicit relationships around complete objects. `architecture` turns semantic nodes into padded cards whose local text bounds are checked automatically. `architecture-overview` retains the full relationship model but renders one declared teaching journey, so contextual dependencies do not become competing arrows. Row, column, grid and four-object cycle arrangements are also available; cycle edges are always supplied by the author.
 
 ```js
 import { composeDocument } from '@sn4pe/infographic-studio';
@@ -244,9 +263,33 @@ const scene = composeDocument({
 
 The JSON equivalent is `{ "document": { ... } }`, accepted by `compose`. Height is measured automatically unless supplied as a hard limit. Impossible fits fail with a useful error; the engine never shrinks text or removes claims. Preserve the semantic document and edit it to reflow the figure. Free scene placement remains available for scientific geometry.
 
-See the [full contract](skills/infographic-studio/references/document-layout.md) and the [editable example](examples/document-layout/document.json), [PNG](examples/document-layout/rendered/figure.png) and [PDF](examples/document-layout/rendered/figure.pdf). `npm run study:document` rebuilds that example. Relationships currently connect objects within one section, without edge labels. Routing reduces shared segments but does not guarantee crossing-free dense graphs. Content and visual review remain separate.
+## Compose a declarative infographic
+
+`compose` also accepts `{ "infographic": { ... } }`: a higher-level source that separates information structure from the editable scene it produces. The initial catalog covers sequence, timeline, feedback loop, layered relationship, relationship neighborhood, hierarchy, tree, architecture overview, decision matrix, bar chart and two-sided comparison. Query it with `infographic-studio structures --json`; use a custom `scene.json` whenever the intended composition is not represented. The [infographic source guide](skills/infographic-studio/references/infographic-format.md) defines the contract.
+
+```json
+{
+  "infographic": {
+    "title": "Solid frit band and dot matrix",
+    "description": "Two edge markings have different roles.",
+    "structure": {
+      "type": "comparison",
+      "sides": [
+        {"id": "band", "title": "Solid band", "items": [{"id": "uv", "title": "UV shield"}]},
+        {"id": "dots", "title": "Dot matrix", "items": [{"id": "thermal", "title": "Thermal transition"}]}
+      ]
+    }
+  }
+}
+```
+
+The compiler calculates cards, typography and panel height, then emits the ordinary scene format. Its compact source forms are kept as test fixtures so the public gallery can focus on physical explanations and public-project architectures instead of card-layout demonstrations.
+
+See the [full contract](skills/infographic-studio/references/document-layout.md). Document relationships connect objects within one section and can carry a short label in the generated section legend. Routing reduces shared segments but does not guarantee crossing-free dense graphs. The gallery uses free scenes to preserve its physical geometry and complementary views. Content and visual review remain separate.
 
 Image generation is optional: common objects use the bundled vector components, and the offline renderer produces PNG and PDF. Image viewing is a separate capability. Without it, the result remains a draft with visual review pending even when mechanical checks pass.
+
+For a full hybrid workflow, see the [windshield frit scene](examples/windshield-frit/scene.json): a locally stored, text-free generated cutaway is combined with editable English labels and vector arrows. Its [PNG](examples/windshield-frit/rendered/figure.png) and [generation record](examples/windshield-frit/scene.json) remain reproducible without another image-generation call.
 
 A model without runtime tools can return a JSON object containing a base `scene` and explicit component `placements`. A trusted host calls `composeSpecification(specification)` or `compose specification.json --out scene.json`, then checks and renders the result. This expands known components without executing model-authored code or silently correcting positions and wording. It does not automatically arrange the scene or connect to a model provider.
 
@@ -256,7 +299,7 @@ The [capability workflow](skills/infographic-studio/references/capability-workfl
 
 Automated checks catch invalid scene data, duplicate IDs, missing images, unresolved callout targets, panel overlaps, text outside panels, overflowing words and unsupported glyphs. They warn about overlapping label boxes, labels overlapping declared component bounds, later opaque shapes covering text, straight connectors crossing labels or passing through illustrations, callout endpoints on labels, small text, low text contrast, rotated labels and missing source references.
 
-Component factories retain artwork bounds as non-rendering metadata. Preserve those bounds when editing. Collision warnings use conservative geometric footprints; curved paths, rotations, raster transparency and arrowhead outlines still need inspection. See the [scene guide](skills/infographic-studio/references/scene-format.md#artwork-bounds-and-collision-checks) for coverage and physical illustration strokes.
+Component factories retain artwork bounds as non-rendering metadata. Preserve those bounds when editing. Unrotated arrowheads are checked against text with the renderer's triangle geometry. Collision warnings use conservative geometric footprints; curved paths, rotations, raster transparency and arrowheads against artwork still need inspection. See the [scene guide](skills/infographic-studio/references/scene-format.md#artwork-bounds-and-collision-checks) for coverage and physical illustration strokes.
 
 Reports explicitly retain `visualReview: "required"` and `scientificReview: "required"`. They do not fact-check claims, spellcheck labels, detect every collision or guarantee legibility. Inspect exports at their intended viewing size. Measured data should drive plotted geometry; hand-authored waveforms are not simulations.
 
@@ -271,18 +314,17 @@ npm run examples
 npm run verify:package
 ```
 
-Tests cover text correction without artwork changes, anchored callout movement, consistent content across styles, reflection geometry, font metrics, Unicode in PDF, PNG dimensions, raster/vector composition, validation failures and the CLI workflow. `verify:package` packs the project, installs the tarball into an isolated temporary directory and exercises the shipped CLI, examples and semantic composer. It installs dependencies but does not publish anything. CI is configured for Windows and Linux; remote runs have not yet been exercised. After visual changes, inspect the generated examples as well as running tests.
+Tests cover text correction without artwork changes, anchored callout movement, generated-scene freshness, font metrics, Unicode in PDF, PNG dimensions, raster/vector composition, validation failures and the CLI workflow. `verify:package` packs the project, installs the tarball into an isolated temporary directory and exercises the shipped CLI, examples and composer. It installs dependencies but does not publish anything. CI is configured for Windows and Linux; remote runs have not yet been exercised. After visual changes, inspect the generated examples as well as running tests.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for development conventions and [RELEASING.md](RELEASING.md) for the release procedure.
 
-To regenerate the example source scenes after changing their construction code:
+To rebuild the illustrated gallery after changing its construction code:
 
 ```sh
-node scripts/build-example-scenes.js
 npm run examples
 ```
 
-Run `npm run study` to reconstruct all three fibre study scenes and exports from their shared brief and construction code. This overwrites the study scenes; ordinary `npm run examples` only rebuilds exports and preserves hand edits to scene JSON. Neither command regenerates the illustration or calls an image service.
+The builders in `scripts/gallery/` reconstruct the Webb, heat-pump, Kubernetes, CRISPR, LIGO and Kafka scenes and exports. Edit those builders for persistent gallery changes; direct edits to their generated `scene.json` files are overwritten. The windshield scene is authored directly and rerendered unchanged. For personal edits, use `init` to create an independent copy. No example build regenerates raster artwork or calls an image service.
 
 ## License and credits
 

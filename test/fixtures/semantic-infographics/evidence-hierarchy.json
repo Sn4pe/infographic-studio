@@ -1,0 +1,36 @@
+{
+  "infographic": {
+    "title": "How a decision earns confidence",
+    "description": "A hierarchy of evidence from a direct observation to the decision that it supports.",
+    "width": 1500,
+    "fontSize": 23,
+    "theme": "paper",
+    "sources": [
+      {"title": "Illustrative scenario authored for Infographic Studio", "url": "https://github.com/Sn4pe/infographic-studio"}
+    ],
+    "structure": {
+      "type": "hierarchy",
+      "title": "Evidence should stay traceable",
+      "description": "Each level adds interpretation while retaining a route back to the observed material.",
+      "columns": 2,
+      "groups": [
+        {"id": "observations", "title": "Observed material", "items": ["source-note", "measurement"]},
+        {"id": "interpretation", "title": "Interpretation", "items": ["finding", "assumption"]},
+        {"id": "decision", "title": "Decision", "items": ["recommendation"]}
+      ],
+      "items": [
+        {"id": "source-note", "component": "document", "variant": "teal", "title": "Source note", "description": "A dated statement, record or primary reference."},
+        {"id": "measurement", "component": "grid", "variant": "teal", "title": "Measurement", "description": "A method and the result it produced."},
+        {"id": "finding", "component": "network", "variant": "teal", "title": "Finding", "description": "A pattern supported by the observed material."},
+        {"id": "assumption", "component": "person", "variant": "elder", "title": "Assumption", "description": "A condition that must be stated and later checked."},
+        {"id": "recommendation", "component": "container", "variant": "teal", "title": "Recommendation", "description": "A decision with links back to evidence and assumptions."}
+      ],
+      "relations": [
+        {"id": "note-finding", "from": "source-note", "to": "finding"},
+        {"id": "measurement-finding", "from": "measurement", "to": "finding"},
+        {"id": "finding-recommendation", "from": "finding", "to": "recommendation"},
+        {"id": "assumption-recommendation", "from": "assumption", "to": "recommendation", "label": "qualifies"}
+      ]
+    }
+  }
+}

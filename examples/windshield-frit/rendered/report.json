@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "issues": [],
+  "scientificReview": "required",
+  "visualReview": "required",
+  "scope": "Schema, text metrics, glyphs, panel geometry, contrast, declared artwork bounds, later opaque rectangle/ellipse/image bounds, and straight connector segments. Conservative collision warnings; curved paths, rotations, raster transparency and semantic correctness still need visual review.",
+  "sourceHash": "51defbb28ba55d1322ab7211ab8854d20cb488fa5a11b5dea83d5fc385795008",
+  "assetHashes": {
+    "windshield-frit": "3d74480ad199c37e02f9963c941c7968783120226957f629fa64a4f22a9b5ff2"
+  },
+  "exports": [
+    "figure.svg",
+    "figure.png",
+    "figure.pdf"
+  ]
+}

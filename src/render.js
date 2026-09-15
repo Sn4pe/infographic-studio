@@ -4,6 +4,7 @@ import { paletteFor } from './themes.js';
 import { assertScene } from './validate.js';
 import { expandScene } from './annotations.js';
 import { renderIcon, sceneIcons, iconCredits } from './icons.js';
+import { arrowGeometry } from './arrows.js';
 
 export const escapeXml = (text) => String(text).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 const n = (value) => Number(value.toFixed(3));
@@ -49,10 +50,8 @@ export function composeSvg(scene, assets = {}, { embedFonts = true } = {}) {
       case 'line': body = `<line x1="${e.x}" y1="${e.y}" x2="${e.x2}" y2="${e.y2}" ${style}/>`; break;
       case 'wave': body = `<path d="${wavePath(e)}" ${style}/>`; break;
       case 'arrow': {
-        const angle = Math.atan2(e.y2 - e.y, e.x2 - e.x);
-        const length = Math.min(Math.hypot(e.x2 - e.x, e.y2 - e.y), Math.max(10, (e.strokeWidth ?? 2) * 3.5));
-        const bx = e.x2 - length * Math.cos(angle), by = e.y2 - length * Math.sin(angle);
-        body = `<line x1="${e.x}" y1="${e.y}" x2="${n(bx)}" y2="${n(by)}" ${style}/><path d="M${e.x2},${e.y2} L${n(bx + length / 2 * Math.sin(angle))},${n(by - length / 2 * Math.cos(angle))} L${n(bx - length / 2 * Math.sin(angle))},${n(by + length / 2 * Math.cos(angle))} Z" fill="${paint(e.stroke)}"/>`;
+        const { base: [bx, by], head: [, left, right] } = arrowGeometry(e);
+        body = `<line x1="${e.x}" y1="${e.y}" x2="${n(bx)}" y2="${n(by)}" ${style}/><path d="M${e.x2},${e.y2} L${n(left[0])},${n(left[1])} L${n(right[0])},${n(right[1])} Z" fill="${paint(e.stroke)}"/>`;
         break;
       }
       case 'image': {

@@ -1,0 +1,38 @@
+{
+  "infographic": {
+    "title": "A delivery system with feedback",
+    "description": "A conceptual architecture showing how a change reaches users and returns operational evidence.",
+    "width": 1600,
+    "fontSize": 24,
+    "theme": "paper",
+    "sources": [
+      {"title": "Illustrative scenario authored for Infographic Studio", "url": "https://github.com/Sn4pe/infographic-studio"}
+    ],
+    "structure": {
+      "type": "relationship",
+      "title": "From planned work to observed behaviour",
+      "description": "The layers name responsibilities rather than prescribing a particular vendor or deployment stack.",
+      "groups": [
+        {"id": "intent", "title": "Intent", "items": ["backlog", "review"]},
+        {"id": "delivery", "title": "Delivery", "items": ["build", "release"]},
+        {"id": "evidence", "title": "Evidence", "items": ["telemetry", "learning"]}
+      ],
+      "items": [
+        {"id": "backlog", "component": "document", "variant": "teal", "title": "Problem brief", "description": "States the outcome, constraints and evidence needed for a decision."},
+        {"id": "review", "component": "person", "variant": "teal", "title": "Design review", "description": "Tests whether the proposed change addresses the stated problem."},
+        {"id": "build", "component": "container", "variant": "teal", "title": "Build", "description": "Turns the reviewed design into a deployable and observable change."},
+        {"id": "release", "component": "device", "variant": "teal", "title": "Release", "description": "Delivers the change to the intended user environment."},
+        {"id": "telemetry", "component": "grid", "variant": "teal", "title": "Telemetry", "description": "Collects service and journey signals after release."},
+        {"id": "learning", "component": "network", "variant": "teal", "title": "Learning loop", "description": "Connects observed results to the next problem brief."}
+      ],
+      "relations": [
+        {"id": "brief-review", "from": "backlog", "to": "review", "label": "proposal"},
+        {"id": "review-build", "from": "review", "to": "build", "label": "approved change"},
+        {"id": "review-release", "from": "review", "to": "release", "label": "release decision"},
+        {"id": "build-telemetry", "from": "build", "to": "telemetry", "label": "instrumentation"},
+        {"id": "release-learning", "from": "release", "to": "learning", "label": "user outcome"},
+        {"id": "telemetry-learning", "from": "telemetry", "to": "learning", "label": "signals"}
+      ]
+    }
+  }
+}

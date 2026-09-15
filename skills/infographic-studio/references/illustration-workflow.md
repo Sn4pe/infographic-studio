@@ -27,9 +27,9 @@ Create annotations with `callout` elements targeting the image's stable ID and n
 
 ## Completed example
 
-In the runtime repository, `examples/fiber-study/hybrid` contains a transparent fibre cutaway, its exact generation prompt and provenance, the editable scene, and SVG/PNG/PDF exports. The image establishes the physical structure; deterministic vectors explain the ray and incidence angle. Two vector-only variants explain the same content, defined once in `examples/fiber-study/brief.json`.
+In the runtime repository, `examples/windshield-frit` contains a local windshield cutaway, its recorded generation prompt and provenance, the editable scene, and SVG/PNG/PDF exports. The image establishes the physical structure; deterministic vectors explain the ceramic frit band, dot gradient and mounting zone.
 
-To make a text-only correction, edit the callout's `text` in `scene.json`, rerender and compare the asset hash in `report.json`. The source image and embedded artwork should remain identical. `npm run examples` rerenders existing scenes without generating images. `npm run study` reconstructs the study scenes from code and overwrites JSON edits; reserve it for changes to the shared construction.
+To make a text-only correction, edit the annotation text in `scene.json`, rerender and compare the asset hash in `report.json`. The source image and embedded artwork should remain identical. `npm run examples` rerenders existing scenes without generating images.
 
 ## References and rendering
 

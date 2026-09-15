@@ -31,6 +31,8 @@ All elements require unique `id` and `type`. IDs match `[a-zA-Z][a-zA-Z0-9_-]*`.
 
 Common styles: `fill`, `stroke`, `strokeWidth` (default 2), `opacity` (0–1), `dash` (numeric array), `rotation` (degrees around x/y, or 0/0 for a path). Shapes default to no fill and no stroke. Arrows should specify stroke. Text defaults to `$ink`, 20 px, regular weight.
 
+For an internal card, zone or nested box, give every contained text label `container: "card-id"`, where `card-id` is a `rect` in the same panel. Validation then rejects text that escapes the declared rectangle even if it still fits in the overall panel. This is the explicit contract for a visual subgroup; the renderer cannot infer containment from an arbitrary decorative rectangle.
+
 Text options: `fontSize`, `weight` (`regular`, `semibold`), `align` (`left`, `center`, `right`). Width determines word wrapping. Explicit newlines are preserved; other whitespace is normalized. Height follows line count × fontSize × 1.3. Long unbreakable words fail validation rather than being truncated. Use separate text nodes for different styles. Rotation requires a visual bounds check.
 
 Wave options: `phase`, `chirp` (nonnegative linear increase in spatial frequency), `envelope` (`constant`, `grow`, `pulse`). Chirps and envelopes are graphic primitives, not physical simulations. Use custom paths for data-driven plots.
@@ -47,7 +49,7 @@ Checks warn when measured text lines overlap declared artwork boxes in either pa
 
 An ungrouped `line` or `path` representing physical geometry, such as a mast behind a device, may use `geometryRole: "illustration"`. This skips connector-through-artwork warnings but still checks crossings with text. Default behavior, or `geometryRole: "connector"`, checks both. Arrows cannot opt out. Do not change a relationship edge's role just to clear a warning.
 
-These are conservative geometry checks. Curved paths, rotated elements, raster transparency, arrowhead outlines and the accuracy of supplied artwork boxes need visual inspection. The checks do not infer object or connection meaning.
+These are conservative geometry checks. Unrotated arrowheads are checked against text using the same triangular geometry as the renderer. Curved paths, rotated elements, raster transparency, arrowheads against artwork and the accuracy of supplied artwork boxes still need visual inspection. The checks do not infer object or connection meaning.
 
 ## Anchored callouts
 

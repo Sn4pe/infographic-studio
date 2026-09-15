@@ -1,4 +1,5 @@
 import { layoutText } from './text.js';
+import { arrowGeometry } from './arrows.js';
 
 const overlap = (a,b) => a.x < b.x+b.w && a.x+a.w > b.x && a.y < b.y+b.h && a.y+a.h > b.y;
 const inside = ([x,y],b) => x>=b.x && x<=b.x+b.w && y>=b.y && y<=b.y+b.h;
@@ -20,6 +21,18 @@ export function segmentIntersectsBox(a,b,r,padding=0) {
 function textLines(e) {
   const size=e.fontSize??20, layout=layoutText(e.text,e.width,size,e.weight);
   return layout.widths.flatMap((w,i)=> w ? [{x:e.x+(e.align==='center'?(e.width-w)/2:e.align==='right'?e.width-w:0),y:e.y+size*.2+i*size*1.3,w,h:size*.85}] : []);
+}
+
+function triangleIntersectsBox(points, r) {
+  const cross = (a, b, p) => (b[0] - a[0]) * (p[1] - a[1]) - (b[1] - a[1]) * (p[0] - a[0]);
+  if (Math.abs(cross(points[0], points[1], points[2])) < 1e-9) return false;
+  const inTriangle = p => {
+    const signs = points.map((a, i) => cross(a, points[(i + 1) % 3], p));
+    return signs.every(s => s >= 0) || signs.every(s => s <= 0);
+  };
+  return points.some(p => inside(p, r)) ||
+    points.some((a, i) => segmentIntersectsBox(a, points[(i + 1) % 3], r)) ||
+    [[r.x, r.y], [r.x + r.w, r.y], [r.x, r.y + r.h], [r.x + r.w, r.y + r.h]].some(inTriangle);
 }
 
 function segments(e) {
@@ -87,6 +100,11 @@ export function inspectCollisions(panel) {
     if(e.artworkId||!e.stroke||e.stroke==='none')return;
     const parts=segments(e),padding=(e.strokeWidth??2)/2;
     for(const label of labels)if(parts.some(([a,b])=>label.lines.some(r=>segmentIntersectsBox(a,b,r,padding))))add('connector-label-crossing',e.id,label.id,`Connector crosses text ${label.id}. Route it around the label.`);
+    if (e.type === 'arrow') {
+      const { head } = arrowGeometry(e);
+      for (const label of labels) if (label.lines.some(r => triangleIntersectsBox(head, r)))
+        add('arrowhead-label-crossing', e.id, label.id, `Arrowhead overlaps text ${label.id}. Reserve space for the complete arrow, including its head.`);
+    }
     // A physical support or contour may run behind an object. It still must avoid text.
     if(e.geometryRole==='illustration')return;
     for(const art of artwork.values())if(parts.some(([a,b])=>!inside(a,art)&&!inside(b,art)&&segmentIntersectsBox(a,b,art,padding)))add('connector-artwork-crossing',e.id,art.id,`Connector passes through illustration ${art.id} without ending on it. Route around the illustration.`);

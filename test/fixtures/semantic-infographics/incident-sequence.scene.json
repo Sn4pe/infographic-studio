@@ -1,0 +1,630 @@
+{
+  "version": 1,
+  "title": "A calm incident-response loop",
+  "description": "A compact sequence for moving from an observed symptom to a verified recovery.",
+  "width": 1600,
+  "height": 646,
+  "theme": "midnight",
+  "sources": [
+    {
+      "title": "Illustrative scenario authored for Infographic Studio",
+      "url": "https://github.com/Sn4pe/infographic-studio"
+    }
+  ],
+  "panels": [
+    {
+      "id": "sequence",
+      "x": 52,
+      "y": 129,
+      "width": 1496,
+      "height": 457,
+      "framed": false,
+      "elements": [
+        {
+          "id": "signal-to-triage-segment-1",
+          "type": "arrow",
+          "x": 285.2,
+          "y": 284.9,
+          "x2": 337.2,
+          "y2": 284.9,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "triage-to-repair-segment-1",
+          "type": "arrow",
+          "x": 576.4,
+          "y": 284.9,
+          "x2": 628.4,
+          "y2": 284.9,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "repair-to-verify-segment-1",
+          "type": "arrow",
+          "x": 867.6,
+          "y": 284.9,
+          "x2": 919.6,
+          "y2": 284.9,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "verify-to-learn-segment-1",
+          "type": "arrow",
+          "x": 1158.8,
+          "y": 284.9,
+          "x2": 1210.8,
+          "y2": 284.9,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "sequence-heading",
+          "type": "text",
+          "text": "Detect, decide, repair, learn",
+          "x": 24,
+          "y": 24,
+          "width": 1448,
+          "fontSize": 32,
+          "weight": "semibold",
+          "fill": "$ink"
+        },
+        {
+          "id": "sequence-description",
+          "type": "text",
+          "text": "Each stage hands evidence to the next one; the flow is intentionally linear.",
+          "x": 24,
+          "y": 85.6,
+          "width": 1448,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink"
+        },
+        {
+          "id": "signal-art-1",
+          "type": "rect",
+          "x": 56.8,
+          "y": 169.60000000000002,
+          "width": 86.4,
+          "height": 86.4,
+          "rx": 3.3600000000000003,
+          "fill": "#E6F3EE",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "signal-art",
+          "artworkBounds": {
+            "x": 52,
+            "y": 164.8,
+            "width": 96,
+            "height": 96
+          }
+        },
+        {
+          "id": "signal-art-2",
+          "type": "rect",
+          "x": 69.28,
+          "y": 181.12,
+          "width": 61.44,
+          "height": 39.36,
+          "rx": 3.3600000000000003,
+          "fill": "#FFFEFA",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "signal-art"
+        },
+        {
+          "id": "signal-art-3",
+          "type": "line",
+          "x": 79.84,
+          "y": 202.24,
+          "x2": 94.24000000000001,
+          "y2": 202.24,
+          "stroke": "#197C78",
+          "strokeWidth": 3,
+          "artworkId": "signal-art"
+        },
+        {
+          "id": "signal-art-4",
+          "type": "line",
+          "x": 103.84,
+          "y": 202.24,
+          "x2": 120.16,
+          "y2": 202.24,
+          "stroke": "#197C78",
+          "strokeWidth": 3,
+          "artworkId": "signal-art"
+        },
+        {
+          "id": "signal-art-5",
+          "type": "ellipse",
+          "x": 78.88,
+          "y": 237.76,
+          "rx": 3.84,
+          "ry": 3.84,
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "signal-art"
+        },
+        {
+          "id": "signal-art-6",
+          "type": "line",
+          "x": 96.16,
+          "y": 233.92000000000002,
+          "x2": 128.8,
+          "y2": 233.92000000000002,
+          "stroke": "#243752",
+          "strokeWidth": 1.5,
+          "artworkId": "signal-art"
+        },
+        {
+          "id": "signal-art-7",
+          "type": "line",
+          "x": 96.16,
+          "y": 241.60000000000002,
+          "x2": 119.2,
+          "y2": 241.60000000000002,
+          "stroke": "#243752",
+          "strokeWidth": 1.5,
+          "artworkId": "signal-art"
+        },
+        {
+          "id": "signal-title",
+          "type": "text",
+          "text": "Observe a signal",
+          "x": 168,
+          "y": 179,
+          "width": 111.19999999999999,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink"
+        },
+        {
+          "id": "signal-description",
+          "type": "text",
+          "text": "An alert, report or dashboard tells the team that behaviour changed.",
+          "x": 52,
+          "y": 274.8,
+          "width": 227.2,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink"
+        },
+        {
+          "id": "triage-art-1",
+          "type": "path",
+          "d": "M363.77142857142854 254.8 L364.62857142857143 235.94285714285715 Q365.48571428571427 223.94285714285715 383.48571428571427 219.65714285714287 L398.9142857142857 219.65714285714287 Q416.9142857142857 223.94285714285715 417.77142857142854 235.94285714285715 L418.62857142857143 254.8 Q392.0571428571428 263.37142857142857 363.77142857142854 254.8 Z",
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "triage-art",
+          "artworkBounds": {
+            "x": 356.9142857142857,
+            "y": 164.8,
+            "width": 68.57142857142857,
+            "height": 96
+          }
+        },
+        {
+          "id": "triage-art-2",
+          "type": "rect",
+          "x": 385.2,
+          "y": 208.51428571428573,
+          "width": 12,
+          "height": 16.285714285714285,
+          "rx": 3.4285714285714284,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "triage-art"
+        },
+        {
+          "id": "triage-art-3",
+          "type": "path",
+          "d": "M380.0571428571429 221.37142857142857 L391.2 230.8 L402.34285714285716 221.37142857142857 L398.9142857142857 240.22857142857146 L391.2 231.65714285714284 L383.48571428571427 240.22857142857146 Z",
+          "fill": "#FFFEFA",
+          "stroke": "#243752",
+          "strokeWidth": 1.5,
+          "artworkId": "triage-art"
+        },
+        {
+          "id": "triage-art-4",
+          "type": "ellipse",
+          "x": 372.34285714285716,
+          "y": 196.51428571428573,
+          "rx": 3.4285714285714284,
+          "ry": 5.142857142857142,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "triage-art"
+        },
+        {
+          "id": "triage-art-5",
+          "type": "ellipse",
+          "x": 410.0571428571428,
+          "y": 196.51428571428573,
+          "rx": 3.4285714285714284,
+          "ry": 5.142857142857142,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "triage-art"
+        },
+        {
+          "id": "triage-art-6",
+          "type": "path",
+          "d": "M372.34285714285716 188.8 Q372.34285714285716 169.94285714285715 391.2 169.94285714285715 Q410.0571428571428 169.94285714285715 410.0571428571428 188.8 L409.2 199.94285714285715 Q408.34285714285716 218.8 391.2 219.65714285714287 Q374.0571428571429 218.8 373.2 199.94285714285715 Z",
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "triage-art"
+        },
+        {
+          "id": "triage-art-7",
+          "type": "path",
+          "d": "M372.34285714285716 191.37142857142857 Q368.0571428571429 169.0857142857143 386.0571428571429 168.22857142857143 Q407.48571428571427 164.8 410.9142857142857 187.94285714285715 Q395.48571428571427 187.0857142857143 389.48571428571427 177.65714285714287 Q386.0571428571429 188.8 372.34285714285716 191.37142857142857 Z",
+          "fill": "#243752",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "triage-art"
+        },
+        {
+          "id": "triage-art-8",
+          "type": "ellipse",
+          "x": 384.34285714285716,
+          "y": 195.65714285714287,
+          "rx": 1.2,
+          "ry": 1.2,
+          "fill": "#243752",
+          "stroke": "none",
+          "strokeWidth": 3,
+          "artworkId": "triage-art"
+        },
+        {
+          "id": "triage-art-9",
+          "type": "ellipse",
+          "x": 398.0571428571428,
+          "y": 195.65714285714287,
+          "rx": 1.2,
+          "ry": 1.2,
+          "fill": "#243752",
+          "stroke": "none",
+          "strokeWidth": 3,
+          "artworkId": "triage-art"
+        },
+        {
+          "id": "triage-art-10",
+          "type": "path",
+          "d": "M386.9142857142857 206.8 Q391.2 211.0857142857143 396.34285714285716 205.94285714285715",
+          "fill": "none",
+          "stroke": "#243752",
+          "strokeWidth": 1.5,
+          "artworkId": "triage-art"
+        },
+        {
+          "id": "triage-title",
+          "type": "text",
+          "text": "Triage impact",
+          "x": 459.2,
+          "y": 179,
+          "width": 111.19999999999999,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink"
+        },
+        {
+          "id": "triage-description",
+          "type": "text",
+          "text": "Confirm the user impact, current scope and the fastest safe owner.",
+          "x": 343.2,
+          "y": 274.8,
+          "width": 227.2,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink"
+        },
+        {
+          "id": "repair-art-1",
+          "type": "rect",
+          "x": 639.1999999999999,
+          "y": 181.12,
+          "width": 86.4,
+          "height": 73.92,
+          "rx": 3.3600000000000003,
+          "fill": "#E6F3EE",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "repair-art",
+          "artworkBounds": {
+            "x": 634.4,
+            "y": 164.8,
+            "width": 96,
+            "height": 96
+          }
+        },
+        {
+          "id": "repair-art-2",
+          "type": "rect",
+          "x": 637.28,
+          "y": 172.48000000000002,
+          "width": 90.24,
+          "height": 19.2,
+          "rx": 3.3600000000000003,
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "repair-art"
+        },
+        {
+          "id": "repair-art-3",
+          "type": "rect",
+          "x": 669.92,
+          "y": 207.04000000000002,
+          "width": 24.96,
+          "height": 11.52,
+          "rx": 3.3600000000000003,
+          "fill": "#FFFEFA",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "repair-art"
+        },
+        {
+          "id": "repair-title",
+          "type": "text",
+          "text": "Apply a repair",
+          "x": 750.4,
+          "y": 179,
+          "width": 111.19999999999999,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink"
+        },
+        {
+          "id": "repair-description",
+          "type": "text",
+          "text": "Choose a reversible mitigation first, then make the durable change.",
+          "x": 634.4,
+          "y": 274.8,
+          "width": 227.2,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink"
+        },
+        {
+          "id": "verify-art-1",
+          "type": "rect",
+          "x": 928.4799999999999,
+          "y": 167.68,
+          "width": 90.24,
+          "height": 90.24,
+          "rx": 3.3600000000000003,
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "verify-art",
+          "artworkBounds": {
+            "x": 925.5999999999999,
+            "y": 164.8,
+            "width": 96,
+            "height": 96
+          }
+        },
+        {
+          "id": "verify-art-2",
+          "type": "line",
+          "x": 951.04,
+          "y": 167.68,
+          "x2": 951.04,
+          "y2": 257.92,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "verify-art"
+        },
+        {
+          "id": "verify-art-3",
+          "type": "line",
+          "x": 928.4799999999999,
+          "y": 190.24,
+          "x2": 1018.7199999999999,
+          "y2": 190.24,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "verify-art"
+        },
+        {
+          "id": "verify-art-4",
+          "type": "line",
+          "x": 973.5999999999999,
+          "y": 167.68,
+          "x2": 973.5999999999999,
+          "y2": 257.92,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "verify-art"
+        },
+        {
+          "id": "verify-art-5",
+          "type": "line",
+          "x": 928.4799999999999,
+          "y": 212.8,
+          "x2": 1018.7199999999999,
+          "y2": 212.8,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "verify-art"
+        },
+        {
+          "id": "verify-art-6",
+          "type": "line",
+          "x": 996.1599999999999,
+          "y": 167.68,
+          "x2": 996.1599999999999,
+          "y2": 257.92,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "verify-art"
+        },
+        {
+          "id": "verify-art-7",
+          "type": "line",
+          "x": 928.4799999999999,
+          "y": 235.36,
+          "x2": 1018.7199999999999,
+          "y2": 235.36,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "verify-art"
+        },
+        {
+          "id": "verify-title",
+          "type": "text",
+          "text": "Verify recovery",
+          "x": 1041.6,
+          "y": 179,
+          "width": 111.19999999999999,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink"
+        },
+        {
+          "id": "verify-description",
+          "type": "text",
+          "text": "Check the original symptom, the affected journey and the system signals.",
+          "x": 925.5999999999999,
+          "y": 274.8,
+          "width": 227.2,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink"
+        },
+        {
+          "id": "learn-art-1",
+          "type": "polygon",
+          "points": [
+            [
+              1226.3999999999999,
+              167.68
+            ],
+            [
+              1282.08,
+              167.68
+            ],
+            [
+              1303.2,
+              186.88
+            ],
+            [
+              1303.2,
+              256.96000000000004
+            ],
+            [
+              1226.3999999999999,
+              256.96000000000004
+            ]
+          ],
+          "fill": "#FFFEFA",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "learn-art",
+          "artworkBounds": {
+            "x": 1216.8,
+            "y": 164.8,
+            "width": 96,
+            "height": 96
+          }
+        },
+        {
+          "id": "learn-art-2",
+          "type": "polygon",
+          "points": [
+            [
+              1282.08,
+              167.68
+            ],
+            [
+              1282.08,
+              186.88
+            ],
+            [
+              1303.2,
+              186.88
+            ]
+          ],
+          "fill": "#E6F3EE",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "learn-art"
+        },
+        {
+          "id": "learn-art-3",
+          "type": "line",
+          "x": 1239.84,
+          "y": 202.24,
+          "x2": 1289.76,
+          "y2": 202.24,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learn-art"
+        },
+        {
+          "id": "learn-art-4",
+          "type": "line",
+          "x": 1239.84,
+          "y": 214.72000000000003,
+          "x2": 1289.76,
+          "y2": 214.72000000000003,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learn-art"
+        },
+        {
+          "id": "learn-art-5",
+          "type": "line",
+          "x": 1239.84,
+          "y": 227.20000000000002,
+          "x2": 1289.76,
+          "y2": 227.20000000000002,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learn-art"
+        },
+        {
+          "id": "learn-art-6",
+          "type": "line",
+          "x": 1239.84,
+          "y": 239.68,
+          "x2": 1275.36,
+          "y2": 239.68,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learn-art"
+        },
+        {
+          "id": "learn-title",
+          "type": "text",
+          "text": "Record the learning",
+          "x": 1332.8,
+          "y": 164.8,
+          "width": 111.19999999999999,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink"
+        },
+        {
+          "id": "learn-description",
+          "type": "text",
+          "text": "Capture the decision, evidence and follow-up while the context is fresh.",
+          "x": 1216.8,
+          "y": 280.20000000000005,
+          "width": 227.2,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink"
+        }
+      ]
+    }
+  ]
+}

@@ -19,6 +19,8 @@ export { createComponent, composeComponents, createSection, listComponents, comp
 export { composeSpecification } from './specification.js';
 export { composeDocument } from './document.js';
 export { assertDocument } from './document-schema.js';
+export { composeInfographic, listInfographicStructures } from './infographic.js';
+export { assertInfographic } from './infographic-schema.js';
 
 export async function loadScene(file) {
   const scene = JSON.parse(await readFile(file, 'utf8'));

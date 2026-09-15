@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "title": "Ceramic frit band and dot matrix",
+  "description": "Two black markings at the glass edge serve different physical functions.",
+  "subtitle": "Both are fired ceramic enamel, but they do not perform exactly the same role.",
+  "width": 1600,
+  "height": 947,
+  "theme": "paper",
+  "sources": [
+    {
+      "title": "Sika Auto Glass Replacement Guideline — ceramic frit",
+      "url": "https://usa.sika.com/dam/dms/us01/c/SIKA-Auto-Glass-Replacement-AGR-Guideline-5-2026.pdf"
+    }
+  ],
+  "panels": [
+    {
+      "id": "comparison",
+      "x": 52,
+      "y": 163,
+      "width": 1496,
+      "height": 584,
+      "title": "The band protects; the dots make the transition gradual",
+      "kicker": "COMPARISON",
+      "grid": false,
+      "elements": [
+        {
+          "id": "band-side",
+          "type": "rect",
+          "x": 24,
+          "y": 100,
+          "width": 708,
+          "height": 459.20000000000005,
+          "rx": 12,
+          "fill": "$panel",
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "dots-side",
+          "type": "rect",
+          "x": 764,
+          "y": 100,
+          "width": 708,
+          "height": 459.20000000000005,
+          "rx": 12,
+          "fill": "$panel",
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "band-title",
+          "type": "text",
+          "text": "Solid black band",
+          "x": 48,
+          "y": 122,
+          "width": 660,
+          "fontSize": 32,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "band-side"
+        },
+        {
+          "id": "band-description",
+          "type": "text",
+          "text": "It surrounds the glass bonding zone.",
+          "x": 48,
+          "y": 175.6,
+          "width": 660,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$secondary",
+          "container": "band-side"
+        },
+        {
+          "id": "band-uv",
+          "type": "rect",
+          "x": 48,
+          "y": 224.8,
+          "width": 660,
+          "height": 117,
+          "rx": 8,
+          "fill": "$background",
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "band-uv-title",
+          "type": "text",
+          "text": "UV protection",
+          "x": 66,
+          "y": 242.8,
+          "width": 624,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "band-uv"
+        },
+        {
+          "id": "band-uv-description",
+          "type": "text",
+          "text": "It protects the polyurethane adhesive from sunlight.",
+          "x": 66,
+          "y": 284.6,
+          "width": 624,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$secondary",
+          "container": "band-uv"
+        },
+        {
+          "id": "band-mask",
+          "type": "rect",
+          "x": 48,
+          "y": 355.8,
+          "width": 660,
+          "height": 117,
+          "rx": 8,
+          "fill": "$background",
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "band-mask-title",
+          "type": "text",
+          "text": "Hidden bond",
+          "x": 66,
+          "y": 373.8,
+          "width": 624,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "band-mask"
+        },
+        {
+          "id": "band-mask-description",
+          "type": "text",
+          "text": "It visually covers the adhesive line and body flange.",
+          "x": 66,
+          "y": 415.6,
+          "width": 624,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$secondary",
+          "container": "band-mask"
+        },
+        {
+          "id": "dots-title",
+          "type": "text",
+          "text": "Dot matrix",
+          "x": 788,
+          "y": 122,
+          "width": 660,
+          "fontSize": 32,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "dots-side"
+        },
+        {
+          "id": "dots-description",
+          "type": "text",
+          "text": "It fades into the clear glass.",
+          "x": 788,
+          "y": 175.6,
+          "width": 660,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$secondary",
+          "container": "dots-side"
+        },
+        {
+          "id": "dots-thermal",
+          "type": "rect",
+          "x": 788,
+          "y": 224.8,
+          "width": 660,
+          "height": 148.20000000000002,
+          "rx": 8,
+          "fill": "$background",
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "dots-thermal-title",
+          "type": "text",
+          "text": "Thermal ramp",
+          "x": 806,
+          "y": 242.8,
+          "width": 624,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "dots-thermal"
+        },
+        {
+          "id": "dots-thermal-description",
+          "type": "text",
+          "text": "It reduces the heat-absorption step between black and clear glass during manufacture.",
+          "x": 806,
+          "y": 284.6,
+          "width": 624,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$secondary",
+          "container": "dots-thermal"
+        },
+        {
+          "id": "dots-visual",
+          "type": "rect",
+          "x": 788,
+          "y": 387,
+          "width": 660,
+          "height": 148.20000000000002,
+          "rx": 8,
+          "fill": "$background",
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "dots-visual-title",
+          "type": "text",
+          "text": "Visual ramp",
+          "x": 806,
+          "y": 405,
+          "width": 624,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "dots-visual"
+        },
+        {
+          "id": "dots-visual-description",
+          "type": "text",
+          "text": "It makes the transition from opaque edge to clear glass less abrupt.",
+          "x": 806,
+          "y": 446.8,
+          "width": 624,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$secondary",
+          "container": "dots-visual"
+        }
+      ]
+    }
+  ]
+}

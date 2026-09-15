@@ -1,0 +1,9 @@
+{
+  "language": "en",
+  "direction": "Technical editorial atlas: navy ground, ivory typography and restrained coral and gold annotations over local raster artwork.",
+  "thesis": "The black border and fading dot pattern perform distinct functions at the bonded glass edge.",
+  "visible_evidence": ["A cutaway exposes the glass, black frit, adhesive and mounting flange", "Three editable annotations identify the transition, protected bond and concealed mounting zone"],
+  "production_contract": "Directly authored scene.json with a locally stored generated illustration. Asset prompt and provenance remain in scene.json.",
+  "scope": "Conceptual cutaway, not to scale or an installation specification. Raster geometry cannot be edited as vector paths.",
+  "sources": ["https://usa.sika.com/dam/dms/us01/c/SIKA-Auto-Glass-Replacement-AGR-Guideline-5-2026.pdf"]
+}

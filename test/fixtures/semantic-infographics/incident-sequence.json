@@ -1,0 +1,24 @@
+{
+  "infographic": {
+    "title": "A calm incident-response loop",
+    "description": "A compact sequence for moving from an observed symptom to a verified recovery.",
+    "width": 1600,
+    "fontSize": 24,
+    "theme": "midnight",
+    "sources": [
+      {"title": "Illustrative scenario authored for Infographic Studio", "url": "https://github.com/Sn4pe/infographic-studio"}
+    ],
+    "structure": {
+      "type": "sequence",
+      "title": "Detect, decide, repair, learn",
+      "description": "Each stage hands evidence to the next one; the flow is intentionally linear.",
+      "items": [
+        {"id": "signal", "component": "device", "variant": "teal", "title": "Observe a signal", "description": "An alert, report or dashboard tells the team that behaviour changed."},
+        {"id": "triage", "component": "person", "variant": "warm", "title": "Triage impact", "description": "Confirm the user impact, current scope and the fastest safe owner."},
+        {"id": "repair", "component": "container", "variant": "teal", "title": "Apply a repair", "description": "Choose a reversible mitigation first, then make the durable change."},
+        {"id": "verify", "component": "grid", "variant": "teal", "title": "Verify recovery", "description": "Check the original symptom, the affected journey and the system signals."},
+        {"id": "learn", "component": "document", "variant": "teal", "title": "Record the learning", "description": "Capture the decision, evidence and follow-up while the context is fresh."}
+      ]
+    }
+  }
+}

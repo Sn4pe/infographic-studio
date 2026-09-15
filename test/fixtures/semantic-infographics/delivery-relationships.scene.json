@@ -1,0 +1,1065 @@
+{
+  "version": 1,
+  "title": "A delivery system with feedback",
+  "description": "A conceptual architecture showing how a change reaches users and returns operational evidence.",
+  "width": 1600,
+  "height": 1418,
+  "theme": "paper",
+  "sources": [
+    {
+      "title": "Illustrative scenario authored for Infographic Studio",
+      "url": "https://github.com/Sn4pe/infographic-studio"
+    }
+  ],
+  "panels": [
+    {
+      "id": "relationship",
+      "x": 52,
+      "y": 129,
+      "width": 1496,
+      "height": 1229,
+      "framed": false,
+      "elements": [
+        {
+          "id": "intent-band",
+          "type": "rect",
+          "x": 24,
+          "y": 243.20000000000005,
+          "width": 1448,
+          "height": 261.6,
+          "rx": 12,
+          "fill": "$panel",
+          "stroke": "$line"
+        },
+        {
+          "id": "delivery-band",
+          "type": "rect",
+          "x": 24,
+          "y": 604.8000000000001,
+          "width": 1448,
+          "height": 261.6,
+          "rx": 12,
+          "fill": "$panel",
+          "stroke": "$line"
+        },
+        {
+          "id": "evidence-band",
+          "type": "rect",
+          "x": 24,
+          "y": 966.4000000000001,
+          "width": 1448,
+          "height": 230.39999999999998,
+          "rx": 12,
+          "fill": "$panel",
+          "stroke": "$line"
+        },
+        {
+          "id": "backlog-card",
+          "type": "rect",
+          "x": 52,
+          "y": 288.40000000000003,
+          "width": 636,
+          "height": 196.4,
+          "rx": 10,
+          "fill": "$background",
+          "stroke": "$line"
+        },
+        {
+          "id": "review-card",
+          "type": "rect",
+          "x": 808,
+          "y": 288.40000000000003,
+          "width": 636,
+          "height": 196.4,
+          "rx": 10,
+          "fill": "$background",
+          "stroke": "$line"
+        },
+        {
+          "id": "build-card",
+          "type": "rect",
+          "x": 52,
+          "y": 650.0000000000001,
+          "width": 636,
+          "height": 196.4,
+          "rx": 10,
+          "fill": "$background",
+          "stroke": "$line"
+        },
+        {
+          "id": "release-card",
+          "type": "rect",
+          "x": 808,
+          "y": 650.0000000000001,
+          "width": 636,
+          "height": 196.4,
+          "rx": 10,
+          "fill": "$background",
+          "stroke": "$line"
+        },
+        {
+          "id": "telemetry-card",
+          "type": "rect",
+          "x": 52,
+          "y": 1011.6000000000001,
+          "width": 636,
+          "height": 165.2,
+          "rx": 10,
+          "fill": "$background",
+          "stroke": "$line"
+        },
+        {
+          "id": "learning-card",
+          "type": "rect",
+          "x": 808,
+          "y": 1011.6000000000001,
+          "width": 636,
+          "height": 165.2,
+          "rx": 10,
+          "fill": "$background",
+          "stroke": "$line"
+        },
+        {
+          "id": "brief-review-segment-1",
+          "type": "arrow",
+          "x": 688,
+          "y": 386.6,
+          "x2": 808,
+          "y2": 386.6,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "review-build-segment-1",
+          "type": "line",
+          "x": 1126,
+          "y": 484.80000000000007,
+          "x2": 1126,
+          "y2": 510.80000000000007,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "review-build-segment-2",
+          "type": "line",
+          "x": 1126,
+          "y": 510.80000000000007,
+          "x2": 370,
+          "y2": 510.80000000000007,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "review-build-segment-3",
+          "type": "arrow",
+          "x": 370,
+          "y": 510.80000000000007,
+          "x2": 370,
+          "y2": 650.0000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "review-release-segment-1",
+          "type": "line",
+          "x": 1126,
+          "y": 484.80000000000007,
+          "x2": 1126,
+          "y2": 598.8000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "review-release-segment-2",
+          "type": "arrow",
+          "x": 1126,
+          "y": 598.8000000000001,
+          "x2": 1126,
+          "y2": 650.0000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "build-telemetry-segment-1",
+          "type": "line",
+          "x": 370,
+          "y": 846.4000000000001,
+          "x2": 370,
+          "y2": 872.4000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "build-telemetry-segment-2",
+          "type": "arrow",
+          "x": 370,
+          "y": 872.4000000000001,
+          "x2": 370,
+          "y2": 1011.6000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "release-learning-segment-1",
+          "type": "line",
+          "x": 1126,
+          "y": 846.4000000000001,
+          "x2": 1126,
+          "y2": 960.4000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "release-learning-segment-2",
+          "type": "arrow",
+          "x": 1126,
+          "y": 960.4000000000001,
+          "x2": 1126,
+          "y2": 1011.6000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "telemetry-learning-segment-1",
+          "type": "arrow",
+          "x": 688,
+          "y": 1094.2,
+          "x2": 808,
+          "y2": 1094.2,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "relationship-heading",
+          "type": "text",
+          "text": "From planned work to observed behaviour",
+          "x": 24,
+          "y": 24,
+          "width": 1448,
+          "fontSize": 32,
+          "weight": "semibold",
+          "fill": "$ink"
+        },
+        {
+          "id": "relationship-description",
+          "type": "text",
+          "text": "The layers name responsibilities rather than prescribing a particular vendor or deployment stack.",
+          "x": 24,
+          "y": 85.6,
+          "width": 1448,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink"
+        },
+        {
+          "id": "relationship-relations",
+          "type": "text",
+          "text": "backlog → review: proposal  ·  review → build: approved change  ·  review → release: release decision  ·  build → telemetry: instrumentation  ·  release → learning: user outcome  ·  telemetry → learning: signals",
+          "x": 24,
+          "y": 136.8,
+          "width": 1448,
+          "fontSize": 24,
+          "weight": "semibold",
+          "fill": "$secondary"
+        },
+        {
+          "id": "backlog-art-1",
+          "type": "polygon",
+          "points": [
+            [
+              78.4,
+              308.92
+            ],
+            [
+              127.12,
+              308.92
+            ],
+            [
+              145.6,
+              325.72
+            ],
+            [
+              145.6,
+              387.04
+            ],
+            [
+              78.4,
+              387.04
+            ]
+          ],
+          "fill": "#FFFEFA",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "backlog-art",
+          "artworkBounds": {
+            "x": 70,
+            "y": 306.40000000000003,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "id": "backlog-art-2",
+          "type": "polygon",
+          "points": [
+            [
+              127.12,
+              308.92
+            ],
+            [
+              127.12,
+              325.72
+            ],
+            [
+              145.6,
+              325.72
+            ]
+          ],
+          "fill": "#E6F3EE",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "backlog-art"
+        },
+        {
+          "id": "backlog-art-3",
+          "type": "line",
+          "x": 90.16,
+          "y": 339.16,
+          "x2": 133.84,
+          "y2": 339.16,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "backlog-art"
+        },
+        {
+          "id": "backlog-art-4",
+          "type": "line",
+          "x": 90.16,
+          "y": 350.08000000000004,
+          "x2": 133.84,
+          "y2": 350.08000000000004,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "backlog-art"
+        },
+        {
+          "id": "backlog-art-5",
+          "type": "line",
+          "x": 90.16,
+          "y": 361.00000000000006,
+          "x2": 133.84,
+          "y2": 361.00000000000006,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "backlog-art"
+        },
+        {
+          "id": "backlog-art-6",
+          "type": "line",
+          "x": 90.16,
+          "y": 371.92,
+          "x2": 121.24000000000001,
+          "y2": 371.92,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "backlog-art"
+        },
+        {
+          "id": "backlog-title",
+          "type": "text",
+          "text": "Problem brief",
+          "x": 174,
+          "y": 331.50000000000006,
+          "width": 496,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "backlog-card"
+        },
+        {
+          "id": "backlog-description",
+          "type": "text",
+          "text": "States the outcome, constraints and evidence needed for a decision.",
+          "x": 70,
+          "y": 404.40000000000003,
+          "width": 600,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink",
+          "container": "backlog-card"
+        },
+        {
+          "id": "review-art-1",
+          "type": "path",
+          "d": "M844 385.15000000000003 L844.75 368.65000000000003 Q845.5 358.15000000000003 861.25 354.40000000000003 L874.75 354.40000000000003 Q890.5 358.15000000000003 891.25 368.65000000000003 L892 385.15000000000003 Q868.75 392.65000000000003 844 385.15000000000003 Z",
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "review-art",
+          "artworkBounds": {
+            "x": 838,
+            "y": 306.40000000000003,
+            "width": 60,
+            "height": 84
+          }
+        },
+        {
+          "id": "review-art-2",
+          "type": "rect",
+          "x": 862.75,
+          "y": 344.65000000000003,
+          "width": 10.5,
+          "height": 14.25,
+          "rx": 3,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "review-art"
+        },
+        {
+          "id": "review-art-3",
+          "type": "path",
+          "d": "M858.25 355.90000000000003 L868 364.15000000000003 L877.75 355.90000000000003 L874.75 372.40000000000003 L868 364.90000000000003 L861.25 372.40000000000003 Z",
+          "fill": "#FFFEFA",
+          "stroke": "#243752",
+          "strokeWidth": 1.5,
+          "artworkId": "review-art"
+        },
+        {
+          "id": "review-art-4",
+          "type": "ellipse",
+          "x": 851.5,
+          "y": 334.15000000000003,
+          "rx": 3,
+          "ry": 4.5,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "review-art"
+        },
+        {
+          "id": "review-art-5",
+          "type": "ellipse",
+          "x": 884.5,
+          "y": 334.15000000000003,
+          "rx": 3,
+          "ry": 4.5,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "review-art"
+        },
+        {
+          "id": "review-art-6",
+          "type": "path",
+          "d": "M851.5 327.40000000000003 Q851.5 310.90000000000003 868 310.90000000000003 Q884.5 310.90000000000003 884.5 327.40000000000003 L883.75 337.15000000000003 Q883 353.65000000000003 868 354.40000000000003 Q853 353.65000000000003 852.25 337.15000000000003 Z",
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "review-art"
+        },
+        {
+          "id": "review-art-7",
+          "type": "path",
+          "d": "M851.5 329.65000000000003 Q847.75 310.15000000000003 863.5 309.40000000000003 Q882.25 306.40000000000003 885.25 326.65000000000003 Q871.75 325.90000000000003 866.5 317.65000000000003 Q863.5 327.40000000000003 851.5 329.65000000000003 Z",
+          "fill": "#243752",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "review-art"
+        },
+        {
+          "id": "review-art-8",
+          "type": "ellipse",
+          "x": 862,
+          "y": 333.40000000000003,
+          "rx": 1.0499999999999998,
+          "ry": 1.0499999999999998,
+          "fill": "#243752",
+          "stroke": "none",
+          "strokeWidth": 3,
+          "artworkId": "review-art"
+        },
+        {
+          "id": "review-art-9",
+          "type": "ellipse",
+          "x": 874,
+          "y": 333.40000000000003,
+          "rx": 1.0499999999999998,
+          "ry": 1.0499999999999998,
+          "fill": "#243752",
+          "stroke": "none",
+          "strokeWidth": 3,
+          "artworkId": "review-art"
+        },
+        {
+          "id": "review-art-10",
+          "type": "path",
+          "d": "M864.25 343.15000000000003 Q868 346.90000000000003 872.5 342.40000000000003",
+          "fill": "none",
+          "stroke": "#243752",
+          "strokeWidth": 1.5,
+          "artworkId": "review-art"
+        },
+        {
+          "id": "review-title",
+          "type": "text",
+          "text": "Design review",
+          "x": 930,
+          "y": 331.50000000000006,
+          "width": 496,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "review-card"
+        },
+        {
+          "id": "review-description",
+          "type": "text",
+          "text": "Tests whether the proposed change addresses the stated problem.",
+          "x": 826,
+          "y": 404.40000000000003,
+          "width": 600,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink",
+          "container": "review-card"
+        },
+        {
+          "id": "build-art-1",
+          "type": "rect",
+          "x": 74.2,
+          "y": 682.2800000000001,
+          "width": 75.6,
+          "height": 64.68,
+          "rx": 2.9400000000000004,
+          "fill": "#E6F3EE",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "build-art",
+          "artworkBounds": {
+            "x": 70,
+            "y": 668.0000000000001,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "id": "build-art-2",
+          "type": "rect",
+          "x": 72.52,
+          "y": 674.7200000000001,
+          "width": 78.96,
+          "height": 16.8,
+          "rx": 2.9400000000000004,
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "build-art"
+        },
+        {
+          "id": "build-art-3",
+          "type": "rect",
+          "x": 101.08,
+          "y": 704.9600000000002,
+          "width": 21.84,
+          "height": 10.08,
+          "rx": 2.9400000000000004,
+          "fill": "#FFFEFA",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "build-art"
+        },
+        {
+          "id": "build-title",
+          "type": "text",
+          "text": "Build",
+          "x": 174,
+          "y": 693.1000000000001,
+          "width": 496,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "build-card"
+        },
+        {
+          "id": "build-description",
+          "type": "text",
+          "text": "Turns the reviewed design into a deployable and observable change.",
+          "x": 70,
+          "y": 766.0000000000001,
+          "width": 600,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink",
+          "container": "build-card"
+        },
+        {
+          "id": "release-art-1",
+          "type": "rect",
+          "x": 830.2,
+          "y": 672.2000000000002,
+          "width": 75.6,
+          "height": 75.6,
+          "rx": 2.9400000000000004,
+          "fill": "#E6F3EE",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "release-art",
+          "artworkBounds": {
+            "x": 826,
+            "y": 668.0000000000001,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "id": "release-art-2",
+          "type": "rect",
+          "x": 841.12,
+          "y": 682.2800000000001,
+          "width": 53.76,
+          "height": 34.44,
+          "rx": 2.9400000000000004,
+          "fill": "#FFFEFA",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "release-art"
+        },
+        {
+          "id": "release-art-3",
+          "type": "line",
+          "x": 850.36,
+          "y": 700.7600000000001,
+          "x2": 862.96,
+          "y2": 700.7600000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 3,
+          "artworkId": "release-art"
+        },
+        {
+          "id": "release-art-4",
+          "type": "line",
+          "x": 871.36,
+          "y": 700.7600000000001,
+          "x2": 885.64,
+          "y2": 700.7600000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 3,
+          "artworkId": "release-art"
+        },
+        {
+          "id": "release-art-5",
+          "type": "ellipse",
+          "x": 849.52,
+          "y": 731.8400000000001,
+          "rx": 3.36,
+          "ry": 3.36,
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "release-art"
+        },
+        {
+          "id": "release-art-6",
+          "type": "line",
+          "x": 864.64,
+          "y": 728.4800000000001,
+          "x2": 893.2,
+          "y2": 728.4800000000001,
+          "stroke": "#243752",
+          "strokeWidth": 1.5,
+          "artworkId": "release-art"
+        },
+        {
+          "id": "release-art-7",
+          "type": "line",
+          "x": 864.64,
+          "y": 735.2000000000002,
+          "x2": 884.8,
+          "y2": 735.2000000000002,
+          "stroke": "#243752",
+          "strokeWidth": 1.5,
+          "artworkId": "release-art"
+        },
+        {
+          "id": "release-title",
+          "type": "text",
+          "text": "Release",
+          "x": 930,
+          "y": 693.1000000000001,
+          "width": 496,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "release-card"
+        },
+        {
+          "id": "release-description",
+          "type": "text",
+          "text": "Delivers the change to the intended user environment.",
+          "x": 826,
+          "y": 766.0000000000001,
+          "width": 600,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink",
+          "container": "release-card"
+        },
+        {
+          "id": "telemetry-art-1",
+          "type": "rect",
+          "x": 72.52,
+          "y": 1032.1200000000001,
+          "width": 78.96,
+          "height": 78.96,
+          "rx": 2.9400000000000004,
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "telemetry-art",
+          "artworkBounds": {
+            "x": 70,
+            "y": 1029.6000000000001,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "id": "telemetry-art-2",
+          "type": "line",
+          "x": 92.26,
+          "y": 1032.1200000000001,
+          "x2": 92.26,
+          "y2": 1111.0800000000002,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "telemetry-art"
+        },
+        {
+          "id": "telemetry-art-3",
+          "type": "line",
+          "x": 72.52,
+          "y": 1051.8600000000001,
+          "x2": 151.48000000000002,
+          "y2": 1051.8600000000001,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "telemetry-art"
+        },
+        {
+          "id": "telemetry-art-4",
+          "type": "line",
+          "x": 112,
+          "y": 1032.1200000000001,
+          "x2": 112,
+          "y2": 1111.0800000000002,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "telemetry-art"
+        },
+        {
+          "id": "telemetry-art-5",
+          "type": "line",
+          "x": 72.52,
+          "y": 1071.6000000000001,
+          "x2": 151.48000000000002,
+          "y2": 1071.6000000000001,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "telemetry-art"
+        },
+        {
+          "id": "telemetry-art-6",
+          "type": "line",
+          "x": 131.74,
+          "y": 1032.1200000000001,
+          "x2": 131.74,
+          "y2": 1111.0800000000002,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "telemetry-art"
+        },
+        {
+          "id": "telemetry-art-7",
+          "type": "line",
+          "x": 72.52,
+          "y": 1091.3400000000001,
+          "x2": 151.48000000000002,
+          "y2": 1091.3400000000001,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "telemetry-art"
+        },
+        {
+          "id": "telemetry-title",
+          "type": "text",
+          "text": "Telemetry",
+          "x": 174,
+          "y": 1054.7,
+          "width": 496,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "telemetry-card"
+        },
+        {
+          "id": "telemetry-description",
+          "type": "text",
+          "text": "Collects service and journey signals after release.",
+          "x": 70,
+          "y": 1127.6000000000001,
+          "width": 600,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink",
+          "container": "telemetry-card"
+        },
+        {
+          "id": "learning-art-1",
+          "type": "line",
+          "x": 838.6,
+          "y": 1050.6000000000001,
+          "x2": 868,
+          "y2": 1038.0000000000002,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learning-art",
+          "artworkBounds": {
+            "x": 826,
+            "y": 1029.6000000000001,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "id": "learning-art-2",
+          "type": "line",
+          "x": 868,
+          "y": 1038.0000000000002,
+          "x2": 897.4,
+          "y2": 1050.6000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-3",
+          "type": "line",
+          "x": 838.6,
+          "y": 1050.6000000000001,
+          "x2": 844.48,
+          "y2": 1098.48,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-4",
+          "type": "line",
+          "x": 897.4,
+          "y": 1050.6000000000001,
+          "x2": 891.52,
+          "y2": 1098.48,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-5",
+          "type": "line",
+          "x": 844.48,
+          "y": 1098.48,
+          "x2": 891.52,
+          "y2": 1098.48,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-6",
+          "type": "line",
+          "x": 838.6,
+          "y": 1050.6000000000001,
+          "x2": 868,
+          "y2": 1071.6000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-7",
+          "type": "line",
+          "x": 868,
+          "y": 1038.0000000000002,
+          "x2": 868,
+          "y2": 1071.6000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-8",
+          "type": "line",
+          "x": 897.4,
+          "y": 1050.6000000000001,
+          "x2": 868,
+          "y2": 1071.6000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-9",
+          "type": "line",
+          "x": 844.48,
+          "y": 1098.48,
+          "x2": 868,
+          "y2": 1071.6000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-10",
+          "type": "line",
+          "x": 891.52,
+          "y": 1098.48,
+          "x2": 868,
+          "y2": 1071.6000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-11",
+          "type": "ellipse",
+          "x": 838.6,
+          "y": 1050.6000000000001,
+          "rx": 5.04,
+          "ry": 5.04,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-12",
+          "type": "ellipse",
+          "x": 868,
+          "y": 1038.0000000000002,
+          "rx": 5.04,
+          "ry": 5.04,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-13",
+          "type": "ellipse",
+          "x": 897.4,
+          "y": 1050.6000000000001,
+          "rx": 5.04,
+          "ry": 5.04,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-14",
+          "type": "ellipse",
+          "x": 844.48,
+          "y": 1098.48,
+          "rx": 5.04,
+          "ry": 5.04,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-15",
+          "type": "ellipse",
+          "x": 891.52,
+          "y": 1098.48,
+          "rx": 5.04,
+          "ry": 5.04,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-art-16",
+          "type": "ellipse",
+          "x": 868,
+          "y": 1071.6000000000001,
+          "rx": 8.4,
+          "ry": 8.4,
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "learning-art"
+        },
+        {
+          "id": "learning-title",
+          "type": "text",
+          "text": "Learning loop",
+          "x": 930,
+          "y": 1054.7,
+          "width": 496,
+          "fontSize": 26,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "learning-card"
+        },
+        {
+          "id": "learning-description",
+          "type": "text",
+          "text": "Connects observed results to the next problem brief.",
+          "x": 826,
+          "y": 1127.6000000000001,
+          "width": 600,
+          "fontSize": 24,
+          "weight": "regular",
+          "fill": "$ink",
+          "container": "learning-card"
+        },
+        {
+          "id": "intent-heading",
+          "type": "text",
+          "text": "Intent",
+          "x": 42,
+          "y": 251.20000000000005,
+          "width": 1412,
+          "fontSize": 24,
+          "weight": "semibold",
+          "fill": "$secondary"
+        },
+        {
+          "id": "delivery-heading",
+          "type": "text",
+          "text": "Delivery",
+          "x": 42,
+          "y": 612.8000000000001,
+          "width": 1412,
+          "fontSize": 24,
+          "weight": "semibold",
+          "fill": "$secondary"
+        },
+        {
+          "id": "evidence-heading",
+          "type": "text",
+          "text": "Evidence",
+          "x": 42,
+          "y": 974.4000000000001,
+          "width": 1412,
+          "fontSize": 24,
+          "weight": "semibold",
+          "fill": "$secondary"
+        }
+      ]
+    }
+  ]
+}

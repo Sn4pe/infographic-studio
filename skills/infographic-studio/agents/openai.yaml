@@ -1,4 +1,4 @@
 interface:
   display_name: "Infographic Studio"
-  short_description: "Illustrated technical figures with editable labels"
-  default_prompt: "Use $infographic-studio to create an illustrated scientific figure with editable labels and SVG, PNG and PDF exports."
+  short_description: "Reviewed infographics and diagrams with editable labels"
+  default_prompt: "Use $infographic-studio to create a reviewed infographic or diagram with editable labels. Establish art direction and a composition that explains the idea; do not default to an icon row. Export SVG, PNG and PDF."

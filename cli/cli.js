@@ -3,17 +3,18 @@ import { parseArgs } from 'node:util';
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadScene, inspectScene, resolveAssets, renderFile, planAssets, listLabels, reviseLabels, createProject, listIcons, composeSpecification } from '../src/index.js';
+import { loadScene, inspectScene, resolveAssets, renderFile, planAssets, listLabels, reviseLabels, createProject, listIcons, listInfographicStructures, composeSpecification } from '../src/index.js';
 
 const help = `Infographic Studio — illustrated figures, editable text, repeatable exports
 
-  infographic-studio init <new-directory> [--example optics|sensing|editorial|technical|hybrid]
+  infographic-studio init <new-directory> [--example windshield|kubernetes|jwst|heat-pump|crispr|ligo|kafka]
   infographic-studio check <scene.json> [--strict] [--json] [--print-width 180] [--min-font 8]
   infographic-studio render <scene.json> [--out directory] [--formats svg,png,pdf] [--scale 2] [--strict] [--print-width 180] [--min-font 8]
   infographic-studio assets <scene.json> [--out plan.json]
   infographic-studio labels <scene.json> [--out labels.json]
   infographic-studio revise <scene.json> --labels changes.json --out <new-directory> [--strict]
   infographic-studio icons [search] [--json]
+  infographic-studio structures [--json]
   infographic-studio compose <specification.json> --out <new-scene.json>
 
 init creates an editable scene. check validates layout and local assets.
@@ -31,7 +32,7 @@ try {
     labels: { type: 'string' }, 'print-width': { type: 'string' }, 'min-font': { type: 'string' },
   } });
   const [command, file] = positionals;
-  const allowed = { init: ['example'], check: ['strict', 'json', 'print-width', 'min-font'], render: ['out', 'formats', 'scale', 'strict', 'print-width', 'min-font'], assets: ['out'], labels: ['out'], revise: ['labels', 'out', 'strict'], icons: ['json'], compose: ['out'] };
+  const allowed = { init: ['example'], check: ['strict', 'json', 'print-width', 'min-font'], render: ['out', 'formats', 'scale', 'strict', 'print-width', 'min-font'], assets: ['out'], labels: ['out'], revise: ['labels', 'out', 'strict'], icons: ['json'], structures: ['json'], compose: ['out'] };
   if (!values.help && allowed[command]) for (const option of Object.keys(values)) if (!allowed[command].includes(option)) throw new Error(`--${option} is not supported by ${command}.`);
   const printOptions = { printWidthMm: values['print-width'] === undefined ? undefined : Number(values['print-width']), minFontPt: values['min-font'] === undefined ? undefined : Number(values['min-font']) };
   if (values.help || !command) { console.log(help); }
@@ -39,6 +40,11 @@ try {
     if (positionals.length > 2) throw new Error('Quote a multiword icon query.');
     const icons = listIcons(file);
     console.log(values.json ? JSON.stringify(icons, null, 2) : icons.map((i) => `${i.name} · ${i.family} · ${i.license}`).join('\n'));
+  }
+  else if (command === 'structures') {
+    if (positionals.length !== 1) throw new Error('structures does not accept a search term.');
+    const structures = listInfographicStructures();
+    console.log(values.json ? JSON.stringify(structures, null, 2) : structures.map((structure) => `${structure.type} · ${structure.use} (${structure.limit})`).join('\n'));
   }
   else if (!file || positionals.length !== 2) throw new Error('Expected one scene path or directory. Use --help.');
   else if (command === 'compose') {
@@ -49,8 +55,8 @@ try {
     console.log(`Created ${resolve(values.out)}. Layout has not been approved; run check --strict and inspect the render.`);
   }
   else if (command === 'init') {
-    const example = values.example ?? 'optics';
-    const examples = { optics: 'optics', sensing: 'sensing', editorial: 'fiber-study/editorial', technical: 'fiber-study/technical', hybrid: 'fiber-study/hybrid' };
+    const example = values.example ?? 'windshield';
+    const examples = { windshield: 'windshield-frit', kubernetes: 'architectures/kubernetes-cluster', jwst: 'space/jwst-deployment', 'heat-pump': 'physical/heat-pump', thermostat: 'physical/heat-pump', crispr: 'biology/crispr-cas9', ligo: 'physical/ligo-interferometer', kafka: 'architectures/apache-kafka' };
     if (!Object.hasOwn(examples, example)) throw new Error(`Example must be ${Object.keys(examples).join(', ')}.`);
     const source = fileURLToPath(new URL(`../examples/${examples[example]}/scene.json`, import.meta.url));
     const created = await createProject(await loadScene(source), { baseDir: dirname(source), outDir: file });

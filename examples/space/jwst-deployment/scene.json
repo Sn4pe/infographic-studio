@@ -1,0 +1,3132 @@
+{
+  "version": 1,
+  "title": "Webb: unfold, cool, focus",
+  "subtitle": "The engineering behind a cold infrared observatory: a deployable mirror, a thermal barrier and months of optical alignment.",
+  "description": "The engineering behind a cold infrared observatory: a deployable mirror, a thermal barrier and months of optical alignment.",
+  "eyebrow": "FIELD ATLAS    /    02 — SPACE SYSTEMS",
+  "width": 1800,
+  "height": 1600,
+  "theme": "blueprint",
+  "sources": [
+    {
+      "title": "NASA — Webb’s Sunshield",
+      "url": "https://science.nasa.gov/mission/webb/webbs-sunshield/"
+    },
+    {
+      "title": "NASA — Webb’s Mirrors",
+      "url": "https://science.nasa.gov/mission/webb/webbs-mirrors/"
+    },
+    {
+      "title": "NASA — Deployment",
+      "url": "https://science.nasa.gov/mission/webb/deployment/"
+    }
+  ],
+  "panels": [
+    {
+      "id": "observatory",
+      "x": 52,
+      "y": 180,
+      "width": 1030,
+      "height": 813,
+      "framed": false,
+      "elements": [
+        {
+          "id": "observatory-1",
+          "type": "text",
+          "text": "01",
+          "x": 0,
+          "y": 5,
+          "width": 40,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "observatory-2",
+          "type": "text",
+          "text": "A large mirror on the cold side",
+          "x": 58,
+          "y": 0,
+          "width": 972,
+          "fontSize": 28,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "observatory-3",
+          "type": "text",
+          "text": "Unfolding creates an observatory that could never fit inside its rocket.",
+          "x": 0,
+          "y": 45,
+          "width": 1030,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "observatory-4",
+          "type": "polygon",
+          "points": [
+            [
+              69.49999999999994,
+              630
+            ],
+            [
+              390.7,
+              541
+            ],
+            [
+              872.5,
+              619.32
+            ],
+            [
+              599.48,
+              719
+            ]
+          ],
+          "fill": "#805f79",
+          "stroke": "#c0d0d1",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-5",
+          "type": "line",
+          "x": 69.49999999999994,
+          "y": 630,
+          "x2": 872.5,
+          "y2": 619.32,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-6",
+          "type": "line",
+          "x": 390.7,
+          "y": 541,
+          "x2": 599.48,
+          "y2": 719,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-7",
+          "type": "polygon",
+          "points": [
+            [
+              78.625,
+              616
+            ],
+            [
+              392.525,
+              527
+            ],
+            [
+              863.375,
+              605.32
+            ],
+            [
+              596.56,
+              705
+            ]
+          ],
+          "fill": "#696c86",
+          "stroke": "#c0d0d1",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-8",
+          "type": "line",
+          "x": 78.625,
+          "y": 616,
+          "x2": 863.375,
+          "y2": 605.32,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-9",
+          "type": "line",
+          "x": 392.525,
+          "y": 527,
+          "x2": 596.56,
+          "y2": 705,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-10",
+          "type": "polygon",
+          "points": [
+            [
+              87.75,
+              602
+            ],
+            [
+              394.35,
+              513
+            ],
+            [
+              854.25,
+              591.32
+            ],
+            [
+              593.64,
+              691
+            ]
+          ],
+          "fill": "#627f92",
+          "stroke": "#c0d0d1",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-11",
+          "type": "line",
+          "x": 87.75,
+          "y": 602,
+          "x2": 854.25,
+          "y2": 591.32,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-12",
+          "type": "line",
+          "x": 394.35,
+          "y": 513,
+          "x2": 593.64,
+          "y2": 691,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-13",
+          "type": "polygon",
+          "points": [
+            [
+              96.87500000000006,
+              588
+            ],
+            [
+              396.175,
+              499
+            ],
+            [
+              845.125,
+              577.32
+            ],
+            [
+              590.72,
+              677
+            ]
+          ],
+          "fill": "#7a9caa",
+          "stroke": "#c0d0d1",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-14",
+          "type": "line",
+          "x": 96.87500000000006,
+          "y": 588,
+          "x2": 845.125,
+          "y2": 577.32,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-15",
+          "type": "line",
+          "x": 396.175,
+          "y": 499,
+          "x2": 590.72,
+          "y2": 677,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-16",
+          "type": "polygon",
+          "points": [
+            [
+              106,
+              574
+            ],
+            [
+              398,
+              485
+            ],
+            [
+              836,
+              563.32
+            ],
+            [
+              587.8,
+              663
+            ]
+          ],
+          "fill": "#97b7c0",
+          "stroke": "#c0d0d1",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-17",
+          "type": "line",
+          "x": 106,
+          "y": 574,
+          "x2": 836,
+          "y2": 563.32,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-18",
+          "type": "line",
+          "x": 398,
+          "y": 485,
+          "x2": 587.8,
+          "y2": 663,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-19",
+          "type": "polygon",
+          "points": [
+            [
+              415,
+              650
+            ],
+            [
+              510,
+              651
+            ],
+            [
+              538,
+              704
+            ],
+            [
+              442,
+              715
+            ],
+            [
+              397,
+              688
+            ]
+          ],
+          "fill": "#355364",
+          "stroke": "$muted",
+          "strokeWidth": 2
+        },
+        {
+          "id": "observatory-20",
+          "type": "polygon",
+          "points": [
+            [
+              413,
+              685
+            ],
+            [
+              338,
+              735
+            ],
+            [
+              505,
+              764
+            ],
+            [
+              552,
+              715
+            ]
+          ],
+          "fill": "#173e56",
+          "stroke": "$secondary",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-21",
+          "type": "line",
+          "x": 440,
+          "y": 692,
+          "x2": 370,
+          "y2": 741,
+          "stroke": "$secondary",
+          "strokeWidth": 1,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-22",
+          "type": "line",
+          "x": 467,
+          "y": 698,
+          "x2": 402,
+          "y2": 747,
+          "stroke": "$secondary",
+          "strokeWidth": 1,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-23",
+          "type": "line",
+          "x": 494,
+          "y": 704,
+          "x2": 434,
+          "y2": 753,
+          "stroke": "$secondary",
+          "strokeWidth": 1,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-24",
+          "type": "line",
+          "x": 521,
+          "y": 710,
+          "x2": 466,
+          "y2": 759,
+          "stroke": "$secondary",
+          "strokeWidth": 1,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "observatory-25",
+          "type": "path",
+          "d": "M455 565 L403 301 L492 297 L512 565",
+          "fill": "none",
+          "stroke": "$line",
+          "strokeWidth": 15
+        },
+        {
+          "id": "observatory-26",
+          "type": "polygon",
+          "points": [
+            [
+              320,
+              233.70922876691856
+            ],
+            [
+              294.5,
+              275.22648662434455
+            ],
+            [
+              243.5,
+              275.22648662434455
+            ],
+            [
+              218,
+              233.70922876691856
+            ],
+            [
+              243.49999999999997,
+              192.19197090949257
+            ],
+            [
+              294.5,
+              192.19197090949257
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-27",
+          "type": "polygon",
+          "points": [
+            [
+              320,
+              320
+            ],
+            [
+              294.5,
+              361.517257857426
+            ],
+            [
+              243.5,
+              361.517257857426
+            ],
+            [
+              218,
+              320
+            ],
+            [
+              243.49999999999997,
+              278.482742142574
+            ],
+            [
+              294.5,
+              278.482742142574
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-28",
+          "type": "polygon",
+          "points": [
+            [
+              320,
+              406.29077123308144
+            ],
+            [
+              294.5,
+              447.80802909050743
+            ],
+            [
+              243.5,
+              447.80802909050743
+            ],
+            [
+              218,
+              406.29077123308144
+            ],
+            [
+              243.49999999999997,
+              364.77351337565545
+            ],
+            [
+              294.5,
+              364.77351337565545
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-29",
+          "type": "polygon",
+          "points": [
+            [
+              399.5,
+              190.5638431503778
+            ],
+            [
+              374,
+              232.0811010078038
+            ],
+            [
+              323,
+              232.0811010078038
+            ],
+            [
+              297.5,
+              190.5638431503778
+            ],
+            [
+              323,
+              149.04658529295182
+            ],
+            [
+              374,
+              149.04658529295182
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-30",
+          "type": "polygon",
+          "points": [
+            [
+              399.5,
+              276.85461438345925
+            ],
+            [
+              374,
+              318.37187224088524
+            ],
+            [
+              323,
+              318.37187224088524
+            ],
+            [
+              297.5,
+              276.85461438345925
+            ],
+            [
+              323,
+              235.33735652603326
+            ],
+            [
+              374,
+              235.33735652603326
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-31",
+          "type": "polygon",
+          "points": [
+            [
+              399.5,
+              363.14538561654075
+            ],
+            [
+              374,
+              404.66264347396674
+            ],
+            [
+              323,
+              404.66264347396674
+            ],
+            [
+              297.5,
+              363.14538561654075
+            ],
+            [
+              323,
+              321.62812775911476
+            ],
+            [
+              374,
+              321.62812775911476
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-32",
+          "type": "polygon",
+          "points": [
+            [
+              399.5,
+              449.4361568496222
+            ],
+            [
+              374,
+              490.9534147070482
+            ],
+            [
+              323,
+              490.9534147070482
+            ],
+            [
+              297.5,
+              449.4361568496222
+            ],
+            [
+              323,
+              407.9188989921962
+            ],
+            [
+              374,
+              407.9188989921962
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-33",
+          "type": "polygon",
+          "points": [
+            [
+              479,
+              147.41845753383708
+            ],
+            [
+              453.5,
+              188.93571539126307
+            ],
+            [
+              402.5,
+              188.93571539126307
+            ],
+            [
+              377,
+              147.41845753383708
+            ],
+            [
+              402.5,
+              105.9011996764111
+            ],
+            [
+              453.5,
+              105.9011996764111
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-34",
+          "type": "polygon",
+          "points": [
+            [
+              479,
+              233.70922876691856
+            ],
+            [
+              453.5,
+              275.22648662434455
+            ],
+            [
+              402.5,
+              275.22648662434455
+            ],
+            [
+              377,
+              233.70922876691856
+            ],
+            [
+              402.5,
+              192.19197090949257
+            ],
+            [
+              453.5,
+              192.19197090949257
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-35",
+          "type": "polygon",
+          "points": [
+            [
+              479,
+              406.29077123308144
+            ],
+            [
+              453.5,
+              447.80802909050743
+            ],
+            [
+              402.5,
+              447.80802909050743
+            ],
+            [
+              377,
+              406.29077123308144
+            ],
+            [
+              402.5,
+              364.77351337565545
+            ],
+            [
+              453.5,
+              364.77351337565545
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-36",
+          "type": "polygon",
+          "points": [
+            [
+              479,
+              492.5815424661629
+            ],
+            [
+              453.5,
+              534.0988003235889
+            ],
+            [
+              402.5,
+              534.0988003235889
+            ],
+            [
+              377,
+              492.5815424661629
+            ],
+            [
+              402.5,
+              451.0642846087369
+            ],
+            [
+              453.5,
+              451.0642846087369
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-37",
+          "type": "polygon",
+          "points": [
+            [
+              558.5,
+              190.5638431503778
+            ],
+            [
+              533,
+              232.0811010078038
+            ],
+            [
+              482,
+              232.0811010078038
+            ],
+            [
+              456.5,
+              190.5638431503778
+            ],
+            [
+              482,
+              149.04658529295182
+            ],
+            [
+              533,
+              149.04658529295182
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-38",
+          "type": "polygon",
+          "points": [
+            [
+              558.5,
+              276.85461438345925
+            ],
+            [
+              533,
+              318.37187224088524
+            ],
+            [
+              482,
+              318.37187224088524
+            ],
+            [
+              456.5,
+              276.85461438345925
+            ],
+            [
+              482,
+              235.33735652603326
+            ],
+            [
+              533,
+              235.33735652603326
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-39",
+          "type": "polygon",
+          "points": [
+            [
+              558.5,
+              363.14538561654075
+            ],
+            [
+              533,
+              404.66264347396674
+            ],
+            [
+              482,
+              404.66264347396674
+            ],
+            [
+              456.5,
+              363.14538561654075
+            ],
+            [
+              482,
+              321.62812775911476
+            ],
+            [
+              533,
+              321.62812775911476
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-40",
+          "type": "polygon",
+          "points": [
+            [
+              558.5,
+              449.4361568496222
+            ],
+            [
+              533,
+              490.9534147070482
+            ],
+            [
+              482,
+              490.9534147070482
+            ],
+            [
+              456.5,
+              449.4361568496222
+            ],
+            [
+              482,
+              407.9188989921962
+            ],
+            [
+              533,
+              407.9188989921962
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-41",
+          "type": "polygon",
+          "points": [
+            [
+              638,
+              233.70922876691856
+            ],
+            [
+              612.5,
+              275.22648662434455
+            ],
+            [
+              561.5,
+              275.22648662434455
+            ],
+            [
+              536,
+              233.70922876691856
+            ],
+            [
+              561.5,
+              192.19197090949257
+            ],
+            [
+              612.5,
+              192.19197090949257
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-42",
+          "type": "polygon",
+          "points": [
+            [
+              638,
+              320
+            ],
+            [
+              612.5,
+              361.517257857426
+            ],
+            [
+              561.5,
+              361.517257857426
+            ],
+            [
+              536,
+              320
+            ],
+            [
+              561.5,
+              278.482742142574
+            ],
+            [
+              612.5,
+              278.482742142574
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-43",
+          "type": "polygon",
+          "points": [
+            [
+              638,
+              406.29077123308144
+            ],
+            [
+              612.5,
+              447.80802909050743
+            ],
+            [
+              561.5,
+              447.80802909050743
+            ],
+            [
+              536,
+              406.29077123308144
+            ],
+            [
+              561.5,
+              364.77351337565545
+            ],
+            [
+              612.5,
+              364.77351337565545
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-44",
+          "type": "polygon",
+          "points": [
+            [
+              412,
+              284
+            ],
+            [
+              447,
+              284
+            ],
+            [
+              459,
+              308
+            ],
+            [
+              443,
+              333
+            ],
+            [
+              411,
+              333
+            ],
+            [
+              397,
+              308
+            ]
+          ],
+          "fill": "$background",
+          "stroke": "$muted",
+          "strokeWidth": 2
+        },
+        {
+          "id": "observatory-45",
+          "type": "path",
+          "d": "M248 349 L420 523 L603 350 M428 117 L420 523",
+          "fill": "none",
+          "stroke": "$ink",
+          "strokeWidth": 3
+        },
+        {
+          "id": "observatory-46",
+          "type": "ellipse",
+          "x": 420,
+          "y": 523,
+          "rx": 29,
+          "ry": 14,
+          "fill": "$warm",
+          "stroke": "$ink",
+          "strokeWidth": 2
+        },
+        {
+          "id": "observatory-47",
+          "type": "text",
+          "text": "18",
+          "x": 755,
+          "y": 147,
+          "width": 220,
+          "fontSize": 76,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "observatory-48",
+          "type": "text",
+          "text": "segments act as\none 6.5 m mirror",
+          "x": 760,
+          "y": 249,
+          "width": 270,
+          "fontSize": 27,
+          "fill": "$ink",
+          "weight": "regular"
+        },
+        {
+          "id": "observatory-49",
+          "type": "line",
+          "x": 652,
+          "y": 257,
+          "x2": 737,
+          "y2": 257,
+          "stroke": "$warm",
+          "strokeWidth": 2
+        },
+        {
+          "id": "observatory-50",
+          "type": "ellipse",
+          "x": 652,
+          "y": 257,
+          "rx": 4,
+          "ry": 4,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "observatory-51",
+          "type": "text",
+          "text": "Secondary mirror",
+          "x": 740,
+          "y": 417,
+          "width": 280,
+          "fontSize": 24,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "observatory-52",
+          "type": "text",
+          "text": "Support struts unfold\nin front of the primary.",
+          "x": 740,
+          "y": 454,
+          "width": 280,
+          "fontSize": 22,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "observatory-53",
+          "type": "path",
+          "d": "M450 522 H694 V451 H725",
+          "fill": "none",
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-54",
+          "type": "ellipse",
+          "x": 450,
+          "y": 522,
+          "rx": 4,
+          "ry": 4,
+          "fill": "$muted",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "observatory-55",
+          "type": "text",
+          "text": "Five separated\nsunshield layers",
+          "x": 754,
+          "y": 690,
+          "width": 266,
+          "fontSize": 25,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "observatory-56",
+          "type": "line",
+          "x": 688,
+          "y": 633,
+          "x2": 738,
+          "y2": 713,
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "observatory-57",
+          "type": "ellipse",
+          "x": 688,
+          "y": 633,
+          "rx": 4,
+          "ry": 4,
+          "fill": "$muted",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "observatory-58",
+          "type": "text",
+          "text": "COLD / SPACE-FACING",
+          "x": 16,
+          "y": 110,
+          "width": 340,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "observatory-59",
+          "type": "text",
+          "text": "WARM / SUN-FACING",
+          "x": 10,
+          "y": 740,
+          "width": 305,
+          "fontSize": 17,
+          "fill": "$accent",
+          "weight": "semibold"
+        },
+        {
+          "id": "observatory-60",
+          "type": "text",
+          "text": "Deployed geometry • simplified perspective",
+          "x": 320,
+          "y": 782,
+          "width": 680,
+          "fontSize": 18,
+          "fill": "$muted",
+          "weight": "regular"
+        }
+      ]
+    },
+    {
+      "id": "thermal-and-optical",
+      "x": 1150,
+      "y": 180,
+      "width": 598,
+      "height": 813,
+      "framed": false,
+      "elements": [
+        {
+          "id": "thermal-and-optical-1",
+          "type": "text",
+          "text": "02",
+          "x": 0,
+          "y": 5,
+          "width": 40,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "thermal-and-optical-2",
+          "type": "text",
+          "text": "Keep its own heat out",
+          "x": 58,
+          "y": 0,
+          "width": 540,
+          "fontSize": 28,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "thermal-and-optical-3",
+          "type": "text",
+          "text": "An infrared telescope must stay cold enough to detect faint signals.",
+          "x": 0,
+          "y": 45,
+          "width": 598,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "thermal-and-optical-4",
+          "type": "text",
+          "text": "TELESCOPE SIDE",
+          "x": 21,
+          "y": 134,
+          "width": 315,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "thermal-and-optical-5",
+          "type": "text",
+          "text": "Below 50 K",
+          "x": 20,
+          "y": 167,
+          "width": 545,
+          "fontSize": 48,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "thermal-and-optical-6",
+          "type": "text",
+          "text": "Passive cooling after deployment",
+          "x": 22,
+          "y": 232,
+          "width": 550,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "thermal-and-optical-7",
+          "type": "polygon",
+          "points": [
+            [
+              42,
+              292
+            ],
+            [
+              417,
+              300
+            ],
+            [
+              417,
+              306
+            ],
+            [
+              42,
+              298
+            ]
+          ],
+          "fill": "#9fcad1",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "thermal-and-optical-8",
+          "type": "text",
+          "text": "5",
+          "x": 0,
+          "y": 285,
+          "width": 24,
+          "fontSize": 17,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "thermal-and-optical-9",
+          "type": "polygon",
+          "points": [
+            [
+              38,
+              325
+            ],
+            [
+              429,
+              333
+            ],
+            [
+              429,
+              339
+            ],
+            [
+              38,
+              331
+            ]
+          ],
+          "fill": "#8db2c2",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "thermal-and-optical-10",
+          "type": "text",
+          "text": "4",
+          "x": 0,
+          "y": 318,
+          "width": 24,
+          "fontSize": 17,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "thermal-and-optical-11",
+          "type": "polygon",
+          "points": [
+            [
+              34,
+              358
+            ],
+            [
+              441,
+              366
+            ],
+            [
+              441,
+              372
+            ],
+            [
+              34,
+              364
+            ]
+          ],
+          "fill": "#8494aa",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "thermal-and-optical-12",
+          "type": "text",
+          "text": "3",
+          "x": 0,
+          "y": 351,
+          "width": 24,
+          "fontSize": 17,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "thermal-and-optical-13",
+          "type": "polygon",
+          "points": [
+            [
+              30,
+              391
+            ],
+            [
+              453,
+              399
+            ],
+            [
+              453,
+              405
+            ],
+            [
+              30,
+              397
+            ]
+          ],
+          "fill": "#a48c9e",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "thermal-and-optical-14",
+          "type": "text",
+          "text": "2",
+          "x": 0,
+          "y": 384,
+          "width": 24,
+          "fontSize": 17,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "thermal-and-optical-15",
+          "type": "polygon",
+          "points": [
+            [
+              26,
+              424
+            ],
+            [
+              465,
+              432
+            ],
+            [
+              465,
+              438
+            ],
+            [
+              26,
+              430
+            ]
+          ],
+          "fill": "#c98685",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "thermal-and-optical-16",
+          "type": "text",
+          "text": "1",
+          "x": 0,
+          "y": 417,
+          "width": 24,
+          "fontSize": 17,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "thermal-and-optical-17",
+          "type": "line",
+          "x": 455,
+          "y": 374,
+          "x2": 509,
+          "y2": 374,
+          "stroke": "$accent",
+          "strokeWidth": 3
+        },
+        {
+          "id": "thermal-and-optical-18",
+          "type": "arrow",
+          "x": 509,
+          "y": 374,
+          "x2": 560,
+          "y2": 327,
+          "stroke": "$accent",
+          "strokeWidth": 3
+        },
+        {
+          "id": "thermal-and-optical-19",
+          "type": "line",
+          "x": 470,
+          "y": 423,
+          "x2": 529,
+          "y2": 423,
+          "stroke": "$accent",
+          "strokeWidth": 3
+        },
+        {
+          "id": "thermal-and-optical-20",
+          "type": "arrow",
+          "x": 529,
+          "y": 423,
+          "x2": 574,
+          "y2": 381,
+          "stroke": "$accent",
+          "strokeWidth": 3
+        },
+        {
+          "id": "thermal-and-optical-21",
+          "type": "text",
+          "text": "Heat escapes\nto space",
+          "x": 431,
+          "y": 266,
+          "width": 166,
+          "fontSize": 20,
+          "fill": "$accent",
+          "weight": "regular"
+        },
+        {
+          "id": "thermal-and-optical-22",
+          "type": "arrow",
+          "x": 130,
+          "y": 518,
+          "x2": 130,
+          "y2": 453,
+          "stroke": "$warm",
+          "strokeWidth": 4
+        },
+        {
+          "id": "thermal-and-optical-23",
+          "type": "arrow",
+          "x": 230,
+          "y": 518,
+          "x2": 230,
+          "y2": 453,
+          "stroke": "$warm",
+          "strokeWidth": 4
+        },
+        {
+          "id": "thermal-and-optical-24",
+          "type": "arrow",
+          "x": 330,
+          "y": 518,
+          "x2": 330,
+          "y2": 453,
+          "stroke": "$warm",
+          "strokeWidth": 4
+        },
+        {
+          "id": "thermal-and-optical-25",
+          "type": "text",
+          "text": "SUN / EARTH / MOON",
+          "x": 78,
+          "y": 534,
+          "width": 460,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "thermal-and-optical-26",
+          "type": "text",
+          "text": "Vacuum gaps limit conduction; separated membranes radiate heat outward.",
+          "x": 0,
+          "y": 585,
+          "width": 598,
+          "fontSize": 24,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "thermal-and-optical-27",
+          "type": "line",
+          "x": 0,
+          "y": 676,
+          "x2": 598,
+          "y2": 676,
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "thermal-and-optical-28",
+          "type": "text",
+          "text": "MIRI needs an extra cooler",
+          "x": 0,
+          "y": 701,
+          "width": 598,
+          "fontSize": 25,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "thermal-and-optical-29",
+          "type": "text",
+          "text": "Its mid-infrared detectors operate near 7 K, colder than passive cooling alone can provide.",
+          "x": 0,
+          "y": 744,
+          "width": 598,
+          "fontSize": 22,
+          "fill": "$muted",
+          "weight": "regular"
+        }
+      ]
+    },
+    {
+      "id": "deployment",
+      "x": 52,
+      "y": 1067,
+      "width": 1696,
+      "height": 448,
+      "framed": false,
+      "elements": [
+        {
+          "id": "deployment-1",
+          "type": "text",
+          "text": "03",
+          "x": 0,
+          "y": 5,
+          "width": 40,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "deployment-2",
+          "type": "text",
+          "text": "Deploy first. Then turn eighteen images into one.",
+          "x": 58,
+          "y": 0,
+          "width": 1638,
+          "fontSize": 28,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "deployment-3",
+          "type": "text",
+          "text": "Physical deployment ends before optical commissioning is complete.",
+          "x": 0,
+          "y": 45,
+          "width": 1696,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "deployment-4",
+          "type": "arrow",
+          "x": 335,
+          "y": 210,
+          "x2": 428,
+          "y2": 210,
+          "stroke": "$muted",
+          "strokeWidth": 2.5
+        },
+        {
+          "id": "deployment-5",
+          "type": "arrow",
+          "x": 785,
+          "y": 210,
+          "x2": 878,
+          "y2": 210,
+          "stroke": "$muted",
+          "strokeWidth": 2.5
+        },
+        {
+          "id": "deployment-6",
+          "type": "arrow",
+          "x": 1235,
+          "y": 210,
+          "x2": 1328,
+          "y2": 210,
+          "stroke": "$muted",
+          "strokeWidth": 2.5
+        },
+        {
+          "id": "deployment-7",
+          "type": "rect",
+          "x": 87,
+          "y": 121,
+          "width": 102,
+          "height": 185,
+          "fill": "$panel",
+          "stroke": "$muted",
+          "strokeWidth": 1.5,
+          "rx": 20
+        },
+        {
+          "id": "deployment-8",
+          "type": "polygon",
+          "points": [
+            [
+              100.28,
+              177.3819311905722
+            ],
+            [
+              98.44,
+              190.54551732809568
+            ],
+            [
+              94.75999999999999,
+              190.54551732809568
+            ],
+            [
+              92.91999999999999,
+              177.3819311905722
+            ],
+            [
+              94.75999999999999,
+              164.21834505304875
+            ],
+            [
+              98.44,
+              164.21834505304872
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-9",
+          "type": "polygon",
+          "points": [
+            [
+              100.28,
+              207
+            ],
+            [
+              98.44,
+              220.16358613752345
+            ],
+            [
+              94.75999999999999,
+              220.16358613752348
+            ],
+            [
+              92.91999999999999,
+              207
+            ],
+            [
+              94.75999999999999,
+              193.83641386247655
+            ],
+            [
+              98.44,
+              193.83641386247655
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-10",
+          "type": "polygon",
+          "points": [
+            [
+              100.28,
+              236.6180688094278
+            ],
+            [
+              98.44,
+              249.78165494695128
+            ],
+            [
+              94.75999999999999,
+              249.78165494695128
+            ],
+            [
+              92.91999999999999,
+              236.6180688094278
+            ],
+            [
+              94.75999999999999,
+              223.45448267190434
+            ],
+            [
+              98.44,
+              223.45448267190432
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-11",
+          "type": "polygon",
+          "points": [
+            [
+              127,
+              162.5728967858583
+            ],
+            [
+              119,
+              175.73648292338174
+            ],
+            [
+              103,
+              175.73648292338177
+            ],
+            [
+              95,
+              162.5728967858583
+            ],
+            [
+              103,
+              149.40931064833484
+            ],
+            [
+              119,
+              149.40931064833484
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-12",
+          "type": "polygon",
+          "points": [
+            [
+              127,
+              192.19096559528612
+            ],
+            [
+              119,
+              205.35455173280957
+            ],
+            [
+              103,
+              205.3545517328096
+            ],
+            [
+              95,
+              192.19096559528612
+            ],
+            [
+              103,
+              179.02737945776266
+            ],
+            [
+              119,
+              179.02737945776266
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-13",
+          "type": "polygon",
+          "points": [
+            [
+              127,
+              221.80903440471388
+            ],
+            [
+              119,
+              234.97262054223734
+            ],
+            [
+              103,
+              234.97262054223737
+            ],
+            [
+              95,
+              221.80903440471388
+            ],
+            [
+              103,
+              208.64544826719043
+            ],
+            [
+              119,
+              208.64544826719043
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-14",
+          "type": "polygon",
+          "points": [
+            [
+              127,
+              251.4271032141417
+            ],
+            [
+              119,
+              264.59068935166516
+            ],
+            [
+              103,
+              264.59068935166516
+            ],
+            [
+              95,
+              251.4271032141417
+            ],
+            [
+              103,
+              238.26351707661826
+            ],
+            [
+              119,
+              238.26351707661826
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-15",
+          "type": "polygon",
+          "points": [
+            [
+              154,
+              147.7638623811444
+            ],
+            [
+              146,
+              160.92744851866786
+            ],
+            [
+              130,
+              160.9274485186679
+            ],
+            [
+              122,
+              147.7638623811444
+            ],
+            [
+              130,
+              134.60027624362095
+            ],
+            [
+              146,
+              134.60027624362095
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-16",
+          "type": "polygon",
+          "points": [
+            [
+              154,
+              177.3819311905722
+            ],
+            [
+              146,
+              190.54551732809568
+            ],
+            [
+              130,
+              190.54551732809568
+            ],
+            [
+              122,
+              177.3819311905722
+            ],
+            [
+              130,
+              164.21834505304875
+            ],
+            [
+              146,
+              164.21834505304872
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-17",
+          "type": "polygon",
+          "points": [
+            [
+              154,
+              236.6180688094278
+            ],
+            [
+              146,
+              249.78165494695128
+            ],
+            [
+              130,
+              249.78165494695128
+            ],
+            [
+              122,
+              236.6180688094278
+            ],
+            [
+              130,
+              223.45448267190434
+            ],
+            [
+              146,
+              223.45448267190432
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-18",
+          "type": "polygon",
+          "points": [
+            [
+              154,
+              266.2361376188556
+            ],
+            [
+              146,
+              279.39972375637905
+            ],
+            [
+              130,
+              279.39972375637905
+            ],
+            [
+              122,
+              266.2361376188556
+            ],
+            [
+              130,
+              253.07255148133214
+            ],
+            [
+              146,
+              253.07255148133214
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-19",
+          "type": "polygon",
+          "points": [
+            [
+              181,
+              162.5728967858583
+            ],
+            [
+              173,
+              175.73648292338174
+            ],
+            [
+              157,
+              175.73648292338177
+            ],
+            [
+              149,
+              162.5728967858583
+            ],
+            [
+              157,
+              149.40931064833484
+            ],
+            [
+              173,
+              149.40931064833484
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-20",
+          "type": "polygon",
+          "points": [
+            [
+              181,
+              192.19096559528612
+            ],
+            [
+              173,
+              205.35455173280957
+            ],
+            [
+              157,
+              205.3545517328096
+            ],
+            [
+              149,
+              192.19096559528612
+            ],
+            [
+              157,
+              179.02737945776266
+            ],
+            [
+              173,
+              179.02737945776266
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-21",
+          "type": "polygon",
+          "points": [
+            [
+              181,
+              221.80903440471388
+            ],
+            [
+              173,
+              234.97262054223734
+            ],
+            [
+              157,
+              234.97262054223737
+            ],
+            [
+              149,
+              221.80903440471388
+            ],
+            [
+              157,
+              208.64544826719043
+            ],
+            [
+              173,
+              208.64544826719043
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-22",
+          "type": "polygon",
+          "points": [
+            [
+              181,
+              251.4271032141417
+            ],
+            [
+              173,
+              264.59068935166516
+            ],
+            [
+              157,
+              264.59068935166516
+            ],
+            [
+              149,
+              251.4271032141417
+            ],
+            [
+              157,
+              238.26351707661826
+            ],
+            [
+              173,
+              238.26351707661826
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-23",
+          "type": "polygon",
+          "points": [
+            [
+              183.08,
+              177.3819311905722
+            ],
+            [
+              181.24,
+              190.54551732809568
+            ],
+            [
+              177.56,
+              190.54551732809568
+            ],
+            [
+              175.72,
+              177.3819311905722
+            ],
+            [
+              177.56,
+              164.21834505304875
+            ],
+            [
+              181.24,
+              164.21834505304872
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-24",
+          "type": "polygon",
+          "points": [
+            [
+              183.08,
+              207
+            ],
+            [
+              181.24,
+              220.16358613752345
+            ],
+            [
+              177.56,
+              220.16358613752348
+            ],
+            [
+              175.72,
+              207
+            ],
+            [
+              177.56,
+              193.83641386247655
+            ],
+            [
+              181.24,
+              193.83641386247655
+            ]
+          ],
+          "fill": "#d1ad64",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-25",
+          "type": "polygon",
+          "points": [
+            [
+              183.08,
+              236.6180688094278
+            ],
+            [
+              181.24,
+              249.78165494695128
+            ],
+            [
+              177.56,
+              249.78165494695128
+            ],
+            [
+              175.72,
+              236.6180688094278
+            ],
+            [
+              177.56,
+              223.45448267190434
+            ],
+            [
+              181.24,
+              223.45448267190432
+            ]
+          ],
+          "fill": "#e6c98a",
+          "stroke": "#8b7449",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-26",
+          "type": "polygon",
+          "points": [
+            [
+              87,
+              310
+            ],
+            [
+              109,
+              310
+            ],
+            [
+              100,
+              339
+            ]
+          ],
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-27",
+          "type": "polygon",
+          "points": [
+            [
+              166,
+              310
+            ],
+            [
+              188,
+              310
+            ],
+            [
+              176,
+              339
+            ]
+          ],
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-28",
+          "type": "text",
+          "text": "LAUNCH • 25 DEC 2021",
+          "x": 0,
+          "y": 355,
+          "width": 338,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "deployment-29",
+          "type": "text",
+          "text": "Fold the mirror and shield\ninside the launch envelope.",
+          "x": 0,
+          "y": 387,
+          "width": 335,
+          "fontSize": 23,
+          "fill": "$ink",
+          "weight": "regular"
+        },
+        {
+          "id": "deployment-30",
+          "type": "polygon",
+          "points": [
+            [
+              437.7,
+              270
+            ],
+            [
+              563.54,
+              230
+            ],
+            [
+              752.3,
+              265.2
+            ],
+            [
+              645.336,
+              310
+            ]
+          ],
+          "fill": "#805f79",
+          "stroke": "#c0d0d1",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-31",
+          "type": "line",
+          "x": 437.7,
+          "y": 270,
+          "x2": 752.3,
+          "y2": 265.2,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "deployment-32",
+          "type": "line",
+          "x": 563.54,
+          "y": 230,
+          "x2": 645.336,
+          "y2": 310,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "deployment-33",
+          "type": "polygon",
+          "points": [
+            [
+              441.275,
+              261
+            ],
+            [
+              564.255,
+              221
+            ],
+            [
+              748.725,
+              256.2
+            ],
+            [
+              644.192,
+              301
+            ]
+          ],
+          "fill": "#696c86",
+          "stroke": "#c0d0d1",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-34",
+          "type": "line",
+          "x": 441.275,
+          "y": 261,
+          "x2": 748.725,
+          "y2": 256.2,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "deployment-35",
+          "type": "line",
+          "x": 564.255,
+          "y": 221,
+          "x2": 644.192,
+          "y2": 301,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "deployment-36",
+          "type": "polygon",
+          "points": [
+            [
+              444.85,
+              252
+            ],
+            [
+              564.97,
+              212
+            ],
+            [
+              745.15,
+              247.2
+            ],
+            [
+              643.048,
+              292
+            ]
+          ],
+          "fill": "#627f92",
+          "stroke": "#c0d0d1",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-37",
+          "type": "line",
+          "x": 444.85,
+          "y": 252,
+          "x2": 745.15,
+          "y2": 247.2,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "deployment-38",
+          "type": "line",
+          "x": 564.97,
+          "y": 212,
+          "x2": 643.048,
+          "y2": 292,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "deployment-39",
+          "type": "polygon",
+          "points": [
+            [
+              448.425,
+              243
+            ],
+            [
+              565.685,
+              203
+            ],
+            [
+              741.575,
+              238.2
+            ],
+            [
+              641.904,
+              283
+            ]
+          ],
+          "fill": "#7a9caa",
+          "stroke": "#c0d0d1",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-40",
+          "type": "line",
+          "x": 448.425,
+          "y": 243,
+          "x2": 741.575,
+          "y2": 238.2,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "deployment-41",
+          "type": "line",
+          "x": 565.685,
+          "y": 203,
+          "x2": 641.904,
+          "y2": 283,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "deployment-42",
+          "type": "polygon",
+          "points": [
+            [
+              452,
+              234
+            ],
+            [
+              566.4,
+              194
+            ],
+            [
+              738,
+              229.2
+            ],
+            [
+              640.76,
+              274
+            ]
+          ],
+          "fill": "#97b7c0",
+          "stroke": "#c0d0d1",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "deployment-43",
+          "type": "line",
+          "x": 452,
+          "y": 234,
+          "x2": 738,
+          "y2": 229.2,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "deployment-44",
+          "type": "line",
+          "x": 566.4,
+          "y": 194,
+          "x2": 640.76,
+          "y2": 274,
+          "stroke": "#c0d0d1",
+          "strokeWidth": 0.8,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "deployment-45",
+          "type": "line",
+          "x": 595,
+          "y": 230,
+          "x2": 595,
+          "y2": 140,
+          "stroke": "$muted",
+          "strokeWidth": 7,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "deployment-46",
+          "type": "text",
+          "text": "FIRST TWO WEEKS",
+          "x": 450,
+          "y": 355,
+          "width": 338,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "deployment-47",
+          "type": "text",
+          "text": "Extend and tension the shield;\nopen the secondary and wings.",
+          "x": 450,
+          "y": 387,
+          "width": 375,
+          "fontSize": 23,
+          "fill": "$ink",
+          "weight": "regular"
+        },
+        {
+          "id": "deployment-48",
+          "type": "ellipse",
+          "x": 986,
+          "y": 187,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-49",
+          "type": "ellipse",
+          "x": 986,
+          "y": 187,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-50",
+          "type": "ellipse",
+          "x": 986,
+          "y": 216,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-51",
+          "type": "ellipse",
+          "x": 986,
+          "y": 216,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-52",
+          "type": "ellipse",
+          "x": 986,
+          "y": 245,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-53",
+          "type": "ellipse",
+          "x": 986,
+          "y": 245,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-54",
+          "type": "ellipse",
+          "x": 1015,
+          "y": 172.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-55",
+          "type": "ellipse",
+          "x": 1015,
+          "y": 172.5,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-56",
+          "type": "ellipse",
+          "x": 1015,
+          "y": 201.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-57",
+          "type": "ellipse",
+          "x": 1015,
+          "y": 201.5,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-58",
+          "type": "ellipse",
+          "x": 1015,
+          "y": 230.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-59",
+          "type": "ellipse",
+          "x": 1015,
+          "y": 230.5,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-60",
+          "type": "ellipse",
+          "x": 1015,
+          "y": 259.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-61",
+          "type": "ellipse",
+          "x": 1015,
+          "y": 259.5,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-62",
+          "type": "ellipse",
+          "x": 1044,
+          "y": 158,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-63",
+          "type": "ellipse",
+          "x": 1044,
+          "y": 158,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-64",
+          "type": "ellipse",
+          "x": 1044,
+          "y": 187,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-65",
+          "type": "ellipse",
+          "x": 1044,
+          "y": 187,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-66",
+          "type": "ellipse",
+          "x": 1044,
+          "y": 245,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-67",
+          "type": "ellipse",
+          "x": 1044,
+          "y": 245,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-68",
+          "type": "ellipse",
+          "x": 1044,
+          "y": 274,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-69",
+          "type": "ellipse",
+          "x": 1044,
+          "y": 274,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-70",
+          "type": "ellipse",
+          "x": 1073,
+          "y": 172.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-71",
+          "type": "ellipse",
+          "x": 1073,
+          "y": 172.5,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-72",
+          "type": "ellipse",
+          "x": 1073,
+          "y": 201.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-73",
+          "type": "ellipse",
+          "x": 1073,
+          "y": 201.5,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-74",
+          "type": "ellipse",
+          "x": 1073,
+          "y": 230.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-75",
+          "type": "ellipse",
+          "x": 1073,
+          "y": 230.5,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-76",
+          "type": "ellipse",
+          "x": 1073,
+          "y": 259.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-77",
+          "type": "ellipse",
+          "x": 1073,
+          "y": 259.5,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-78",
+          "type": "ellipse",
+          "x": 1102,
+          "y": 187,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-79",
+          "type": "ellipse",
+          "x": 1102,
+          "y": 187,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-80",
+          "type": "ellipse",
+          "x": 1102,
+          "y": 216,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-81",
+          "type": "ellipse",
+          "x": 1102,
+          "y": 216,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-82",
+          "type": "ellipse",
+          "x": 1102,
+          "y": 245,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-83",
+          "type": "ellipse",
+          "x": 1102,
+          "y": 245,
+          "rx": 10,
+          "ry": 10,
+          "fill": "none",
+          "stroke": "#6c6a57",
+          "strokeWidth": 1
+        },
+        {
+          "id": "deployment-84",
+          "type": "text",
+          "text": "COMMISSIONING",
+          "x": 900,
+          "y": 355,
+          "width": 338,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "deployment-85",
+          "type": "text",
+          "text": "Align the segment images\nand phase the primary mirror.",
+          "x": 900,
+          "y": 387,
+          "width": 375,
+          "fontSize": 23,
+          "fill": "$ink",
+          "weight": "regular"
+        },
+        {
+          "id": "deployment-86",
+          "type": "ellipse",
+          "x": 1502,
+          "y": 216,
+          "rx": 72,
+          "ry": 72,
+          "fill": "none",
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-87",
+          "type": "ellipse",
+          "x": 1502,
+          "y": 216,
+          "rx": 48,
+          "ry": 48,
+          "fill": "none",
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-88",
+          "type": "ellipse",
+          "x": 1502,
+          "y": 216,
+          "rx": 26,
+          "ry": 26,
+          "fill": "none",
+          "stroke": "$warm",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-89",
+          "type": "ellipse",
+          "x": 1502,
+          "y": 216,
+          "rx": 11,
+          "ry": 11,
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-90",
+          "type": "line",
+          "x": 1502,
+          "y": 123,
+          "x2": 1502,
+          "y2": 180,
+          "stroke": "$warm",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-91",
+          "type": "line",
+          "x": 1502,
+          "y": 252,
+          "x2": 1502,
+          "y2": 309,
+          "stroke": "$warm",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-92",
+          "type": "line",
+          "x": 1409,
+          "y": 216,
+          "x2": 1466,
+          "y2": 216,
+          "stroke": "$warm",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-93",
+          "type": "line",
+          "x": 1538,
+          "y": 216,
+          "x2": 1595,
+          "y2": 216,
+          "stroke": "$warm",
+          "strokeWidth": 2
+        },
+        {
+          "id": "deployment-94",
+          "type": "text",
+          "text": "SCIENCE • JULY 2022",
+          "x": 1350,
+          "y": 355,
+          "width": 346,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "deployment-95",
+          "type": "text",
+          "text": "One aligned aperture\nfeeds the science instruments.",
+          "x": 1350,
+          "y": 387,
+          "width": 346,
+          "fontSize": 23,
+          "fill": "$ink",
+          "weight": "regular"
+        }
+      ]
+    }
+  ],
+  "footer": "Sources: NASA / Webb • Original vector schematics, not to scale • Thermal section and star images are conceptual, not measured data"
+}

@@ -1,0 +1,1330 @@
+{
+  "version": 1,
+  "title": "LIGO: turning a change in space into light",
+  "subtitle": "Two long optical cavities amplify a tiny differential effect; interference makes the change observable.",
+  "description": "Two long optical cavities amplify a tiny differential effect; interference makes the change observable.",
+  "eyebrow": "FIELD ATLAS    /    06 — PRECISION MEASUREMENT",
+  "width": 1800,
+  "height": 1680,
+  "theme": "paper",
+  "sources": [
+    {
+      "title": "LIGO Lab — What is an Interferometer?",
+      "url": "https://www.ligo.caltech.edu/MIT/page/what-is-interferometer"
+    },
+    {
+      "title": "LIGO Lab — LIGO’s Interferometer",
+      "url": "https://www.ligo.caltech.edu/WA/page/ligos-ifo"
+    },
+    {
+      "title": "LIGO Lab — What is LIGO?",
+      "url": "https://www.ligo.caltech.edu/page/what-is-ligo"
+    }
+  ],
+  "panels": [
+    {
+      "id": "optical-core",
+      "x": 52,
+      "y": 182,
+      "width": 1030,
+      "height": 869,
+      "framed": false,
+      "elements": [
+        {
+          "id": "optical-core-1",
+          "type": "text",
+          "text": "01",
+          "x": 0,
+          "y": 5,
+          "width": 40,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "optical-core-2",
+          "type": "text",
+          "text": "Follow the light",
+          "x": 58,
+          "y": 0,
+          "width": 972,
+          "fontSize": 28,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "optical-core-3",
+          "type": "text",
+          "text": "A Michelson layout with two perpendicular Fabry–Pérot arm cavities.",
+          "x": 0,
+          "y": 45,
+          "width": 1030,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "optical-core-4",
+          "type": "rect",
+          "x": 321,
+          "y": 158,
+          "width": 86,
+          "height": 486,
+          "fill": "#e5ebe6",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "rx": 27
+        },
+        {
+          "id": "optical-core-5",
+          "type": "rect",
+          "x": 320,
+          "y": 574,
+          "width": 690,
+          "height": 76,
+          "fill": "#e5ebe6",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "rx": 27
+        },
+        {
+          "id": "optical-core-6",
+          "type": "rect",
+          "x": 322,
+          "y": 641,
+          "width": 84,
+          "height": 163,
+          "fill": "#e5ebe6",
+          "stroke": "none",
+          "strokeWidth": 1.5,
+          "rx": 20
+        },
+        {
+          "id": "optical-core-7",
+          "type": "rect",
+          "x": 13,
+          "y": 574,
+          "width": 171,
+          "height": 58,
+          "fill": "#e2e8e5",
+          "stroke": "$muted",
+          "strokeWidth": 1.5,
+          "rx": 9
+        },
+        {
+          "id": "optical-core-8",
+          "type": "text",
+          "text": "LASER",
+          "x": 37,
+          "y": 589,
+          "width": 122,
+          "fontSize": 23,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "optical-core-9",
+          "type": "arrow",
+          "x": 190,
+          "y": 602,
+          "x2": 326,
+          "y2": 602,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "optical-core-10",
+          "type": "line",
+          "x": 351,
+          "y": 602,
+          "x2": 351,
+          "y2": 185,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "optical-core-11",
+          "type": "line",
+          "x": 372,
+          "y": 185,
+          "x2": 372,
+          "y2": 602,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "optical-core-12",
+          "type": "arrow",
+          "x": 351,
+          "y": 389,
+          "x2": 351,
+          "y2": 319,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "optical-core-13",
+          "type": "arrow",
+          "x": 372,
+          "y": 305,
+          "x2": 372,
+          "y2": 375,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "optical-core-14",
+          "type": "line",
+          "x": 374,
+          "y": 602,
+          "x2": 975,
+          "y2": 602,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "optical-core-15",
+          "type": "line",
+          "x": 975,
+          "y": 623,
+          "x2": 372,
+          "y2": 623,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "optical-core-16",
+          "type": "arrow",
+          "x": 605,
+          "y": 602,
+          "x2": 675,
+          "y2": 602,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "optical-core-17",
+          "type": "arrow",
+          "x": 838,
+          "y": 623,
+          "x2": 768,
+          "y2": 623,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "optical-core-18",
+          "type": "line",
+          "x": 372,
+          "y": 623,
+          "x2": 372,
+          "y2": 775,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "optical-core-19",
+          "type": "arrow",
+          "x": 372,
+          "y": 688,
+          "x2": 372,
+          "y2": 744,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "optical-core-20",
+          "type": "rect",
+          "x": 309,
+          "y": 173,
+          "width": 111,
+          "height": 12,
+          "fill": "#a9c4c9",
+          "stroke": "$secondary",
+          "strokeWidth": 1.5,
+          "rx": 2
+        },
+        {
+          "id": "optical-core-21",
+          "type": "rect",
+          "x": 317,
+          "y": 447,
+          "width": 90,
+          "height": 10,
+          "fill": "#a9c4c9",
+          "stroke": "$secondary",
+          "strokeWidth": 1.5,
+          "rx": 2
+        },
+        {
+          "id": "optical-core-22",
+          "type": "rect",
+          "x": 476,
+          "y": 570,
+          "width": 10,
+          "height": 84,
+          "fill": "#a9c4c9",
+          "stroke": "$secondary",
+          "strokeWidth": 1.5,
+          "rx": 2
+        },
+        {
+          "id": "optical-core-23",
+          "type": "rect",
+          "x": 975,
+          "y": 557,
+          "width": 12,
+          "height": 110,
+          "fill": "#a9c4c9",
+          "stroke": "$secondary",
+          "strokeWidth": 1.5,
+          "rx": 2
+        },
+        {
+          "id": "optical-core-24",
+          "type": "line",
+          "x": 329,
+          "y": 572,
+          "x2": 397,
+          "y2": 640,
+          "stroke": "$secondary",
+          "strokeWidth": 9,
+          "geometryRole": "illustration"
+        },
+        {
+          "id": "optical-core-25",
+          "type": "rect",
+          "x": 300,
+          "y": 779,
+          "width": 145,
+          "height": 62,
+          "fill": "#e2e8e5",
+          "stroke": "$secondary",
+          "strokeWidth": 1.5,
+          "rx": 8
+        },
+        {
+          "id": "optical-core-26",
+          "type": "ellipse",
+          "x": 372,
+          "y": 810,
+          "rx": 16,
+          "ry": 16,
+          "fill": "#aac9cf",
+          "stroke": "$secondary",
+          "strokeWidth": 2
+        },
+        {
+          "id": "optical-core-27",
+          "type": "text",
+          "text": "END MIRROR",
+          "x": 278,
+          "y": 125,
+          "width": 240,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "optical-core-28",
+          "type": "line",
+          "x": 263,
+          "y": 187,
+          "x2": 263,
+          "y2": 446,
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "optical-core-29",
+          "type": "line",
+          "x": 253,
+          "y": 187,
+          "x2": 273,
+          "y2": 187,
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "optical-core-30",
+          "type": "line",
+          "x": 253,
+          "y": 446,
+          "x2": 273,
+          "y2": 446,
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "optical-core-31",
+          "type": "text",
+          "text": "4 km",
+          "x": 151,
+          "y": 303,
+          "width": 100,
+          "fontSize": 30,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "optical-core-32",
+          "type": "line",
+          "x": 487,
+          "y": 539,
+          "x2": 972,
+          "y2": 539,
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "optical-core-33",
+          "type": "line",
+          "x": 487,
+          "y": 529,
+          "x2": 487,
+          "y2": 549,
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "optical-core-34",
+          "type": "line",
+          "x": 972,
+          "y": 529,
+          "x2": 972,
+          "y2": 549,
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "optical-core-35",
+          "type": "text",
+          "text": "4 km",
+          "x": 687,
+          "y": 488,
+          "width": 180,
+          "fontSize": 30,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "optical-core-36",
+          "type": "text",
+          "text": "INPUT MIRRORS",
+          "x": 454,
+          "y": 435,
+          "width": 330,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "optical-core-37",
+          "type": "path",
+          "d": "M427 452 H443 M481 462 V558",
+          "fill": "none",
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "optical-core-38",
+          "type": "text",
+          "text": "Light makes repeated trips",
+          "x": 498,
+          "y": 189,
+          "width": 495,
+          "fontSize": 28,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "optical-core-39",
+          "type": "text",
+          "text": "Each input mirror and end mirror form a cavity, increasing the light’s interaction with a changing arm length.",
+          "x": 498,
+          "y": 244,
+          "width": 495,
+          "fontSize": 24,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "optical-core-40",
+          "type": "text",
+          "text": "END MIRROR",
+          "x": 821,
+          "y": 691,
+          "width": 208,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "optical-core-41",
+          "type": "line",
+          "x": 980,
+          "y": 674,
+          "x2": 980,
+          "y2": 684,
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "optical-core-42",
+          "type": "text",
+          "text": "Beam splitter",
+          "x": 15,
+          "y": 700,
+          "width": 258,
+          "fontSize": 25,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "optical-core-43",
+          "type": "path",
+          "d": "M261 712 H296 V650 L337 628",
+          "fill": "none",
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "optical-core-44",
+          "type": "text",
+          "text": "Split, then recombine",
+          "x": 15,
+          "y": 743,
+          "width": 250,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "optical-core-45",
+          "type": "text",
+          "text": "Photodetector",
+          "x": 481,
+          "y": 777,
+          "width": 474,
+          "fontSize": 26,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "optical-core-46",
+          "type": "text",
+          "text": "Read the interference signal",
+          "x": 481,
+          "y": 821,
+          "width": 513,
+          "fontSize": 22,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "optical-core-47",
+          "type": "line",
+          "x": 451,
+          "y": 810,
+          "x2": 469,
+          "y2": 810,
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        }
+      ]
+    },
+    {
+      "id": "differential-strain",
+      "x": 1150,
+      "y": 182,
+      "width": 598,
+      "height": 869,
+      "framed": false,
+      "elements": [
+        {
+          "id": "differential-strain-1",
+          "type": "text",
+          "text": "02",
+          "x": 0,
+          "y": 5,
+          "width": 40,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "differential-strain-2",
+          "type": "text",
+          "text": "Space changes the paths",
+          "x": 58,
+          "y": 0,
+          "width": 540,
+          "fontSize": 28,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "differential-strain-3",
+          "type": "text",
+          "text": "A conceptual ring of freely falling test particles, viewed along the wave.",
+          "x": 0,
+          "y": 45,
+          "width": 598,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "differential-strain-4",
+          "type": "ellipse",
+          "x": 110,
+          "y": 231,
+          "rx": 66,
+          "ry": 66,
+          "fill": "none",
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "differential-strain-5",
+          "type": "ellipse",
+          "x": 110,
+          "y": 231,
+          "rx": 66,
+          "ry": 66,
+          "fill": "none",
+          "stroke": "$secondary",
+          "strokeWidth": 2.5
+        },
+        {
+          "id": "differential-strain-6",
+          "type": "ellipse",
+          "x": 176,
+          "y": 231,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-7",
+          "type": "ellipse",
+          "x": 167.15767664977295,
+          "y": 264,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-8",
+          "type": "ellipse",
+          "x": 143,
+          "y": 288.15767664977295,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-9",
+          "type": "ellipse",
+          "x": 110,
+          "y": 297,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-10",
+          "type": "ellipse",
+          "x": 77.00000000000001,
+          "y": 288.15767664977295,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-11",
+          "type": "ellipse",
+          "x": 52.84232335022705,
+          "y": 264,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-12",
+          "type": "ellipse",
+          "x": 44,
+          "y": 231,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-13",
+          "type": "ellipse",
+          "x": 52.84232335022704,
+          "y": 198.00000000000003,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-14",
+          "type": "ellipse",
+          "x": 76.99999999999997,
+          "y": 173.84232335022705,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-15",
+          "type": "ellipse",
+          "x": 109.99999999999999,
+          "y": 165,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-16",
+          "type": "ellipse",
+          "x": 143,
+          "y": 173.84232335022705,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-17",
+          "type": "ellipse",
+          "x": 167.15767664977292,
+          "y": 197.99999999999997,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-18",
+          "type": "text",
+          "text": "REFERENCE",
+          "x": 246,
+          "y": 174,
+          "width": 346,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "differential-strain-19",
+          "type": "text",
+          "text": "No deformation",
+          "x": 246,
+          "y": 210,
+          "width": 346,
+          "fontSize": 27,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "differential-strain-20",
+          "type": "text",
+          "text": "The two axes have the same reference length.",
+          "x": 246,
+          "y": 255,
+          "width": 346,
+          "fontSize": 22,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "differential-strain-21",
+          "type": "ellipse",
+          "x": 110,
+          "y": 418,
+          "rx": 66,
+          "ry": 66,
+          "fill": "none",
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "differential-strain-22",
+          "type": "ellipse",
+          "x": 110,
+          "y": 418,
+          "rx": 91,
+          "ry": 48,
+          "fill": "none",
+          "stroke": "$secondary",
+          "strokeWidth": 2.5
+        },
+        {
+          "id": "differential-strain-23",
+          "type": "ellipse",
+          "x": 201,
+          "y": 418,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-24",
+          "type": "ellipse",
+          "x": 188.80831174438393,
+          "y": 442,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-25",
+          "type": "ellipse",
+          "x": 155.5,
+          "y": 459.56921938165306,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-26",
+          "type": "ellipse",
+          "x": 110,
+          "y": 466,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-27",
+          "type": "ellipse",
+          "x": 64.50000000000003,
+          "y": 459.56921938165306,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-28",
+          "type": "ellipse",
+          "x": 31.19168825561607,
+          "y": 442,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-29",
+          "type": "ellipse",
+          "x": 19,
+          "y": 418,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-30",
+          "type": "ellipse",
+          "x": 31.19168825561607,
+          "y": 394,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-31",
+          "type": "ellipse",
+          "x": 64.49999999999996,
+          "y": 376.43078061834694,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-32",
+          "type": "ellipse",
+          "x": 109.99999999999999,
+          "y": 370,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-33",
+          "type": "ellipse",
+          "x": 155.5,
+          "y": 376.43078061834694,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-34",
+          "type": "ellipse",
+          "x": 188.8083117443839,
+          "y": 394,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-35",
+          "type": "text",
+          "text": "ONE PHASE",
+          "x": 246,
+          "y": 364,
+          "width": 346,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "differential-strain-36",
+          "type": "text",
+          "text": "Stretch x, compress y",
+          "x": 246,
+          "y": 400,
+          "width": 346,
+          "fontSize": 26,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "differential-strain-37",
+          "type": "text",
+          "text": "Perpendicular optical paths change differently.",
+          "x": 246,
+          "y": 447,
+          "width": 346,
+          "fontSize": 22,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "differential-strain-38",
+          "type": "ellipse",
+          "x": 110,
+          "y": 606,
+          "rx": 66,
+          "ry": 66,
+          "fill": "none",
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "differential-strain-39",
+          "type": "ellipse",
+          "x": 110,
+          "y": 606,
+          "rx": 48,
+          "ry": 91,
+          "fill": "none",
+          "stroke": "$secondary",
+          "strokeWidth": 2.5
+        },
+        {
+          "id": "differential-strain-40",
+          "type": "ellipse",
+          "x": 158,
+          "y": 606,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-41",
+          "type": "ellipse",
+          "x": 151.56921938165306,
+          "y": 651.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-42",
+          "type": "ellipse",
+          "x": 134,
+          "y": 684.8083117443839,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-43",
+          "type": "ellipse",
+          "x": 110,
+          "y": 697,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-44",
+          "type": "ellipse",
+          "x": 86.00000000000001,
+          "y": 684.8083117443839,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-45",
+          "type": "ellipse",
+          "x": 68.43078061834694,
+          "y": 651.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-46",
+          "type": "ellipse",
+          "x": 62,
+          "y": 606,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-47",
+          "type": "ellipse",
+          "x": 68.43078061834694,
+          "y": 560.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-48",
+          "type": "ellipse",
+          "x": 85.99999999999997,
+          "y": 527.1916882556161,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-49",
+          "type": "ellipse",
+          "x": 109.99999999999999,
+          "y": 515,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-50",
+          "type": "ellipse",
+          "x": 134,
+          "y": 527.1916882556161,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-51",
+          "type": "ellipse",
+          "x": 151.56921938165306,
+          "y": 560.5,
+          "rx": 5,
+          "ry": 5,
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-52",
+          "type": "text",
+          "text": "HALF A CYCLE LATER",
+          "x": 246,
+          "y": 556,
+          "width": 346,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "differential-strain-53",
+          "type": "text",
+          "text": "Compress x, stretch y",
+          "x": 246,
+          "y": 592,
+          "width": 346,
+          "fontSize": 26,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "differential-strain-54",
+          "type": "text",
+          "text": "The sign of the differential change reverses.",
+          "x": 246,
+          "y": 639,
+          "width": 346,
+          "fontSize": 22,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "differential-strain-55",
+          "type": "line",
+          "x": 0,
+          "y": 745,
+          "x2": 598,
+          "y2": 745,
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "differential-strain-56",
+          "type": "text",
+          "text": "Plus polarization shown. Deformation is greatly exaggerated; the faint reference is the original circle.",
+          "x": 0,
+          "y": 773,
+          "width": 598,
+          "fontSize": 23,
+          "fill": "$muted",
+          "weight": "regular"
+        }
+      ]
+    },
+    {
+      "id": "phase-readout",
+      "x": 52,
+      "y": 1130,
+      "width": 1696,
+      "height": 459,
+      "framed": false,
+      "elements": [
+        {
+          "id": "phase-readout-1",
+          "type": "text",
+          "text": "03",
+          "x": 0,
+          "y": 5,
+          "width": 40,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "phase-readout-2",
+          "type": "text",
+          "text": "Compare optical phase, not a ruler reading",
+          "x": 58,
+          "y": 0,
+          "width": 1638,
+          "fontSize": 28,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "phase-readout-3",
+          "type": "text",
+          "text": "Returning electric fields combine. A relative phase change alters the light reaching the output.",
+          "x": 0,
+          "y": 45,
+          "width": 1696,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "phase-readout-4",
+          "type": "text",
+          "text": "IDEAL DESTRUCTIVE INTERFERENCE",
+          "x": 0,
+          "y": 118,
+          "width": 680,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "phase-readout-5",
+          "type": "path",
+          "d": "M15.00 225.00 L18.17 230.29 L21.33 235.47 L24.50 240.46 L27.67 245.14 L30.83 249.43 L34.00 253.24 L37.17 256.50 L40.33 259.15 L43.50 261.14 L46.67 262.42 L49.83 262.98 L53.00 262.79 L56.17 261.87 L59.33 260.23 L62.50 257.91 L65.67 254.94 L68.83 251.40 L72.00 247.34 L75.17 242.84 L78.33 238.00 L81.50 232.90 L84.67 227.65 L87.83 222.35 L91.00 217.10 L94.17 212.00 L97.33 207.16 L100.50 202.66 L103.67 198.60 L106.83 195.06 L110.00 192.09 L113.17 189.77 L116.33 188.13 L119.50 187.21 L122.67 187.02 L125.83 187.58 L129.00 188.86 L132.17 190.85 L135.33 193.50 L138.50 196.76 L141.67 200.57 L144.83 204.86 L148.00 209.54 L151.17 214.53 L154.33 219.71 L157.50 225.00 L160.67 230.29 L163.83 235.47 L167.00 240.46 L170.17 245.14 L173.33 249.43 L176.50 253.24 L179.67 256.50 L182.83 259.15 L186.00 261.14 L189.17 262.42 L192.33 262.98 L195.50 262.79 L198.67 261.87 L201.83 260.23 L205.00 257.91 L208.17 254.94 L211.33 251.40 L214.50 247.34 L217.67 242.84 L220.83 238.00 L224.00 232.90 L227.17 227.65 L230.33 222.35 L233.50 217.10 L236.67 212.00 L239.83 207.16 L243.00 202.66 L246.17 198.60 L249.33 195.06 L252.50 192.09 L255.67 189.77 L258.83 188.13 L262.00 187.21 L265.17 187.02 L268.33 187.58 L271.50 188.86 L274.67 190.85 L277.83 193.50 L281.00 196.76 L284.17 200.57 L287.33 204.86 L290.50 209.54 L293.67 214.53 L296.83 219.71 L300.00 225.00 L303.17 230.29 L306.33 235.47 L309.50 240.46 L312.67 245.14 L315.83 249.43 L319.00 253.24 L322.17 256.50 L325.33 259.15 L328.50 261.14 L331.67 262.42 L334.83 262.98 L338.00 262.79 L341.17 261.87 L344.33 260.23 L347.50 257.91 L350.67 254.94 L353.83 251.40 L357.00 247.34 L360.17 242.84 L363.33 238.00 L366.50 232.90 L369.67 227.65 L372.83 222.35 L376.00 217.10 L379.17 212.00 L382.33 207.16 L385.50 202.66 L388.67 198.60 L391.83 195.06 L395.00 192.09 L398.17 189.77 L401.33 188.13 L404.50 187.21 L407.67 187.02 L410.83 187.58 L414.00 188.86 L417.17 190.85 L420.33 193.50 L423.50 196.76 L426.67 200.57 L429.83 204.86 L433.00 209.54 L436.17 214.53 L439.33 219.71 L442.50 225.00 L445.67 230.29 L448.83 235.47 L452.00 240.46 L455.17 245.14 L458.33 249.43 L461.50 253.24 L464.67 256.50 L467.83 259.15 L471.00 261.14 L474.17 262.42 L477.33 262.98 L480.50 262.79 L483.67 261.87 L486.83 260.23 L490.00 257.91 L493.17 254.94 L496.33 251.40 L499.50 247.34 L502.67 242.84 L505.83 238.00 L509.00 232.90 L512.17 227.65 L515.33 222.35 L518.50 217.10 L521.67 212.00 L524.83 207.16 L528.00 202.66 L531.17 198.60 L534.33 195.06 L537.50 192.09 L540.67 189.77 L543.83 188.13 L547.00 187.21 L550.17 187.02 L553.33 187.58 L556.50 188.86 L559.67 190.85 L562.83 193.50 L566.00 196.76 L569.17 200.57 L572.33 204.86 L575.50 209.54 L578.67 214.53 L581.83 219.71 L585.00 225.00",
+          "fill": "none",
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "phase-readout-6",
+          "type": "path",
+          "d": "M15.00 225.00 L18.17 219.71 L21.33 214.53 L24.50 209.54 L27.67 204.86 L30.83 200.57 L34.00 196.76 L37.17 193.50 L40.33 190.85 L43.50 188.86 L46.67 187.58 L49.83 187.02 L53.00 187.21 L56.17 188.13 L59.33 189.77 L62.50 192.09 L65.67 195.06 L68.83 198.60 L72.00 202.66 L75.17 207.16 L78.33 212.00 L81.50 217.10 L84.67 222.35 L87.83 227.65 L91.00 232.90 L94.17 238.00 L97.33 242.84 L100.50 247.34 L103.67 251.40 L106.83 254.94 L110.00 257.91 L113.17 260.23 L116.33 261.87 L119.50 262.79 L122.67 262.98 L125.83 262.42 L129.00 261.14 L132.17 259.15 L135.33 256.50 L138.50 253.24 L141.67 249.43 L144.83 245.14 L148.00 240.46 L151.17 235.47 L154.33 230.29 L157.50 225.00 L160.67 219.71 L163.83 214.53 L167.00 209.54 L170.17 204.86 L173.33 200.57 L176.50 196.76 L179.67 193.50 L182.83 190.85 L186.00 188.86 L189.17 187.58 L192.33 187.02 L195.50 187.21 L198.67 188.13 L201.83 189.77 L205.00 192.09 L208.17 195.06 L211.33 198.60 L214.50 202.66 L217.67 207.16 L220.83 212.00 L224.00 217.10 L227.17 222.35 L230.33 227.65 L233.50 232.90 L236.67 238.00 L239.83 242.84 L243.00 247.34 L246.17 251.40 L249.33 254.94 L252.50 257.91 L255.67 260.23 L258.83 261.87 L262.00 262.79 L265.17 262.98 L268.33 262.42 L271.50 261.14 L274.67 259.15 L277.83 256.50 L281.00 253.24 L284.17 249.43 L287.33 245.14 L290.50 240.46 L293.67 235.47 L296.83 230.29 L300.00 225.00 L303.17 219.71 L306.33 214.53 L309.50 209.54 L312.67 204.86 L315.83 200.57 L319.00 196.76 L322.17 193.50 L325.33 190.85 L328.50 188.86 L331.67 187.58 L334.83 187.02 L338.00 187.21 L341.17 188.13 L344.33 189.77 L347.50 192.09 L350.67 195.06 L353.83 198.60 L357.00 202.66 L360.17 207.16 L363.33 212.00 L366.50 217.10 L369.67 222.35 L372.83 227.65 L376.00 232.90 L379.17 238.00 L382.33 242.84 L385.50 247.34 L388.67 251.40 L391.83 254.94 L395.00 257.91 L398.17 260.23 L401.33 261.87 L404.50 262.79 L407.67 262.98 L410.83 262.42 L414.00 261.14 L417.17 259.15 L420.33 256.50 L423.50 253.24 L426.67 249.43 L429.83 245.14 L433.00 240.46 L436.17 235.47 L439.33 230.29 L442.50 225.00 L445.67 219.71 L448.83 214.53 L452.00 209.54 L455.17 204.86 L458.33 200.57 L461.50 196.76 L464.67 193.50 L467.83 190.85 L471.00 188.86 L474.17 187.58 L477.33 187.02 L480.50 187.21 L483.67 188.13 L486.83 189.77 L490.00 192.09 L493.17 195.06 L496.33 198.60 L499.50 202.66 L502.67 207.16 L505.83 212.00 L509.00 217.10 L512.17 222.35 L515.33 227.65 L518.50 232.90 L521.67 238.00 L524.83 242.84 L528.00 247.34 L531.17 251.40 L534.33 254.94 L537.50 257.91 L540.67 260.23 L543.83 261.87 L547.00 262.79 L550.17 262.98 L553.33 262.42 L556.50 261.14 L559.67 259.15 L562.83 256.50 L566.00 253.24 L569.17 249.43 L572.33 245.14 L575.50 240.46 L578.67 235.47 L581.83 230.29 L585.00 225.00",
+          "fill": "none",
+          "stroke": "$accent",
+          "strokeWidth": 3,
+          "dash": [
+            7,
+            5
+          ]
+        },
+        {
+          "id": "phase-readout-7",
+          "type": "line",
+          "x": 15,
+          "y": 338,
+          "x2": 585,
+          "y2": 338,
+          "stroke": "$warm",
+          "strokeWidth": 4
+        },
+        {
+          "id": "phase-readout-8",
+          "type": "text",
+          "text": "Opposite fields cancel at the dark output.",
+          "x": 0,
+          "y": 389,
+          "width": 680,
+          "fontSize": 23,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "phase-readout-9",
+          "type": "text",
+          "text": "WITH A SMALL PHASE DIFFERENCE",
+          "x": 802,
+          "y": 118,
+          "width": 830,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "phase-readout-10",
+          "type": "path",
+          "d": "M817.00 225.00 L820.17 230.29 L823.33 235.47 L826.50 240.46 L829.67 245.14 L832.83 249.43 L836.00 253.24 L839.17 256.50 L842.33 259.15 L845.50 261.14 L848.67 262.42 L851.83 262.98 L855.00 262.79 L858.17 261.87 L861.33 260.23 L864.50 257.91 L867.67 254.94 L870.83 251.40 L874.00 247.34 L877.17 242.84 L880.33 238.00 L883.50 232.90 L886.67 227.65 L889.83 222.35 L893.00 217.10 L896.17 212.00 L899.33 207.16 L902.50 202.66 L905.67 198.60 L908.83 195.06 L912.00 192.09 L915.17 189.77 L918.33 188.13 L921.50 187.21 L924.67 187.02 L927.83 187.58 L931.00 188.86 L934.17 190.85 L937.33 193.50 L940.50 196.76 L943.67 200.57 L946.83 204.86 L950.00 209.54 L953.17 214.53 L956.33 219.71 L959.50 225.00 L962.67 230.29 L965.83 235.47 L969.00 240.46 L972.17 245.14 L975.33 249.43 L978.50 253.24 L981.67 256.50 L984.83 259.15 L988.00 261.14 L991.17 262.42 L994.33 262.98 L997.50 262.79 L1000.67 261.87 L1003.83 260.23 L1007.00 257.91 L1010.17 254.94 L1013.33 251.40 L1016.50 247.34 L1019.67 242.84 L1022.83 238.00 L1026.00 232.90 L1029.17 227.65 L1032.33 222.35 L1035.50 217.10 L1038.67 212.00 L1041.83 207.16 L1045.00 202.66 L1048.17 198.60 L1051.33 195.06 L1054.50 192.09 L1057.67 189.77 L1060.83 188.13 L1064.00 187.21 L1067.17 187.02 L1070.33 187.58 L1073.50 188.86 L1076.67 190.85 L1079.83 193.50 L1083.00 196.76 L1086.17 200.57 L1089.33 204.86 L1092.50 209.54 L1095.67 214.53 L1098.83 219.71 L1102.00 225.00 L1105.17 230.29 L1108.33 235.47 L1111.50 240.46 L1114.67 245.14 L1117.83 249.43 L1121.00 253.24 L1124.17 256.50 L1127.33 259.15 L1130.50 261.14 L1133.67 262.42 L1136.83 262.98 L1140.00 262.79 L1143.17 261.87 L1146.33 260.23 L1149.50 257.91 L1152.67 254.94 L1155.83 251.40 L1159.00 247.34 L1162.17 242.84 L1165.33 238.00 L1168.50 232.90 L1171.67 227.65 L1174.83 222.35 L1178.00 217.10 L1181.17 212.00 L1184.33 207.16 L1187.50 202.66 L1190.67 198.60 L1193.83 195.06 L1197.00 192.09 L1200.17 189.77 L1203.33 188.13 L1206.50 187.21 L1209.67 187.02 L1212.83 187.58 L1216.00 188.86 L1219.17 190.85 L1222.33 193.50 L1225.50 196.76 L1228.67 200.57 L1231.83 204.86 L1235.00 209.54 L1238.17 214.53 L1241.33 219.71 L1244.50 225.00 L1247.67 230.29 L1250.83 235.47 L1254.00 240.46 L1257.17 245.14 L1260.33 249.43 L1263.50 253.24 L1266.67 256.50 L1269.83 259.15 L1273.00 261.14 L1276.17 262.42 L1279.33 262.98 L1282.50 262.79 L1285.67 261.87 L1288.83 260.23 L1292.00 257.91 L1295.17 254.94 L1298.33 251.40 L1301.50 247.34 L1304.67 242.84 L1307.83 238.00 L1311.00 232.90 L1314.17 227.65 L1317.33 222.35 L1320.50 217.10 L1323.67 212.00 L1326.83 207.16 L1330.00 202.66 L1333.17 198.60 L1336.33 195.06 L1339.50 192.09 L1342.67 189.77 L1345.83 188.13 L1349.00 187.21 L1352.17 187.02 L1355.33 187.58 L1358.50 188.86 L1361.67 190.85 L1364.83 193.50 L1368.00 196.76 L1371.17 200.57 L1374.33 204.86 L1377.50 209.54 L1380.67 214.53 L1383.83 219.71 L1387.00 225.00",
+          "fill": "none",
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "phase-readout-11",
+          "type": "path",
+          "d": "M817.00 202.00 L820.17 198.02 L823.33 194.56 L826.50 191.69 L829.67 189.47 L832.83 187.94 L836.00 187.13 L839.17 187.06 L842.33 187.73 L845.50 189.12 L848.67 191.21 L851.83 193.96 L855.00 197.32 L858.17 201.21 L861.33 205.57 L864.50 210.30 L867.67 215.32 L870.83 220.53 L874.00 225.82 L877.17 231.10 L880.33 236.26 L883.50 241.20 L886.67 245.83 L889.83 250.05 L893.00 253.78 L896.17 256.96 L899.33 259.51 L902.50 261.39 L905.67 262.56 L908.83 263.00 L912.00 262.70 L915.17 261.66 L918.33 259.92 L921.50 257.49 L924.67 254.43 L927.83 250.80 L931.00 246.66 L934.17 242.11 L937.33 237.22 L940.50 232.09 L943.67 226.83 L946.83 221.53 L950.00 216.30 L953.17 211.23 L956.33 206.44 L959.50 202.00 L962.67 198.02 L965.83 194.56 L969.00 191.69 L972.17 189.47 L975.33 187.94 L978.50 187.13 L981.67 187.06 L984.83 187.73 L988.00 189.12 L991.17 191.21 L994.33 193.96 L997.50 197.32 L1000.67 201.21 L1003.83 205.57 L1007.00 210.30 L1010.17 215.32 L1013.33 220.53 L1016.50 225.82 L1019.67 231.10 L1022.83 236.26 L1026.00 241.20 L1029.17 245.83 L1032.33 250.05 L1035.50 253.78 L1038.67 256.96 L1041.83 259.51 L1045.00 261.39 L1048.17 262.56 L1051.33 263.00 L1054.50 262.70 L1057.67 261.66 L1060.83 259.92 L1064.00 257.49 L1067.17 254.43 L1070.33 250.80 L1073.50 246.66 L1076.67 242.11 L1079.83 237.22 L1083.00 232.09 L1086.17 226.83 L1089.33 221.53 L1092.50 216.30 L1095.67 211.23 L1098.83 206.44 L1102.00 202.00 L1105.17 198.02 L1108.33 194.56 L1111.50 191.69 L1114.67 189.47 L1117.83 187.94 L1121.00 187.13 L1124.17 187.06 L1127.33 187.73 L1130.50 189.12 L1133.67 191.21 L1136.83 193.96 L1140.00 197.32 L1143.17 201.21 L1146.33 205.57 L1149.50 210.30 L1152.67 215.32 L1155.83 220.53 L1159.00 225.82 L1162.17 231.10 L1165.33 236.26 L1168.50 241.20 L1171.67 245.83 L1174.83 250.05 L1178.00 253.78 L1181.17 256.96 L1184.33 259.51 L1187.50 261.39 L1190.67 262.56 L1193.83 263.00 L1197.00 262.70 L1200.17 261.66 L1203.33 259.92 L1206.50 257.49 L1209.67 254.43 L1212.83 250.80 L1216.00 246.66 L1219.17 242.11 L1222.33 237.22 L1225.50 232.09 L1228.67 226.83 L1231.83 221.53 L1235.00 216.30 L1238.17 211.23 L1241.33 206.44 L1244.50 202.00 L1247.67 198.02 L1250.83 194.56 L1254.00 191.69 L1257.17 189.47 L1260.33 187.94 L1263.50 187.13 L1266.67 187.06 L1269.83 187.73 L1273.00 189.12 L1276.17 191.21 L1279.33 193.96 L1282.50 197.32 L1285.67 201.21 L1288.83 205.57 L1292.00 210.30 L1295.17 215.32 L1298.33 220.53 L1301.50 225.82 L1304.67 231.10 L1307.83 236.26 L1311.00 241.20 L1314.17 245.83 L1317.33 250.05 L1320.50 253.78 L1323.67 256.96 L1326.83 259.51 L1330.00 261.39 L1333.17 262.56 L1336.33 263.00 L1339.50 262.70 L1342.67 261.66 L1345.83 259.92 L1349.00 257.49 L1352.17 254.43 L1355.33 250.80 L1358.50 246.66 L1361.67 242.11 L1364.83 237.22 L1368.00 232.09 L1371.17 226.83 L1374.33 221.53 L1377.50 216.30 L1380.67 211.23 L1383.83 206.44 L1387.00 202.00",
+          "fill": "none",
+          "stroke": "$accent",
+          "strokeWidth": 3,
+          "dash": [
+            7,
+            5
+          ]
+        },
+        {
+          "id": "phase-readout-12",
+          "type": "path",
+          "d": "M817 315.0029165820305 L820.1666666666666 316.3051493204917 L823.3333333333334 318.0296476499027 L826.5 320.14284617186917 L829.6666666666666 322.6036138808888 L832.8333333333334 325.3640547325873 L836 328.3704398857413 L839.1666666666666 331.564253473057 L842.3333333333334 334.88333154596654 L845.5 338.263072025176 L848.6666666666666 341.6376921066554 L851.8333333333334 344.9415086490922 L855 348.1102166215235 L858.1666666666666 351.08214072761774 L861.3333333333334 353.7994358451635 L864.5 356.209212915575 L867.6666666666666 358.2645683692575 L870.8333333333334 359.92549705023737 L874 361.15967087101757 L877.1666666666666 361.94306804202853 L880.3333333333334 362.2604406284377 L883.5 362.1056113338565 L886.6666666666666 361.48159373438824 L889.8333333333334 360.4005336227971 L893 358.8834726044676 L896.1666666666666 356.95993854649015 L899.3333333333334 354.6673708513157 L902.5 352.05039174137374 L905.6666666666666 349.1599377382696 L908.8333333333334 346.05226824133115 L912 342.7878705023945 L915.1666666666666 339.4302823102508 L918.3333333333334 336.04485529986 L921.5 332.6974829571133 L924.6666666666666 329.45331807708266 L927.8333333333334 326.37550463897503 L931 323.52394878040224 L934.1666666666666 320.95415279255474 L937.3333333333334 318.71613483123633 L940.5 316.85345537035636 L943.6666666666666 315.4023693468544 L946.8333333333334 314.39112049959215 L950 313.8393916371028 L953.1666666666667 313.75792153411265 L956.3333333333334 314.14829591350536 L959.5 315.0029165820305 L962.6666666666666 316.3051493204917 L965.8333333333334 318.02964764990264 L969 320.14284617186917 L972.1666666666666 322.60361388088876 L975.3333333333334 325.3640547325873 L978.5 328.37043988574123 L981.6666666666666 331.564253473057 L984.8333333333334 334.88333154596654 L988 338.263072025176 L991.1666666666667 341.6376921066554 L994.3333333333334 344.9415086490922 L997.5 348.1102166215234 L1000.6666666666667 351.08214072761774 L1003.8333333333334 353.79943584516343 L1007 356.209212915575 L1010.1666666666667 358.2645683692575 L1013.3333333333334 359.92549705023737 L1016.5 361.15967087101757 L1019.6666666666667 361.94306804202853 L1022.8333333333334 362.26044062843766 L1026 362.1056113338565 L1029.1666666666667 361.48159373438824 L1032.3333333333333 360.4005336227972 L1035.5 358.8834726044676 L1038.6666666666667 356.95993854649015 L1041.8333333333333 354.6673708513157 L1045 352.05039174137374 L1048.1666666666667 349.15993773826966 L1051.3333333333333 346.05226824133115 L1054.5 342.7878705023945 L1057.6666666666667 339.43028231025073 L1060.8333333333333 336.04485529986 L1064 332.69748295711327 L1067.1666666666667 329.4533180770827 L1070.3333333333333 326.37550463897503 L1073.5 323.52394878040224 L1076.6666666666667 320.95415279255474 L1079.8333333333335 318.71613483123633 L1083 316.85345537035636 L1086.1666666666667 315.40236934685447 L1089.3333333333335 314.3911204995921 L1092.5 313.8393916371028 L1095.6666666666667 313.75792153411265 L1098.8333333333335 314.14829591350536 L1102 315.00291658203054 L1105.1666666666665 316.3051493204917 L1108.3333333333333 318.02964764990264 L1111.5 320.1428461718692 L1114.6666666666667 322.6036138808888 L1117.8333333333333 325.3640547325873 L1121 328.37043988574123 L1124.1666666666665 331.564253473057 L1127.3333333333333 334.8833315459665 L1130.5 338.26307202517603 L1133.6666666666667 341.6376921066554 L1136.8333333333333 344.94150864909216 L1140 348.1102166215234 L1143.1666666666665 351.0821407276176 L1146.3333333333333 353.7994358451634 L1149.5 356.20921291557494 L1152.6666666666667 358.26456836925746 L1155.8333333333333 359.9254970502372 L1159 361.15967087101745 L1162.1666666666665 361.9430680420285 L1165.3333333333335 362.2604406284376 L1168.5 362.10561133385636 L1171.6666666666667 361.4815937343882 L1174.8333333333333 360.4005336227971 L1178 358.88347260446767 L1181.1666666666665 356.95993854649015 L1184.3333333333335 354.66737085131564 L1187.5 352.05039174137374 L1190.6666666666667 349.15993773826966 L1193.8333333333333 346.05226824133115 L1197 342.7878705023946 L1200.1666666666667 339.4302823102508 L1203.3333333333335 336.04485529986005 L1206.5 332.6974829571133 L1209.6666666666667 329.4533180770827 L1212.8333333333333 326.37550463897514 L1216 323.5239487804023 L1219.1666666666667 320.95415279255474 L1222.3333333333335 318.7161348312364 L1225.5 316.85345537035647 L1228.6666666666667 315.40236934685447 L1231.8333333333333 314.39112049959215 L1235 313.8393916371029 L1238.1666666666667 313.75792153411265 L1241.3333333333335 314.1482959135054 L1244.5 315.00291658203054 L1247.6666666666665 316.30514932049175 L1250.8333333333333 318.0296476499027 L1254 320.1428461718692 L1257.1666666666667 322.6036138808888 L1260.3333333333333 325.36405473258725 L1263.5 328.3704398857413 L1266.6666666666665 331.56425347305697 L1269.8333333333333 334.8833315459665 L1273 338.263072025176 L1276.1666666666667 341.6376921066554 L1279.3333333333333 344.94150864909216 L1282.5 348.11021662152336 L1285.6666666666665 351.0821407276177 L1288.8333333333333 353.7994358451634 L1292 356.20921291557494 L1295.1666666666667 358.26456836925746 L1298.3333333333333 359.9254970502373 L1301.5 361.15967087101745 L1304.6666666666665 361.9430680420285 L1307.8333333333335 362.2604406284376 L1311 362.1056113338564 L1314.1666666666667 361.4815937343882 L1317.3333333333333 360.4005336227971 L1320.5 358.8834726044676 L1323.6666666666665 356.95993854649015 L1326.8333333333335 354.66737085131564 L1330 352.05039174137374 L1333.1666666666665 349.15993773826966 L1336.3333333333335 346.05226824133115 L1339.5 342.7878705023946 L1342.6666666666667 339.4302823102508 L1345.8333333333335 336.04485529986005 L1349 332.6974829571133 L1352.1666666666665 329.4533180770827 L1355.3333333333335 326.37550463897514 L1358.5 323.5239487804023 L1361.6666666666667 320.95415279255474 L1364.8333333333335 318.7161348312364 L1368 316.85345537035647 L1371.1666666666665 315.40236934685447 L1374.3333333333335 314.39112049959215 L1377.5 313.8393916371029 L1380.6666666666667 313.75792153411265 L1383.8333333333335 314.1482959135054 L1387 315.00291658203054",
+          "fill": "none",
+          "stroke": "$warm",
+          "strokeWidth": 4
+        },
+        {
+          "id": "phase-readout-13",
+          "type": "text",
+          "text": "Incomplete cancellation changes output power.",
+          "x": 802,
+          "y": 389,
+          "width": 894,
+          "fontSize": 23,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "phase-readout-14",
+          "type": "text",
+          "text": "FIELDS",
+          "x": 1461,
+          "y": 211,
+          "width": 230,
+          "fontSize": 17,
+          "fill": "$muted",
+          "weight": "semibold"
+        },
+        {
+          "id": "phase-readout-15",
+          "type": "text",
+          "text": "SUM",
+          "x": 1461,
+          "y": 325,
+          "width": 230,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        }
+      ]
+    }
+  ],
+  "footer": "Source: Caltech / MIT / LIGO Lab • Optical core only; recycling optics and readout controls omitted • Rays offset for clarity; waves are conceptual"
+}

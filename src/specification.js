@@ -1,10 +1,15 @@
 import { assertScene } from './validate.js';
 import { createComponent } from './components.js';
 import { composeDocument } from './document.js';
+import { composeInfographic } from './infographic.js';
 
 // A small data-only boundary for authors without shell or rendering tools.
 // Coordinates and wording belong to the author; the host never invents or repairs layout.
 export function composeSpecification(specification) {
+  if (specification && typeof specification === 'object' && !Array.isArray(specification) && Object.hasOwn(specification,'infographic')) {
+    if (Object.keys(specification).length !== 1) throw new Error('An infographic specification contains only infographic.');
+    return composeInfographic(specification.infographic);
+  }
   if (specification && typeof specification === 'object' && !Array.isArray(specification) && Object.hasOwn(specification,'document')) {
     if (Object.keys(specification).length !== 1) throw new Error('A document specification contains only document.');
     return composeDocument(specification.document);

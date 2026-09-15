@@ -1,0 +1,1381 @@
+{
+  "version": 1,
+  "title": "How a heat pump warms a room",
+  "subtitle": "A phase-changing fluid moves heat uphill in temperature. Electricity drives the transfer; feedback controls the demand.",
+  "description": "A phase-changing fluid moves heat uphill in temperature. Electricity drives the transfer; feedback controls the demand.",
+  "eyebrow": "FIELD ATLAS    /    01 — HEAT & CONTROL",
+  "width": 1800,
+  "height": 1540,
+  "theme": "blueprint",
+  "sources": [
+    {
+      "title": "U.S. DOE — Energy Renovations: HVAC, air-source heat pump heating cycle",
+      "url": "https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/hvac_guide.pdf"
+    },
+    {
+      "title": "DOE / NREL — Decarbonizing Building Thermal Systems",
+      "url": "https://betterbuildingssolutioncenter.energy.gov/sites/default/files/attachments/87812.pdf"
+    },
+    {
+      "title": "DOE — Programmable Thermostats",
+      "url": "https://bsesc.energy.gov/energy-basics/hvac-programmable-thermostats"
+    }
+  ],
+  "panels": [
+    {
+      "id": "refrigerant",
+      "x": 52,
+      "y": 180,
+      "width": 1696,
+      "height": 735,
+      "framed": false,
+      "elements": [
+        {
+          "id": "refrigerant-1",
+          "type": "text",
+          "text": "01",
+          "x": 0,
+          "y": 5,
+          "width": 40,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-2",
+          "type": "text",
+          "text": "Follow the refrigerant, not the air",
+          "x": 58,
+          "y": 0,
+          "width": 1638,
+          "fontSize": 28,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-3",
+          "type": "text",
+          "text": "Heating mode • the closed circuit carries heat from outdoor air to the room.",
+          "x": 0,
+          "y": 45,
+          "width": 1696,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "refrigerant-4",
+          "type": "rect",
+          "x": 28,
+          "y": 122,
+          "width": 535,
+          "height": 403,
+          "fill": "#102c3e",
+          "stroke": "$line",
+          "strokeWidth": 1.5,
+          "rx": 14
+        },
+        {
+          "id": "refrigerant-5",
+          "type": "rect",
+          "x": 1133,
+          "y": 122,
+          "width": 535,
+          "height": 403,
+          "fill": "#192f3c",
+          "stroke": "$line",
+          "strokeWidth": 1.5,
+          "rx": 14
+        },
+        {
+          "id": "refrigerant-6",
+          "type": "text",
+          "text": "OUTDOOR UNIT",
+          "x": 54,
+          "y": 140,
+          "width": 270,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-7",
+          "type": "text",
+          "text": "INDOOR UNIT",
+          "x": 1160,
+          "y": 140,
+          "width": 270,
+          "fontSize": 17,
+          "fill": "$accent",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-8",
+          "type": "text",
+          "text": "Colder refrigerant absorbs heat",
+          "x": 54,
+          "y": 170,
+          "width": 470,
+          "fontSize": 23,
+          "fill": "$ink",
+          "weight": "regular"
+        },
+        {
+          "id": "refrigerant-9",
+          "type": "text",
+          "text": "Hotter refrigerant releases heat",
+          "x": 1160,
+          "y": 170,
+          "width": 475,
+          "fontSize": 23,
+          "fill": "$ink",
+          "weight": "regular"
+        },
+        {
+          "id": "refrigerant-10",
+          "type": "line",
+          "x": 220,
+          "y": 260,
+          "x2": 220,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-11",
+          "type": "line",
+          "x": 233.33333333333334,
+          "y": 260,
+          "x2": 233.33333333333334,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-12",
+          "type": "line",
+          "x": 246.66666666666666,
+          "y": 260,
+          "x2": 246.66666666666666,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-13",
+          "type": "line",
+          "x": 260,
+          "y": 260,
+          "x2": 260,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-14",
+          "type": "line",
+          "x": 273.3333333333333,
+          "y": 260,
+          "x2": 273.3333333333333,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-15",
+          "type": "line",
+          "x": 286.6666666666667,
+          "y": 260,
+          "x2": 286.6666666666667,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-16",
+          "type": "line",
+          "x": 300,
+          "y": 260,
+          "x2": 300,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-17",
+          "type": "line",
+          "x": 313.3333333333333,
+          "y": 260,
+          "x2": 313.3333333333333,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-18",
+          "type": "line",
+          "x": 326.6666666666667,
+          "y": 260,
+          "x2": 326.6666666666667,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-19",
+          "type": "line",
+          "x": 340,
+          "y": 260,
+          "x2": 340,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-20",
+          "type": "line",
+          "x": 353.33333333333337,
+          "y": 260,
+          "x2": 353.33333333333337,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-21",
+          "type": "line",
+          "x": 366.66666666666663,
+          "y": 260,
+          "x2": 366.66666666666663,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-22",
+          "type": "line",
+          "x": 380,
+          "y": 260,
+          "x2": 380,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-23",
+          "type": "path",
+          "d": "M234 260 L366 272 L366 307.2 L234 307.2 L234 342.4 L366 342.4 L366 377.59999999999997 L234 377.6 L234 412.8 L366 412.8 L366 448 L234 448",
+          "fill": "none",
+          "stroke": "$secondary",
+          "strokeWidth": 7
+        },
+        {
+          "id": "refrigerant-24",
+          "type": "ellipse",
+          "x": 465,
+          "y": 354,
+          "rx": 56,
+          "ry": 56,
+          "fill": "none",
+          "stroke": "$muted",
+          "strokeWidth": 2
+        },
+        {
+          "id": "refrigerant-25",
+          "type": "path",
+          "d": "M465 354 Q477.32 354 496.99277209322184 386.94099169410606 Q467.77289830537393 393.1018034748789 465 354",
+          "fill": "$muted",
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-26",
+          "type": "path",
+          "d": "M465 354 Q458.84 364.66943297462427 420.47587832044104 365.2360575231629 Q429.75039570428123 336.8504986371252 465 354",
+          "fill": "$muted",
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-27",
+          "type": "path",
+          "d": "M465 354 Q458.84 343.33056702537573 477.5313495863371 309.822950782731 Q497.4767059903448 332.04769788799587 465 354",
+          "fill": "$muted",
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-28",
+          "type": "ellipse",
+          "x": 465,
+          "y": 354,
+          "rx": 8.4,
+          "ry": 8.4,
+          "fill": "$panel",
+          "stroke": "$muted",
+          "strokeWidth": 2
+        },
+        {
+          "id": "refrigerant-29",
+          "type": "line",
+          "x": 1380,
+          "y": 260,
+          "x2": 1380,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-30",
+          "type": "line",
+          "x": 1393.3333333333333,
+          "y": 260,
+          "x2": 1393.3333333333333,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-31",
+          "type": "line",
+          "x": 1406.6666666666667,
+          "y": 260,
+          "x2": 1406.6666666666667,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-32",
+          "type": "line",
+          "x": 1420,
+          "y": 260,
+          "x2": 1420,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-33",
+          "type": "line",
+          "x": 1433.3333333333333,
+          "y": 260,
+          "x2": 1433.3333333333333,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-34",
+          "type": "line",
+          "x": 1446.6666666666667,
+          "y": 260,
+          "x2": 1446.6666666666667,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-35",
+          "type": "line",
+          "x": 1460,
+          "y": 260,
+          "x2": 1460,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-36",
+          "type": "line",
+          "x": 1473.3333333333333,
+          "y": 260,
+          "x2": 1473.3333333333333,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-37",
+          "type": "line",
+          "x": 1486.6666666666667,
+          "y": 260,
+          "x2": 1486.6666666666667,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-38",
+          "type": "line",
+          "x": 1500,
+          "y": 260,
+          "x2": 1500,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-39",
+          "type": "line",
+          "x": 1513.3333333333333,
+          "y": 260,
+          "x2": 1513.3333333333333,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-40",
+          "type": "line",
+          "x": 1526.6666666666667,
+          "y": 260,
+          "x2": 1526.6666666666667,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-41",
+          "type": "line",
+          "x": 1540,
+          "y": 260,
+          "x2": 1540,
+          "y2": 460,
+          "stroke": "$line",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-42",
+          "type": "path",
+          "d": "M1394 260 L1526 272 L1526 307.2 L1394 307.2 L1394 342.4 L1526 342.4 L1526 377.59999999999997 L1394 377.6 L1394 412.8 L1526 412.8 L1526 448 L1394 448",
+          "fill": "none",
+          "stroke": "$accent",
+          "strokeWidth": 7
+        },
+        {
+          "id": "refrigerant-43",
+          "type": "ellipse",
+          "x": 1240,
+          "y": 354,
+          "rx": 56,
+          "ry": 56,
+          "fill": "none",
+          "stroke": "$muted",
+          "strokeWidth": 2
+        },
+        {
+          "id": "refrigerant-44",
+          "type": "path",
+          "d": "M1240 354 Q1252.32 354 1271.992772093222 386.94099169410606 Q1242.772898305374 393.1018034748789 1240 354",
+          "fill": "$muted",
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-45",
+          "type": "path",
+          "d": "M1240 354 Q1233.84 364.66943297462427 1195.475878320441 365.2360575231629 Q1204.7503957042813 336.8504986371252 1240 354",
+          "fill": "$muted",
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-46",
+          "type": "path",
+          "d": "M1240 354 Q1233.84 343.33056702537573 1252.531349586337 309.822950782731 Q1272.4767059903447 332.04769788799587 1240 354",
+          "fill": "$muted",
+          "stroke": "$muted",
+          "strokeWidth": 1.5
+        },
+        {
+          "id": "refrigerant-47",
+          "type": "ellipse",
+          "x": 1240,
+          "y": 354,
+          "rx": 8.4,
+          "ry": 8.4,
+          "fill": "$panel",
+          "stroke": "$muted",
+          "strokeWidth": 2
+        },
+        {
+          "id": "refrigerant-48",
+          "type": "text",
+          "text": "EVAPORATOR",
+          "x": 272,
+          "y": 484,
+          "width": 200,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-49",
+          "type": "text",
+          "text": "CONDENSER",
+          "x": 1440,
+          "y": 484,
+          "width": 215,
+          "fontSize": 17,
+          "fill": "$accent",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-50",
+          "type": "arrow",
+          "x": 66,
+          "y": 305,
+          "x2": 184,
+          "y2": 305,
+          "stroke": "$warm",
+          "strokeWidth": 4
+        },
+        {
+          "id": "refrigerant-51",
+          "type": "arrow",
+          "x": 1555,
+          "y": 305,
+          "x2": 1640,
+          "y2": 305,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "refrigerant-52",
+          "type": "arrow",
+          "x": 66,
+          "y": 355,
+          "x2": 184,
+          "y2": 355,
+          "stroke": "$warm",
+          "strokeWidth": 4
+        },
+        {
+          "id": "refrigerant-53",
+          "type": "arrow",
+          "x": 1555,
+          "y": 355,
+          "x2": 1640,
+          "y2": 355,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "refrigerant-54",
+          "type": "arrow",
+          "x": 66,
+          "y": 405,
+          "x2": 184,
+          "y2": 405,
+          "stroke": "$warm",
+          "strokeWidth": 4
+        },
+        {
+          "id": "refrigerant-55",
+          "type": "arrow",
+          "x": 1555,
+          "y": 405,
+          "x2": 1640,
+          "y2": 405,
+          "stroke": "$accent",
+          "strokeWidth": 4
+        },
+        {
+          "id": "refrigerant-56",
+          "type": "text",
+          "text": "HEAT IN",
+          "x": 59,
+          "y": 436,
+          "width": 140,
+          "fontSize": 18,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-57",
+          "type": "text",
+          "text": "HEAT OUT",
+          "x": 1545,
+          "y": 436,
+          "width": 120,
+          "fontSize": 18,
+          "fill": "$accent",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-58",
+          "type": "line",
+          "x": 234,
+          "y": 260,
+          "x2": 234,
+          "y2": 223,
+          "stroke": "$secondary",
+          "strokeWidth": 5
+        },
+        {
+          "id": "refrigerant-59",
+          "type": "arrow",
+          "x": 234,
+          "y": 223,
+          "x2": 770,
+          "y2": 223,
+          "stroke": "$secondary",
+          "strokeWidth": 5
+        },
+        {
+          "id": "refrigerant-60",
+          "type": "line",
+          "x": 900,
+          "y": 223,
+          "x2": 1394,
+          "y2": 223,
+          "stroke": "$accent",
+          "strokeWidth": 5
+        },
+        {
+          "id": "refrigerant-61",
+          "type": "arrow",
+          "x": 1394,
+          "y": 223,
+          "x2": 1394,
+          "y2": 260,
+          "stroke": "$accent",
+          "strokeWidth": 5
+        },
+        {
+          "id": "refrigerant-62",
+          "type": "ellipse",
+          "x": 835,
+          "y": 223,
+          "rx": 65,
+          "ry": 65,
+          "fill": "$panel",
+          "stroke": "$warm",
+          "strokeWidth": 3
+        },
+        {
+          "id": "refrigerant-63",
+          "type": "polygon",
+          "points": [
+            [
+              800,
+              254
+            ],
+            [
+              800,
+              192
+            ],
+            [
+              867,
+              223
+            ]
+          ],
+          "fill": "none",
+          "stroke": "$warm",
+          "strokeWidth": 3
+        },
+        {
+          "id": "refrigerant-64",
+          "type": "text",
+          "text": "COMPRESSOR",
+          "x": 705,
+          "y": 316,
+          "width": 260,
+          "fontSize": 22,
+          "fill": "$warm",
+          "weight": "semibold",
+          "align": "center"
+        },
+        {
+          "id": "refrigerant-65",
+          "type": "text",
+          "text": "Electrical work raises\npressure and temperature.",
+          "x": 650,
+          "y": 355,
+          "width": 370,
+          "fontSize": 23,
+          "fill": "$muted",
+          "weight": "regular",
+          "align": "center"
+        },
+        {
+          "id": "refrigerant-66",
+          "type": "arrow",
+          "x": 835,
+          "y": 121,
+          "x2": 835,
+          "y2": 155,
+          "stroke": "$warm",
+          "strokeWidth": 4
+        },
+        {
+          "id": "refrigerant-67",
+          "type": "text",
+          "text": "WORK IN",
+          "x": 738,
+          "y": 85,
+          "width": 200,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-68",
+          "type": "text",
+          "text": "LOW-PRESSURE VAPOUR",
+          "x": 594,
+          "y": 262,
+          "width": 300,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-69",
+          "type": "text",
+          "text": "HIGH-PRESSURE VAPOUR",
+          "x": 921,
+          "y": 262,
+          "width": 320,
+          "fontSize": 17,
+          "fill": "$accent",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-70",
+          "type": "line",
+          "x": 1394,
+          "y": 448,
+          "x2": 1394,
+          "y2": 563,
+          "stroke": "$accent",
+          "strokeWidth": 5
+        },
+        {
+          "id": "refrigerant-71",
+          "type": "arrow",
+          "x": 1394,
+          "y": 563,
+          "x2": 875,
+          "y2": 563,
+          "stroke": "$accent",
+          "strokeWidth": 5
+        },
+        {
+          "id": "refrigerant-72",
+          "type": "line",
+          "x": 795,
+          "y": 563,
+          "x2": 234,
+          "y2": 563,
+          "stroke": "$secondary",
+          "strokeWidth": 5
+        },
+        {
+          "id": "refrigerant-73",
+          "type": "arrow",
+          "x": 234,
+          "y": 563,
+          "x2": 234,
+          "y2": 448,
+          "stroke": "$secondary",
+          "strokeWidth": 5
+        },
+        {
+          "id": "refrigerant-74",
+          "type": "polygon",
+          "points": [
+            [
+              795,
+              542
+            ],
+            [
+              835,
+              563
+            ],
+            [
+              795,
+              584
+            ]
+          ],
+          "fill": "$panel",
+          "stroke": "$warm",
+          "strokeWidth": 3
+        },
+        {
+          "id": "refrigerant-75",
+          "type": "polygon",
+          "points": [
+            [
+              875,
+              542
+            ],
+            [
+              835,
+              563
+            ],
+            [
+              875,
+              584
+            ]
+          ],
+          "fill": "$panel",
+          "stroke": "$warm",
+          "strokeWidth": 3
+        },
+        {
+          "id": "refrigerant-76",
+          "type": "text",
+          "text": "EXPANSION VALVE",
+          "x": 676,
+          "y": 605,
+          "width": 320,
+          "fontSize": 22,
+          "fill": "$warm",
+          "weight": "semibold",
+          "align": "center"
+        },
+        {
+          "id": "refrigerant-77",
+          "type": "text",
+          "text": "Pressure falls; some liquid flashes to vapour.",
+          "x": 590,
+          "y": 642,
+          "width": 490,
+          "fontSize": 22,
+          "fill": "$muted",
+          "weight": "regular",
+          "align": "center"
+        },
+        {
+          "id": "refrigerant-78",
+          "type": "text",
+          "text": "COLD LIQUID + VAPOUR",
+          "x": 288,
+          "y": 585,
+          "width": 310,
+          "fontSize": 17,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-79",
+          "type": "text",
+          "text": "HIGH-PRESSURE LIQUID",
+          "x": 1068,
+          "y": 585,
+          "width": 315,
+          "fontSize": 17,
+          "fill": "$accent",
+          "weight": "semibold"
+        },
+        {
+          "id": "refrigerant-80",
+          "type": "text",
+          "text": "Evaporation takes energy from the air.",
+          "x": 56,
+          "y": 645,
+          "width": 445,
+          "fontSize": 23,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "refrigerant-81",
+          "type": "text",
+          "text": "Condensation gives energy to the room.",
+          "x": 1160,
+          "y": 645,
+          "width": 465,
+          "fontSize": 23,
+          "fill": "$muted",
+          "weight": "regular"
+        }
+      ]
+    },
+    {
+      "id": "energy-balance",
+      "x": 52,
+      "y": 974,
+      "width": 800,
+      "height": 475,
+      "framed": false,
+      "elements": [
+        {
+          "id": "energy-balance-1",
+          "type": "text",
+          "text": "02",
+          "x": 0,
+          "y": 5,
+          "width": 40,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "energy-balance-2",
+          "type": "text",
+          "text": "More heat than electrical input",
+          "x": 58,
+          "y": 0,
+          "width": 742,
+          "fontSize": 28,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "energy-balance-3",
+          "type": "text",
+          "text": "A worked balance • illustrative operating point, not a product rating.",
+          "x": 0,
+          "y": 45,
+          "width": 800,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "energy-balance-4",
+          "type": "rect",
+          "x": 308,
+          "y": 137,
+          "width": 175,
+          "height": 196,
+          "fill": "$panel",
+          "stroke": "$line",
+          "strokeWidth": 1.5,
+          "rx": 12
+        },
+        {
+          "id": "energy-balance-5",
+          "type": "text",
+          "text": "HEAT\nPUMP",
+          "x": 333,
+          "y": 191,
+          "width": 125,
+          "fontSize": 25,
+          "fill": "$ink",
+          "weight": "semibold",
+          "align": "center"
+        },
+        {
+          "id": "energy-balance-6",
+          "type": "polygon",
+          "points": [
+            [
+              28,
+              158
+            ],
+            [
+              235.4,
+              158
+            ],
+            [
+              235.4,
+              147.5
+            ],
+            [
+              290,
+              179
+            ],
+            [
+              235.4,
+              210.5
+            ],
+            [
+              235.4,
+              200
+            ],
+            [
+              28,
+              200
+            ]
+          ],
+          "fill": "$secondary",
+          "stroke": "none",
+          "strokeWidth": 2,
+          "artworkId": "energy-balance-6-ribbon",
+          "artworkBounds": {
+            "x": 28,
+            "y": 147.5,
+            "width": 262,
+            "height": 63
+          }
+        },
+        {
+          "id": "energy-balance-7",
+          "type": "polygon",
+          "points": [
+            [
+              28,
+              279.5
+            ],
+            [
+              262.7,
+              279.5
+            ],
+            [
+              262.7,
+              274.25
+            ],
+            [
+              290,
+              290
+            ],
+            [
+              262.7,
+              305.75
+            ],
+            [
+              262.7,
+              300.5
+            ],
+            [
+              28,
+              300.5
+            ]
+          ],
+          "fill": "$warm",
+          "stroke": "none",
+          "strokeWidth": 2,
+          "artworkId": "energy-balance-7-ribbon",
+          "artworkBounds": {
+            "x": 28,
+            "y": 274.25,
+            "width": 262,
+            "height": 31.5
+          }
+        },
+        {
+          "id": "energy-balance-8",
+          "type": "polygon",
+          "points": [
+            [
+              500,
+              198.5
+            ],
+            [
+              709.82,
+              198.5
+            ],
+            [
+              709.82,
+              182.75
+            ],
+            [
+              769,
+              230
+            ],
+            [
+              709.82,
+              277.25
+            ],
+            [
+              709.82,
+              261.5
+            ],
+            [
+              500,
+              261.5
+            ]
+          ],
+          "fill": "$accent",
+          "stroke": "none",
+          "strokeWidth": 2,
+          "artworkId": "energy-balance-8-ribbon",
+          "artworkBounds": {
+            "x": 500,
+            "y": 182.75,
+            "width": 269,
+            "height": 94.5
+          }
+        },
+        {
+          "id": "energy-balance-9",
+          "type": "text",
+          "text": "2 kW • outdoor heat",
+          "x": 28,
+          "y": 117,
+          "width": 260,
+          "fontSize": 23,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "energy-balance-10",
+          "type": "text",
+          "text": "1 kW • electricity",
+          "x": 28,
+          "y": 336,
+          "width": 275,
+          "fontSize": 23,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "energy-balance-11",
+          "type": "text",
+          "text": "3 kW • indoor heat",
+          "x": 516,
+          "y": 142,
+          "width": 275,
+          "fontSize": 23,
+          "fill": "$accent",
+          "weight": "semibold"
+        },
+        {
+          "id": "energy-balance-12",
+          "type": "text",
+          "text": "3 = 2 + 1",
+          "x": 512,
+          "y": 288,
+          "width": 275,
+          "fontSize": 29,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "energy-balance-13",
+          "type": "line",
+          "x": 0,
+          "y": 393,
+          "x2": 800,
+          "y2": 393,
+          "stroke": "$line",
+          "strokeWidth": 2
+        },
+        {
+          "id": "energy-balance-14",
+          "type": "text",
+          "text": "COP = delivered heat / electrical input = 3",
+          "x": 0,
+          "y": 415,
+          "width": 800,
+          "fontSize": 24,
+          "fill": "$ink",
+          "weight": "semibold"
+        }
+      ]
+    },
+    {
+      "id": "control-loop",
+      "x": 930,
+      "y": 974,
+      "width": 818,
+      "height": 475,
+      "framed": false,
+      "elements": [
+        {
+          "id": "control-loop-1",
+          "type": "text",
+          "text": "03",
+          "x": 0,
+          "y": 5,
+          "width": 40,
+          "fontSize": 17,
+          "fill": "$warm",
+          "weight": "semibold"
+        },
+        {
+          "id": "control-loop-2",
+          "type": "text",
+          "text": "The thermostat closes another loop",
+          "x": 58,
+          "y": 0,
+          "width": 760,
+          "fontSize": 28,
+          "fill": "$ink",
+          "weight": "semibold"
+        },
+        {
+          "id": "control-loop-3",
+          "type": "text",
+          "text": "Refrigerant transfers heat; the control signal regulates demand.",
+          "x": 0,
+          "y": 45,
+          "width": 818,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "control-loop-4",
+          "type": "rect",
+          "x": 0,
+          "y": 123,
+          "width": 818,
+          "height": 221,
+          "fill": "$panel",
+          "stroke": "$line",
+          "strokeWidth": 1.5,
+          "rx": 12
+        },
+        {
+          "id": "control-loop-5",
+          "type": "text",
+          "text": "ROOM",
+          "x": 25,
+          "y": 143,
+          "width": 140,
+          "fontSize": 18,
+          "fill": "$secondary",
+          "weight": "semibold"
+        },
+        {
+          "id": "control-loop-6",
+          "type": "rect",
+          "x": 27,
+          "y": 190,
+          "width": 148,
+          "height": 84,
+          "fill": "$background",
+          "stroke": "$secondary",
+          "strokeWidth": 1.5,
+          "rx": 8
+        },
+        {
+          "id": "control-loop-7",
+          "type": "text",
+          "text": "T < target",
+          "x": 41,
+          "y": 209,
+          "width": 125,
+          "fontSize": 23,
+          "fill": "$ink",
+          "weight": "regular"
+        },
+        {
+          "id": "control-loop-8",
+          "type": "arrow",
+          "x": 188,
+          "y": 232,
+          "x2": 273,
+          "y2": 232,
+          "stroke": "$warm",
+          "strokeWidth": 3
+        },
+        {
+          "id": "control-loop-9",
+          "type": "text",
+          "text": "Heat demand",
+          "x": 191,
+          "y": 150,
+          "width": 154,
+          "fontSize": 19,
+          "fill": "$warm",
+          "weight": "regular"
+        },
+        {
+          "id": "control-loop-10",
+          "type": "rect",
+          "x": 289,
+          "y": 190,
+          "width": 167,
+          "height": 84,
+          "fill": "$background",
+          "stroke": "$warm",
+          "strokeWidth": 1.5,
+          "rx": 8
+        },
+        {
+          "id": "control-loop-11",
+          "type": "text",
+          "text": "Controller",
+          "x": 310,
+          "y": 209,
+          "width": 128,
+          "fontSize": 23,
+          "fill": "$ink",
+          "weight": "regular"
+        },
+        {
+          "id": "control-loop-12",
+          "type": "arrow",
+          "x": 469,
+          "y": 232,
+          "x2": 548,
+          "y2": 232,
+          "stroke": "$warm",
+          "strokeWidth": 3
+        },
+        {
+          "id": "control-loop-13",
+          "type": "rect",
+          "x": 564,
+          "y": 190,
+          "width": 224,
+          "height": 84,
+          "fill": "$background",
+          "stroke": "$accent",
+          "strokeWidth": 1.5,
+          "rx": 8
+        },
+        {
+          "id": "control-loop-14",
+          "type": "text",
+          "text": "Heat to the room",
+          "x": 579,
+          "y": 209,
+          "width": 198,
+          "fontSize": 23,
+          "fill": "$ink",
+          "weight": "regular"
+        },
+        {
+          "id": "control-loop-15",
+          "type": "line",
+          "x": 676,
+          "y": 286,
+          "x2": 676,
+          "y2": 314,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "control-loop-16",
+          "type": "line",
+          "x": 676,
+          "y": 314,
+          "x2": 100,
+          "y2": 314,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "control-loop-17",
+          "type": "arrow",
+          "x": 100,
+          "y": 314,
+          "x2": 100,
+          "y2": 280,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "control-loop-18",
+          "type": "text",
+          "text": "Room temperature is measured again",
+          "x": 164,
+          "y": 354,
+          "width": 580,
+          "fontSize": 23,
+          "fill": "$muted",
+          "weight": "regular"
+        },
+        {
+          "id": "control-loop-19",
+          "type": "text",
+          "text": "Real control may modulate output or cycle equipment.\nDefrost and reversing valves are omitted from the circuit.",
+          "x": 0,
+          "y": 410,
+          "width": 818,
+          "fontSize": 21,
+          "fill": "$muted",
+          "weight": "regular"
+        }
+      ]
+    }
+  ],
+  "footer": "Sources: U.S. DOE / NREL • Heating mode; simplified circuit • Energy figures are a worked example • Geometry is not to scale"
+}

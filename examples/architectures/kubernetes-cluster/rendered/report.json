@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "issues": [],
+  "scientificReview": "required",
+  "visualReview": "required",
+  "scope": "Schema, text metrics, glyphs, panel geometry, contrast, declared artwork bounds, later opaque rectangle/ellipse/image bounds, and straight connector segments. Conservative collision warnings; curved paths, rotations, raster transparency and semantic correctness still need visual review.",
+  "sourceHash": "210e12d73550985204d6708b29db14aedabcb4febff2e5058b467c8407a66017",
+  "assetHashes": {},
+  "exports": [
+    "figure.svg",
+    "figure.png",
+    "figure.pdf"
+  ]
+}

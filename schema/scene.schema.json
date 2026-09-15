@@ -76,6 +76,7 @@
       "type": "object", "additionalProperties": false, "required": ["id", "type"],
       "properties": {
         "id": { "$ref": "#/definitions/id" },
+        "container": { "$ref": "#/definitions/id" },
         "type": { "enum": ["rect", "ellipse", "path", "polygon", "line", "arrow", "wave", "text", "image", "callout", "icon"] },
         "icon": { "type": "string", "pattern": "^tabler/[a-z0-9-]+$" },
         "artworkId": { "$ref": "#/definitions/id" },

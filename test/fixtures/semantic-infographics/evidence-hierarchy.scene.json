@@ -1,0 +1,979 @@
+{
+  "version": 1,
+  "title": "How a decision earns confidence",
+  "description": "A hierarchy of evidence from a direct observation to the decision that it supports.",
+  "width": 1500,
+  "height": 1313,
+  "theme": "paper",
+  "sources": [
+    {
+      "title": "Illustrative scenario authored for Infographic Studio",
+      "url": "https://github.com/Sn4pe/infographic-studio"
+    }
+  ],
+  "panels": [
+    {
+      "id": "hierarchy",
+      "x": 52,
+      "y": 129,
+      "width": 1396,
+      "height": 1124,
+      "framed": false,
+      "elements": [
+        {
+          "id": "observations-band",
+          "type": "rect",
+          "x": 24,
+          "y": 208.10000000000002,
+          "width": 1348,
+          "height": 227.8,
+          "rx": 12,
+          "fill": "$panel",
+          "stroke": "$line"
+        },
+        {
+          "id": "interpretation-band",
+          "type": "rect",
+          "x": 24,
+          "y": 535.9000000000001,
+          "width": 1348,
+          "height": 227.8,
+          "rx": 12,
+          "fill": "$panel",
+          "stroke": "$line"
+        },
+        {
+          "id": "decision-band",
+          "type": "rect",
+          "x": 24,
+          "y": 863.7,
+          "width": 1348,
+          "height": 227.8,
+          "rx": 12,
+          "fill": "$panel",
+          "stroke": "$line"
+        },
+        {
+          "id": "source-note-card",
+          "type": "rect",
+          "x": 52,
+          "y": 252.00000000000003,
+          "width": 586,
+          "height": 163.9,
+          "rx": 10,
+          "fill": "$background",
+          "stroke": "$line"
+        },
+        {
+          "id": "measurement-card",
+          "type": "rect",
+          "x": 758,
+          "y": 252.00000000000003,
+          "width": 586,
+          "height": 163.9,
+          "rx": 10,
+          "fill": "$background",
+          "stroke": "$line"
+        },
+        {
+          "id": "finding-card",
+          "type": "rect",
+          "x": 52,
+          "y": 579.8000000000001,
+          "width": 586,
+          "height": 163.9,
+          "rx": 10,
+          "fill": "$background",
+          "stroke": "$line"
+        },
+        {
+          "id": "assumption-card",
+          "type": "rect",
+          "x": 758,
+          "y": 579.8000000000001,
+          "width": 586,
+          "height": 163.9,
+          "rx": 10,
+          "fill": "$background",
+          "stroke": "$line"
+        },
+        {
+          "id": "recommendation-card",
+          "type": "rect",
+          "x": 405,
+          "y": 907.6,
+          "width": 586,
+          "height": 163.9,
+          "rx": 10,
+          "fill": "$background",
+          "stroke": "$line"
+        },
+        {
+          "id": "note-finding-segment-1",
+          "type": "line",
+          "x": 345,
+          "y": 415.90000000000003,
+          "x2": 345,
+          "y2": 441.9000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "note-finding-segment-2",
+          "type": "arrow",
+          "x": 345,
+          "y": 441.9000000000001,
+          "x2": 345,
+          "y2": 579.8000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "measurement-finding-segment-1",
+          "type": "line",
+          "x": 1051,
+          "y": 415.90000000000003,
+          "x2": 1051,
+          "y2": 529.9000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "measurement-finding-segment-2",
+          "type": "line",
+          "x": 1051,
+          "y": 529.9000000000001,
+          "x2": 345,
+          "y2": 529.9000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "measurement-finding-segment-3",
+          "type": "arrow",
+          "x": 345,
+          "y": 529.9000000000001,
+          "x2": 345,
+          "y2": 579.8000000000001,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "finding-recommendation-segment-1",
+          "type": "line",
+          "x": 345,
+          "y": 743.7,
+          "x2": 345,
+          "y2": 769.7,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "finding-recommendation-segment-2",
+          "type": "line",
+          "x": 345,
+          "y": 769.7,
+          "x2": 698,
+          "y2": 769.7,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "finding-recommendation-segment-3",
+          "type": "arrow",
+          "x": 698,
+          "y": 769.7,
+          "x2": 698,
+          "y2": 907.6,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "assumption-recommendation-segment-1",
+          "type": "line",
+          "x": 1051,
+          "y": 743.7,
+          "x2": 1051,
+          "y2": 857.7,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "assumption-recommendation-segment-2",
+          "type": "line",
+          "x": 1051,
+          "y": 857.7,
+          "x2": 698,
+          "y2": 857.7,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "assumption-recommendation-segment-3",
+          "type": "arrow",
+          "x": 698,
+          "y": 857.7,
+          "x2": 698,
+          "y2": 907.6,
+          "stroke": "$secondary",
+          "strokeWidth": 3
+        },
+        {
+          "id": "hierarchy-heading",
+          "type": "text",
+          "text": "Evidence should stay traceable",
+          "x": 24,
+          "y": 24,
+          "width": 1348,
+          "fontSize": 31,
+          "weight": "semibold",
+          "fill": "$ink"
+        },
+        {
+          "id": "hierarchy-description",
+          "type": "text",
+          "text": "Each level adds interpretation while retaining a route back to the observed material.",
+          "x": 24,
+          "y": 84.30000000000001,
+          "width": 1348,
+          "fontSize": 23,
+          "weight": "regular",
+          "fill": "$ink"
+        },
+        {
+          "id": "hierarchy-relations",
+          "type": "text",
+          "text": "assumption → recommendation: qualifies",
+          "x": 24,
+          "y": 134.20000000000002,
+          "width": 1348,
+          "fontSize": 23,
+          "weight": "semibold",
+          "fill": "$secondary"
+        },
+        {
+          "id": "source-note-art-1",
+          "type": "polygon",
+          "points": [
+            [
+              78.4,
+              272.52
+            ],
+            [
+              127.12,
+              272.52
+            ],
+            [
+              145.6,
+              289.32
+            ],
+            [
+              145.6,
+              350.64
+            ],
+            [
+              78.4,
+              350.64
+            ]
+          ],
+          "fill": "#FFFEFA",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "source-note-art",
+          "artworkBounds": {
+            "x": 70,
+            "y": 270,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "id": "source-note-art-2",
+          "type": "polygon",
+          "points": [
+            [
+              127.12,
+              272.52
+            ],
+            [
+              127.12,
+              289.32
+            ],
+            [
+              145.6,
+              289.32
+            ]
+          ],
+          "fill": "#E6F3EE",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "source-note-art"
+        },
+        {
+          "id": "source-note-art-3",
+          "type": "line",
+          "x": 90.16,
+          "y": 302.76,
+          "x2": 133.84,
+          "y2": 302.76,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "source-note-art"
+        },
+        {
+          "id": "source-note-art-4",
+          "type": "line",
+          "x": 90.16,
+          "y": 313.68,
+          "x2": 133.84,
+          "y2": 313.68,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "source-note-art"
+        },
+        {
+          "id": "source-note-art-5",
+          "type": "line",
+          "x": 90.16,
+          "y": 324.6,
+          "x2": 133.84,
+          "y2": 324.6,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "source-note-art"
+        },
+        {
+          "id": "source-note-art-6",
+          "type": "line",
+          "x": 90.16,
+          "y": 335.52,
+          "x2": 121.24000000000001,
+          "y2": 335.52,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "source-note-art"
+        },
+        {
+          "id": "source-note-title",
+          "type": "text",
+          "text": "Source note",
+          "x": 174,
+          "y": 295.75,
+          "width": 446,
+          "fontSize": 25,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "source-note-card"
+        },
+        {
+          "id": "source-note-description",
+          "type": "text",
+          "text": "A dated statement, record or primary reference.",
+          "x": 70,
+          "y": 368,
+          "width": 550,
+          "fontSize": 23,
+          "weight": "regular",
+          "fill": "$ink",
+          "container": "source-note-card"
+        },
+        {
+          "id": "measurement-art-1",
+          "type": "rect",
+          "x": 778.52,
+          "y": 272.52,
+          "width": 78.96,
+          "height": 78.96,
+          "rx": 2.9400000000000004,
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "measurement-art",
+          "artworkBounds": {
+            "x": 776,
+            "y": 270,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "id": "measurement-art-2",
+          "type": "line",
+          "x": 798.26,
+          "y": 272.52,
+          "x2": 798.26,
+          "y2": 351.48,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "measurement-art"
+        },
+        {
+          "id": "measurement-art-3",
+          "type": "line",
+          "x": 778.52,
+          "y": 292.26,
+          "x2": 857.48,
+          "y2": 292.26,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "measurement-art"
+        },
+        {
+          "id": "measurement-art-4",
+          "type": "line",
+          "x": 818,
+          "y": 272.52,
+          "x2": 818,
+          "y2": 351.48,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "measurement-art"
+        },
+        {
+          "id": "measurement-art-5",
+          "type": "line",
+          "x": 778.52,
+          "y": 312,
+          "x2": 857.48,
+          "y2": 312,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "measurement-art"
+        },
+        {
+          "id": "measurement-art-6",
+          "type": "line",
+          "x": 837.74,
+          "y": 272.52,
+          "x2": 837.74,
+          "y2": 351.48,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "measurement-art"
+        },
+        {
+          "id": "measurement-art-7",
+          "type": "line",
+          "x": 778.52,
+          "y": 331.74,
+          "x2": 857.48,
+          "y2": 331.74,
+          "stroke": "#FFFEFA",
+          "strokeWidth": 1.5,
+          "artworkId": "measurement-art"
+        },
+        {
+          "id": "measurement-title",
+          "type": "text",
+          "text": "Measurement",
+          "x": 880,
+          "y": 295.75,
+          "width": 446,
+          "fontSize": 25,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "measurement-card"
+        },
+        {
+          "id": "measurement-description",
+          "type": "text",
+          "text": "A method and the result it produced.",
+          "x": 776,
+          "y": 368,
+          "width": 550,
+          "fontSize": 23,
+          "weight": "regular",
+          "fill": "$ink",
+          "container": "measurement-card"
+        },
+        {
+          "id": "finding-art-1",
+          "type": "line",
+          "x": 82.6,
+          "y": 618.8000000000001,
+          "x2": 112,
+          "y2": 606.2,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "finding-art",
+          "artworkBounds": {
+            "x": 70,
+            "y": 597.8000000000001,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "id": "finding-art-2",
+          "type": "line",
+          "x": 112,
+          "y": 606.2,
+          "x2": 141.4,
+          "y2": 618.8000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-3",
+          "type": "line",
+          "x": 82.6,
+          "y": 618.8000000000001,
+          "x2": 88.48,
+          "y2": 666.6800000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-4",
+          "type": "line",
+          "x": 141.4,
+          "y": 618.8000000000001,
+          "x2": 135.51999999999998,
+          "y2": 666.6800000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-5",
+          "type": "line",
+          "x": 88.48,
+          "y": 666.6800000000001,
+          "x2": 135.51999999999998,
+          "y2": 666.6800000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-6",
+          "type": "line",
+          "x": 82.6,
+          "y": 618.8000000000001,
+          "x2": 112,
+          "y2": 639.8000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-7",
+          "type": "line",
+          "x": 112,
+          "y": 606.2,
+          "x2": 112,
+          "y2": 639.8000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-8",
+          "type": "line",
+          "x": 141.4,
+          "y": 618.8000000000001,
+          "x2": 112,
+          "y2": 639.8000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-9",
+          "type": "line",
+          "x": 88.48,
+          "y": 666.6800000000001,
+          "x2": 112,
+          "y2": 639.8000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-10",
+          "type": "line",
+          "x": 135.51999999999998,
+          "y": 666.6800000000001,
+          "x2": 112,
+          "y2": 639.8000000000001,
+          "stroke": "#197C78",
+          "strokeWidth": 1.5,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-11",
+          "type": "ellipse",
+          "x": 82.6,
+          "y": 618.8000000000001,
+          "rx": 5.04,
+          "ry": 5.04,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-12",
+          "type": "ellipse",
+          "x": 112,
+          "y": 606.2,
+          "rx": 5.04,
+          "ry": 5.04,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-13",
+          "type": "ellipse",
+          "x": 141.4,
+          "y": 618.8000000000001,
+          "rx": 5.04,
+          "ry": 5.04,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-14",
+          "type": "ellipse",
+          "x": 88.48,
+          "y": 666.6800000000001,
+          "rx": 5.04,
+          "ry": 5.04,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-15",
+          "type": "ellipse",
+          "x": 135.51999999999998,
+          "y": 666.6800000000001,
+          "rx": 5.04,
+          "ry": 5.04,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-art-16",
+          "type": "ellipse",
+          "x": 112,
+          "y": 639.8000000000001,
+          "rx": 8.4,
+          "ry": 8.4,
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "finding-art"
+        },
+        {
+          "id": "finding-title",
+          "type": "text",
+          "text": "Finding",
+          "x": 174,
+          "y": 623.5500000000001,
+          "width": 446,
+          "fontSize": 25,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "finding-card"
+        },
+        {
+          "id": "finding-description",
+          "type": "text",
+          "text": "A pattern supported by the observed material.",
+          "x": 70,
+          "y": 695.8000000000001,
+          "width": 550,
+          "fontSize": 23,
+          "weight": "regular",
+          "fill": "$ink",
+          "container": "finding-card"
+        },
+        {
+          "id": "assumption-art-1",
+          "type": "path",
+          "d": "M794 676.5500000000001 L794.75 660.0500000000001 Q795.5 649.5500000000001 811.25 645.8000000000001 L824.75 645.8000000000001 Q840.5 649.5500000000001 841.25 660.0500000000001 L842 676.5500000000001 Q818.75 684.0500000000001 794 676.5500000000001 Z",
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "assumption-art",
+          "artworkBounds": {
+            "x": 788,
+            "y": 597.8000000000001,
+            "width": 60,
+            "height": 84
+          }
+        },
+        {
+          "id": "assumption-art-2",
+          "type": "rect",
+          "x": 812.75,
+          "y": 636.0500000000001,
+          "width": 10.5,
+          "height": 14.25,
+          "rx": 3,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-art-3",
+          "type": "path",
+          "d": "M808.25 647.3000000000001 L818 655.5500000000001 L827.75 647.3000000000001 L824.75 663.8000000000001 L818 656.3000000000001 L811.25 663.8000000000001 Z",
+          "fill": "#FFFEFA",
+          "stroke": "#243752",
+          "strokeWidth": 1.5,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-art-4",
+          "type": "ellipse",
+          "x": 801.5,
+          "y": 625.5500000000001,
+          "rx": 3,
+          "ry": 4.5,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-art-5",
+          "type": "ellipse",
+          "x": 834.5,
+          "y": 625.5500000000001,
+          "rx": 3,
+          "ry": 4.5,
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-art-6",
+          "type": "path",
+          "d": "M801.5 618.8000000000001 Q801.5 602.3000000000001 818 602.3000000000001 Q834.5 602.3000000000001 834.5 618.8000000000001 L833.75 628.5500000000001 Q833 645.0500000000001 818 645.8000000000001 Q803 645.0500000000001 802.25 628.5500000000001 Z",
+          "fill": "#E9C399",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-art-7",
+          "type": "path",
+          "d": "M802.25 619.5500000000001 Q798.5 600.8000000000001 818 600.8000000000001 Q837.5 600.8000000000001 833.75 619.5500000000001 L829.25 611.3000000000001 Q818 607.5500000000001 806 614.3000000000001 Z",
+          "fill": "#B6C8CB",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-art-8",
+          "type": "ellipse",
+          "x": 812,
+          "y": 624.8000000000001,
+          "rx": 1.0499999999999998,
+          "ry": 1.0499999999999998,
+          "fill": "#243752",
+          "stroke": "none",
+          "strokeWidth": 3,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-art-9",
+          "type": "ellipse",
+          "x": 824,
+          "y": 624.8000000000001,
+          "rx": 1.0499999999999998,
+          "ry": 1.0499999999999998,
+          "fill": "#243752",
+          "stroke": "none",
+          "strokeWidth": 3,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-art-10",
+          "type": "path",
+          "d": "M814.25 634.5500000000001 Q818 638.3000000000001 822.5 633.8000000000001",
+          "fill": "none",
+          "stroke": "#243752",
+          "strokeWidth": 1.5,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-art-11",
+          "type": "rect",
+          "x": 805.25,
+          "y": 621.0500000000001,
+          "width": 9.75,
+          "height": 7.5,
+          "rx": 2.25,
+          "fill": "none",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-art-12",
+          "type": "rect",
+          "x": 821,
+          "y": 621.0500000000001,
+          "width": 9.75,
+          "height": 7.5,
+          "rx": 2.25,
+          "fill": "none",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-art-13",
+          "type": "line",
+          "x": 815,
+          "y": 624.0500000000001,
+          "x2": 821,
+          "y2": 624.0500000000001,
+          "stroke": "#243752",
+          "strokeWidth": 1.5,
+          "artworkId": "assumption-art"
+        },
+        {
+          "id": "assumption-title",
+          "type": "text",
+          "text": "Assumption",
+          "x": 880,
+          "y": 623.5500000000001,
+          "width": 446,
+          "fontSize": 25,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "assumption-card"
+        },
+        {
+          "id": "assumption-description",
+          "type": "text",
+          "text": "A condition that must be stated and later checked.",
+          "x": 776,
+          "y": 695.8000000000001,
+          "width": 550,
+          "fontSize": 23,
+          "weight": "regular",
+          "fill": "$ink",
+          "container": "assumption-card"
+        },
+        {
+          "id": "recommendation-art-1",
+          "type": "rect",
+          "x": 427.2,
+          "y": 939.88,
+          "width": 75.6,
+          "height": 64.68,
+          "rx": 2.9400000000000004,
+          "fill": "#E6F3EE",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "recommendation-art",
+          "artworkBounds": {
+            "x": 423,
+            "y": 925.6,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "id": "recommendation-art-2",
+          "type": "rect",
+          "x": 425.52,
+          "y": 932.32,
+          "width": 78.96,
+          "height": 16.8,
+          "rx": 2.9400000000000004,
+          "fill": "#197C78",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "recommendation-art"
+        },
+        {
+          "id": "recommendation-art-3",
+          "type": "rect",
+          "x": 454.08,
+          "y": 962.5600000000001,
+          "width": 21.84,
+          "height": 10.08,
+          "rx": 2.9400000000000004,
+          "fill": "#FFFEFA",
+          "stroke": "#243752",
+          "strokeWidth": 3,
+          "artworkId": "recommendation-art"
+        },
+        {
+          "id": "recommendation-title",
+          "type": "text",
+          "text": "Recommendation",
+          "x": 527,
+          "y": 951.35,
+          "width": 446,
+          "fontSize": 25,
+          "weight": "semibold",
+          "fill": "$ink",
+          "container": "recommendation-card"
+        },
+        {
+          "id": "recommendation-description",
+          "type": "text",
+          "text": "A decision with links back to evidence and assumptions.",
+          "x": 423,
+          "y": 1023.6,
+          "width": 550,
+          "fontSize": 23,
+          "weight": "regular",
+          "fill": "$ink",
+          "container": "recommendation-card"
+        },
+        {
+          "id": "observations-heading",
+          "type": "text",
+          "text": "Observed material",
+          "x": 42,
+          "y": 216.10000000000002,
+          "width": 1312,
+          "fontSize": 23,
+          "weight": "semibold",
+          "fill": "$secondary"
+        },
+        {
+          "id": "interpretation-heading",
+          "type": "text",
+          "text": "Interpretation",
+          "x": 42,
+          "y": 543.9000000000001,
+          "width": 1312,
+          "fontSize": 23,
+          "weight": "semibold",
+          "fill": "$secondary"
+        },
+        {
+          "id": "decision-heading",
+          "type": "text",
+          "text": "Decision",
+          "x": 42,
+          "y": 871.7,
+          "width": 1312,
+          "fontSize": 23,
+          "weight": "semibold",
+          "fill": "$secondary"
+        }
+      ]
+    }
+  ]
+}

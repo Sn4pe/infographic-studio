@@ -97,6 +97,7 @@ export function inspectScene(scene, { printWidthMm, minFontPt } = {}) {
       if (intersects({ x: panel.x, y: panel.y, w: panel.width, h: panel.height }, { x: other.x, y: other.y, w: other.width, h: other.height })) add('error', 'panel-overlap', panel.id, `Overlaps ${other.id}.`);
     }
     const labelBoxes = [];
+    const containedLabels = [];
     const panelBackground = panel.framed === false ? palette.background : palette.panel;
     if (panel.title) {
       const title = textBox({ id: `${panel.id}-title`, x: 24, y: 36, width: panel.width - 48, text: panel.title, fontSize: 25, weight: 'semibold' }, panelBackground);
@@ -119,7 +120,18 @@ export function inspectScene(scene, { printWidthMm, minFontPt } = {}) {
         if (box.x < 0 || box.y < 0 || box.x + box.w > panel.width || box.y + box.h > panel.height) add('error', 'label-bounds', element.id, 'Text extends outside its panel.');
         for (const previous of labelBoxes) if (intersects(box, previous)) add('warning', 'label-overlap', element.id, `Text box overlaps ${previous.id}.`);
         labelBoxes.push({ ...box, id: element.id });
+        if (element.container) containedLabels.push({ id: element.id, container: element.container, box });
         if (element.rotation) add('warning', 'rotated-label', element.id, 'Bounds checks use the unrotated label; inspect the rotated result.');
+      }
+    }
+    for (const label of containedLabels) {
+      const container = panel.elements.find((element) => element.id === label.container);
+      if (!container || container.type !== 'rect') {
+        add('error', 'unknown-container', label.id, `Text container ${label.container} must name a rectangle in the same panel.`);
+        continue;
+      }
+      if (label.box.x < container.x || label.box.y < container.y || label.box.x + label.box.w > container.x + container.width || label.box.y + label.box.h > container.y + container.height) {
+        add('error', 'container-bounds', label.id, `Text extends outside container ${label.container}. Increase the container, shorten the text or move the label.`);
       }
     }
     const originalPanel = original.panels[i];

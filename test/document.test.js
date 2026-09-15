@@ -69,3 +69,129 @@ test('narrow objects switch to stacked titles, and schema feedback aggregates in
   input.sections[0].items[0].variant='warm';
   assert.throws(()=>assertDocument(input),error=>error.message.includes('/sources/0')&&error.message.includes('/sections/0/items/0/variant'));
 });
+
+test('architecture groups create editable layers and labelled relationships without reverting to an icon row',()=>{
+  const input={
+    title:'Retrieval architecture',description:'Synthetic layered architecture fixture.',width:1600,
+    sources:[{title:'Fixture',url:'https://example.org/fixture'}],
+    sections:[{id:'system',title:'Retrieve grounded context',layout:'architecture',items:[
+      {id:'api',component:'device',title:'Chat API',description:'Receives the question.'},
+      {id:'router',component:'network',title:'Query router',description:'Chooses the retrieval path.'},
+      {id:'vectors',component:'grid',title:'Vector store',description:'Returns similar passages.'},
+      {id:'graph',component:'network',title:'Knowledge graph',description:'Expands related entities.'}
+    ],groups:[
+      {id:'experience',title:'Experience layer',items:['api','router']},
+      {id:'knowledge',title:'Knowledge layer',items:['vectors','graph']}
+    ],relations:[
+      {id:'api-router',from:'api',to:'router',label:'question'},
+      {id:'router-vectors',from:'router',to:'vectors',label:'vector search'},
+      {id:'router-graph',from:'router',to:'graph',label:'entity expansion'}
+    ]}]
+  };
+  const scene=composeDocument(input), panel=scene.panels[0];
+  assert.deepEqual(inspectScene(scene).issues,[]);
+  assert.ok(panel.elements.some(element=>element.id==='experience-band'));
+  assert.ok(panel.elements.some(element=>element.id==='knowledge-band'));
+  assert.equal(panel.elements.find(element=>element.id==='experience-heading').text,'Experience layer');
+  assert.match(panel.elements.find(element=>element.id==='system-relations').text,/router → vectors: vector search/);
+  assert.ok(panel.elements.find(element=>element.id==='knowledge-band').y > panel.elements.find(element=>element.id==='experience-band').y);
+});
+
+test('architecture cards calculate local text space and validate long labels without manual placement', () => {
+  const input = {
+    title: 'Long-form architecture', description: 'A synthetic fit test.', width: 1600,
+    sources: [{ title: 'Fixture', url: 'https://example.org/fixture' }],
+    sections: [{ id: 'system', title: 'Cards reserve their own content area', layout: 'architecture', groups: [
+      { id: 'entry', title: 'Ingress', items: ['gateway'] },
+      { id: 'execution', title: 'Execution', items: ['executor', 'sandbox'] }
+    ], items: [
+      { id: 'gateway', component: 'device', title: 'Reverse proxy and API gateway', description: 'Accepts browser, command-line and meeting-transcription requests before dispatch.' },
+      { id: 'executor', component: 'person', title: 'Session executor', description: 'Runs the language-model and tool loop in a sequence that can take several steps.' },
+      { id: 'sandbox', component: 'container', title: 'KVM sandbox', description: 'Contains tool access, files and isolated execution resources for each session.' }
+    ], relations: [{ id: 'dispatch', from: 'gateway', to: 'executor' }, { id: 'isolate', from: 'executor', to: 'sandbox' }] }]
+  };
+  const scene = composeDocument(input);
+  const panel = scene.panels[0];
+  for (const id of ['gateway', 'executor', 'sandbox']) {
+    assert.ok(panel.elements.some(element => element.id === `${id}-card`));
+    assert.equal(panel.elements.find(element => element.id === `${id}-title`).container, `${id}-card`);
+  }
+  assert.deepEqual(inspectScene(scene).issues, []);
+});
+
+test('architecture routes skip intermediate cards through a generated layer corridor', () => {
+  const document = {
+    title: 'Route corridor', description: 'Synthetic routing fixture.', width: 1800,
+    sources: [{ title: 'Fixture', url: 'https://example.org/fixture' }],
+    sections: [{ id: 'system', title: 'A layer has an intermediate card', layout: 'architecture', groups: [
+      { id: 'top', title: 'Top layer', items: ['source', 'middle', 'target'] },
+      { id: 'bottom', title: 'Bottom layer', items: ['sink'] }
+    ], items: [
+      { id: 'source', component: 'device', title: 'Source', description: 'Starts the link.' },
+      { id: 'middle', component: 'container', title: 'Intermediate', description: 'Must remain unobstructed.' },
+      { id: 'target', component: 'device', title: 'Target', description: 'Receives the link.' },
+      { id: 'sink', component: 'document', title: 'Sink', description: 'Completes the layer contract.' }
+    ], relations: [{ id: 'skip-middle', from: 'source', to: 'target' }] }]
+  };
+  const scene = composeDocument(document);
+  const segments = scene.panels[0].elements.filter(element => element.id.startsWith('skip-middle-segment-'));
+  assert.equal(segments.length, 3);
+  assert.equal(segments[0].type, 'line');
+  assert.equal(segments[2].type, 'arrow');
+  assert.ok(segments[1].y > scene.panels[0].elements.find(element => element.id === 'middle-card').y + scene.panels[0].elements.find(element => element.id === 'middle-card').height);
+  assert.deepEqual(inspectScene(scene).issues, []);
+});
+
+test('architecture distributes adjacent-layer links across generated corridor lanes', () => {
+  const document = {
+    title: 'Route lanes', description: 'Synthetic routing fixture.', width: 1800,
+    sources: [{ title: 'Fixture', url: 'https://example.org/fixture' }],
+    sections: [{ id: 'system', title: 'Several links share one layer transition', layout: 'architecture', groups: [
+      { id: 'top', title: 'Top layer', items: ['first', 'second', 'third'] },
+      { id: 'bottom', title: 'Bottom layer', items: ['target'] }
+    ], items: [
+      { id: 'first', component: 'device', title: 'First', description: 'Starts a link.' },
+      { id: 'second', component: 'device', title: 'Second', description: 'Starts a link.' },
+      { id: 'third', component: 'device', title: 'Third', description: 'Starts a link.' },
+      { id: 'target', component: 'container', title: 'Target', description: 'Receives the links.' }
+    ], relations: [{ id: 'first-target', from: 'first', to: 'target' }, { id: 'second-target', from: 'second', to: 'target' }, { id: 'third-target', from: 'third', to: 'target' }] }]
+  };
+  const scene = composeDocument(document);
+  const lanes = ['first-target', 'second-target', 'third-target'].map(id => scene.panels[0].elements.find(element => element.id === `${id}-segment-2`).y);
+  assert.equal(new Set(lanes).size, 3);
+  assert.deepEqual(inspectScene(scene).issues, []);
+});
+
+test('architecture overview preserves the semantic graph while routing only one declared journey', () => {
+  const document = {
+    title: 'Overview grammar', description: 'A synthetic overview fixture.', width: 1600,
+    sources: [{ title: 'Fixture', url: 'https://example.org/fixture' }],
+    sections: [{ id: 'system', title: 'One readable path through a complete system', layout: 'architecture-overview', groups: [
+      { id: 'entry', title: 'Entry', items: ['client'] },
+      { id: 'control', title: 'Control', items: ['api', 'store', 'scheduler'] },
+      { id: 'node', title: 'Node', items: ['agent'] }
+    ], items: [
+      { id: 'client', component: 'person', title: 'Client' },
+      { id: 'api', component: 'device', title: 'API' },
+      { id: 'store', component: 'grid', title: 'Store' },
+      { id: 'scheduler', component: 'network', title: 'Scheduler' },
+      { id: 'agent', component: 'container', title: 'Node agent' }
+    ], relations: [
+      { id: 'client-api', from: 'client', to: 'api' },
+      { id: 'api-store', from: 'api', to: 'store' },
+      { id: 'api-scheduler', from: 'api', to: 'scheduler' },
+      { id: 'api-agent', from: 'api', to: 'agent' }
+    ], journey: ['client-api', 'api-agent'] }]
+  };
+  const scene = composeDocument(document);
+  const elements = scene.panels[0].elements;
+  assert.ok(elements.some(element => element.id === 'store-card'));
+  assert.ok(elements.some(element => element.id === 'scheduler-card'));
+  assert.ok(elements.some(element => element.id.startsWith('client-api-segment-')));
+  assert.ok(elements.some(element => element.id.startsWith('api-agent-segment-')));
+  assert.ok(!elements.some(element => element.id.startsWith('api-store-segment-')));
+  assert.ok(!elements.some(element => element.id.startsWith('api-scheduler-segment-')));
+  assert.deepEqual(inspectScene(scene).issues, []);
+  document.sections[0].journey = ['client-api', 'api-store', 'api-agent'];
+  assert.throws(() => composeDocument(document), /continuous directed path/);
+});

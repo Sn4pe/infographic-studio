@@ -27,10 +27,7 @@
   "scripts": {
     "test": "node --test",
     "examples": "node scripts/build-examples.js",
-    "study": "node scripts/build-fiber-study.js",
-    "study:components": "node scripts/build-component-study.js",
-    "study:document": "node scripts/build-document-example.js",
-    "check": "node cli/cli.js check examples/optics/scene.json --strict",
+    "check": "node cli/cli.js check examples/windshield-frit/scene.json --strict",
     "verify:package": "node scripts/verify-package.js"
   },
   "engines": {

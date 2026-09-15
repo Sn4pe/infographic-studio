@@ -21,7 +21,7 @@ const minimal = () => ({
 });
 
 test('included examples pass strict mechanical checks and remain independent scenes', async () => {
-  for (const name of ['optics', 'sensing', 'fiber-study/editorial', 'fiber-study/technical', 'fiber-study/hybrid', 'document-layout']) {
+  for (const name of ['windshield-frit', 'space/jwst-deployment', 'physical/heat-pump', 'architectures/kubernetes-cluster', 'biology/crispr-cas9', 'physical/ligo-interferometer', 'architectures/apache-kafka']) {
     const scene = await loadScene(new URL(`../examples/${name}/scene.json`, import.meta.url));
     assert.deepEqual(inspectScene(scene).issues, []);
   }
@@ -81,36 +81,18 @@ test('unframed panels omit title and border and check contrast against the canva
   assert.ok(inspectScene(scene).issues.some((i) => i.code === 'low-contrast'));
 });
 
-test('three visual directions retain the shared claims and equal ray reflection angles', async () => {
-  const brief = JSON.parse(await readFile(new URL('../examples/fiber-study/brief.json', import.meta.url), 'utf8'));
-  for (const name of ['editorial', 'technical', 'hybrid']) {
-    const scene = await loadScene(new URL(`../examples/fiber-study/${name}/scene.json`, import.meta.url));
-    const elements = scene.panels.flatMap((p) => p.elements);
-    const labels = elements.filter((e) => ['text', 'callout'].includes(e.type)).map((e) => e.text);
-    for (const text of brief.sameAcrossVariants.requiredText) assert.ok(labels.includes(text), `${name}: missing ${text}`);
-    assert.deepEqual([scene.width, scene.height], brief.sameAcrossVariants.canvas);
-    const rays = elements.filter((e) => e.type === 'arrow');
-    assert.ok(rays.length >= 3);
-    const slope = Math.abs((rays[0].y2 - rays[0].y) / (rays[0].x2 - rays[0].x));
-    for (const [i, ray] of rays.entries()) {
-      assert.ok(Math.abs(Math.abs((ray.y2 - ray.y) / (ray.x2 - ray.x)) - slope) < 1e-10, `${name}: unequal reflection angle`);
-      if (i) assert.deepEqual([rays[i - 1].x2, rays[i - 1].y2], [ray.x, ray.y]);
-    }
-  }
-});
-
 test('hybrid label correction preserves embedded illustration and its recorded hash', async () => {
-  const baseDir = fileURLToPath(new URL('../examples/fiber-study/hybrid/', import.meta.url));
+  const baseDir = fileURLToPath(new URL('../examples/windshield-frit/', import.meta.url));
   const scene = await loadScene(join(baseDir, 'scene.json'));
   const first = await renderScene(scene, { baseDir, formats: ['svg'], strict: true });
-  scene.panels[0].elements.find((e) => e.id === 'core-label').text = 'Núcleo · n₁';
+  scene.panels[0].elements.find((e) => e.id === 'main-claim').text = 'The ceramic band protects the bonded edge.';
   const second = await renderScene(scene, { baseDir, formats: ['svg'], strict: true });
   const a = first.files['figure.svg'].toString(), b = second.files['figure.svg'].toString();
-  const artwork = (svg) => svg.match(/<g id="art-fibre-hero"[\s\S]*?<\/g>/)[0];
+  const artwork = (svg) => svg.match(/<g id="art-windshield-corner"[\s\S]*?<\/g>/)[0];
   assert.equal(artwork(a), artwork(b));
   assert.deepEqual(first.report.assetHashes, second.report.assetHashes);
-  assert.ok(b.includes('Núcleo · n₁'));
-  assert.ok(b.includes('<text id="core-label"'));
+  assert.equal(listLabels(scene)['main-claim'], 'The ceramic band protects the bonded edge.');
+  assert.ok(b.includes('<text id="main-claim"'));
 });
 
 test('schema rejects missing geometry, unsupported properties and injected paint', () => {
@@ -138,6 +120,17 @@ test('checks catch clipping, duplicate IDs, missing glyphs and title collisions'
   for (const expected of ['duplicate-id', 'missing-glyph', 'label-bounds']) assert.ok(codes.includes(expected), expected);
   scene.panels[0].elements[1].y = 40;
   assert.ok(inspectScene(scene).issues.some((i) => i.code === 'label-overlap'));
+});
+
+test('declared text containers reject local overflow even when the panel itself has room', () => {
+  const scene = minimal();
+  scene.panels[0].elements.push({ id: 'card', type: 'rect', x: 300, y: 40, width: 130, height: 70, fill: '$panel', stroke: '$line' });
+  scene.panels[0].elements.push({ id: 'card-label', type: 'text', x: 320, y: 80, width: 100, text: 'This label deliberately wraps outside its card.', fontSize: 18, container: 'card' });
+  let issues = inspectScene(scene).issues;
+  assert.ok(issues.some((issue) => issue.code === 'container-bounds' && issue.element === 'card-label'));
+  scene.panels[0].elements.find((element) => element.id === 'card-label').container = 'missing-card';
+  issues = inspectScene(scene).issues;
+  assert.ok(issues.some((issue) => issue.code === 'unknown-container' && issue.element === 'card-label'));
 });
 
 test('long words and panels outside the body are errors', () => {
@@ -310,41 +303,41 @@ test('label maps revise headers, panel titles and annotations without changing g
 test('hybrid project copies source image bytes and refuses existing destinations', async (t) => {
   const root = await mkdtemp(join(tmpdir(), 'infographic-project-'));
   t.after(() => rm(root, { recursive: true, force: true }));
-  const baseDir = fileURLToPath(new URL('../examples/fiber-study/hybrid/', import.meta.url));
+  const baseDir = fileURLToPath(new URL('../examples/windshield-frit/', import.meta.url));
   const scene = await loadScene(join(baseDir, 'scene.json'));
   const before = structuredClone(scene);
   const path = await createProject(scene, { baseDir, outDir: join(root, 'copy') });
   const copy = await loadScene(path);
-  const original = await readFile(join(baseDir, scene.assets['fibre-cutaway'].path));
-  assert.deepEqual(await readFile(join(root, 'copy', copy.assets['fibre-cutaway'].path)), original);
+  const original = await readFile(join(baseDir, scene.assets['windshield-frit'].path));
+  assert.deepEqual(await readFile(join(root, 'copy', copy.assets['windshield-frit'].path)), original);
   assert.deepEqual(scene, before);
   await assert.rejects(createProject(scene, { baseDir, outDir: join(root, 'copy') }), /EEXIST/);
   await renderScene(copy, { baseDir: join(root, 'copy'), formats: ['svg'], strict: true });
 });
 
-test('CLI supports a hybrid text revision and strict print failures without replacing source files', async (t) => {
+test('CLI supports an illustrated text revision and strict print failures without replacing source files', async (t) => {
   const root = await mkdtemp(join(tmpdir(), 'infographic-revision-'));
   t.after(() => rm(root, { recursive: true, force: true }));
   const cli = (args) => spawnSync(process.execPath, ['cli/cli.js', ...args], { encoding: 'utf8' });
-  const project = join(root, 'hybrid');
-  const initialized = cli(['init', project, '--example', 'hybrid']);
+  const project = join(root, 'windshield');
+  const initialized = cli(['init', project, '--example', 'windshield']);
   assert.equal(initialized.status, 0, initialized.stderr);
   const source = join(project, 'scene.json');
   const before = await readFile(source);
   const exported = cli(['labels', source]);
-  assert.equal(JSON.parse(exported.stdout)['core-label'], 'Core · n₁');
+  assert.equal(JSON.parse(exported.stdout)['main-claim'], 'The black marks are a functional ceramic coating, not a decorative print.');
   const changes = join(root, 'changes.json');
-  await writeFile(changes, JSON.stringify({ 'core-label': 'Light-guiding core · n₁' }));
+  await writeFile(changes, JSON.stringify({ 'main-claim': 'The ceramic band protects the bonded edge.' }));
   const revision = join(root, 'revision');
   const revised = cli(['revise', source, '--labels', changes, '--out', revision, '--strict']);
   assert.equal(revised.status, 0, revised.stderr);
   assert.deepEqual(await readFile(source), before);
-  assert.equal(listLabels(await loadScene(join(revision, 'scene.json')))['core-label'], 'Light-guiding core · n₁');
+  assert.equal(listLabels(await loadScene(join(revision, 'scene.json')))['main-claim'], 'The ceramic band protects the bonded edge.');
   const checked = cli(['check', source, '--print-width', '180', '--strict']);
   assert.equal(checked.status, 1);
   assert.ok(checked.stdout.startsWith('FAIL:'));
   assert.notEqual(cli(['labels', source, '--scale', '2']).status, 0);
-  await writeFile(changes, JSON.stringify({ 'core-label': 'W'.repeat(1000) }));
+  await writeFile(changes, JSON.stringify({ 'main-claim': 'W'.repeat(1000) }));
   const bad = cli(['revise', source, '--labels', changes, '--out', join(root, 'bad'), '--strict']);
   assert.equal(bad.status, 1);
   await assert.rejects(readFile(join(root, 'bad', 'scene.json')), /ENOENT/);
