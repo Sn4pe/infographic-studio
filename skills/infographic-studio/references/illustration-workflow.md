@@ -1,10 +1,5 @@
 # Combining illustrations and exact text
 
-Use image generation when texture, organic structures or a detailed physical scene improve the explanation. Use
-deterministic vectors when geometry carries technical meaning. Both can coexist in one panel.
-
-# Combining illustrations and exact text
-
 Use image generation when texture, organic structures or a detailed physical
 scene improve the explanation. Use deterministic vectors when geometry carries
 technical meaning. Both can coexist in one panel.
