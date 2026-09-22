@@ -13,6 +13,37 @@ Installed as a plugin, the engine lives in the plugin directory (`${CLAUDE_PLUGI
 
 Read [composition-strategy.md](references/composition-strategy.md) before authoring every figure. Read [scene-format.md](references/scene-format.md) when authoring or modifying a scene. Read [infographic-format.md](references/infographic-format.md) when the chosen structure fits the declarative infographic source. Read [illustration-workflow.md](references/illustration-workflow.md) when the figure needs raster artwork or supplied visual references.
 
+## Required production path
+
+When this skill is invoked, Infographic Studio is the production engine
+for the final figure whenever its runtime is available.
+
+Do not substitute Design, Artifacts, HTML, Canvas, another diagram
+generator, or another document-generation tool for Infographic Studio.
+
+Before using the no-runtime fallback, verify that the Infographic Studio
+CLI cannot actually be executed. Do not infer runtime availability from
+the model name or from the presence of other design tools.
+
+For hybrid figures, image-generation tools are auxiliary tools only.
+Use them to create text-free raster artwork, then import that artwork
+into the Infographic Studio scene. Keep titles, labels, annotations,
+numbers, connectors, and other precise content editable in the scene.
+
+The final composition, validation, and rendering must be performed with
+Infographic Studio:
+
+1. Create or update the Infographic Studio scene.
+2. Run `check --strict`.
+3. Run `render --strict`.
+4. Inspect the rendered result when image viewing is available.
+5. Correct the scene and rerender when necessary.
+
+If the runtime genuinely cannot be executed, return an editable
+Infographic Studio specification and clearly state that it has not been
+validated or rendered. Do not present output from another production
+tool as an Infographic Studio render.
+
 ## Match the workflow to available capabilities
 
 Check tool access and image viewing independently; do not infer either from the model name. The free-placement scene is the general authoring surface: use it for any composition that needs an intentional visual hierarchy, such as an illustrated explanation, cutaway, physical mechanism, architecture, graph, comparison, timeline, map, data display or annotated process. It supports arbitrary editable vector geometry, components, icons, local artwork and anchored labels.

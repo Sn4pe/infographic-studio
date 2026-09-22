@@ -1,6 +1,20 @@
 # Combining illustrations and exact text
 
-Use image generation when texture, organic structures or a detailed physical scene improve the explanation. Use deterministic vectors when geometry carries technical meaning. Both can coexist in one panel.
+Use image generation when texture, organic structures or a detailed physical scene improve the explanation. Use
+deterministic vectors when geometry carries technical meaning. Both can coexist in one panel.
+
+# Combining illustrations and exact text
+
+Use image generation when texture, organic structures or a detailed physical
+scene improve the explanation. Use deterministic vectors when geometry carries
+technical meaning. Both can coexist in one panel.
+
+Generated imagery is an input to Infographic Studio, not a replacement for it.
+In hybrid mode, use image-generation tools only to create text-free artwork,
+then use Infographic Studio for the final composition, editable text, labels,
+annotations, validation and rendering. Do not use Design, Artifacts, HTML,
+Canvas or another design/document generator as a substitute for the
+Infographic Studio production pipeline when its runtime is available.
 
 ## Asset contract
 
@@ -19,28 +33,53 @@ Declare each image at the scene root:
 }
 ```
 
-Place an image element with `asset: "reactor"` in a panel. Run `infographic-studio assets scene.json` to get the prompt and placement dimensions. This command makes no network calls, incurs no generation fees and does not claim that a path-specified asset exists.
+Place an image element with `asset: "reactor"` in a panel. Run `infographic-studio assets scene.json` to get the prompt
+and placement dimensions. This command makes no network calls, incurs no generation fees and does not claim that a
+path-specified asset exists.
 
-Use an available image-generation tool with the prompt. Inspect the returned illustration for incorrect anatomy, impossible geometry and unintended text. Save an accepted PNG/JPEG inside the scene directory (for example `assets/reactor.png`) and set the asset's `path` to that relative path. Use authentic provenance and license information instead of the explanatory strings above. The engine embeds local image bytes in the SVG, so final exports do not depend on external URLs.
+Use an available image-generation tool with the prompt. Inspect the returned illustration for incorrect anatomy,
+impossible geometry and unintended text. Save an accepted PNG/JPEG inside the scene directory (for example
+`assets/reactor.png`) and set the asset's `path` to that relative path. Use authentic provenance and license information
+instead of the explanatory strings above. The engine embeds local image bytes in the SVG, so final exports do not depend
+on external URLs.
 
-Create annotations with `callout` elements targeting the image's stable ID and normalized positions. Use separate text and geometry when a custom annotation shape is needed. All precise numbers, units, labels and equations should be in that layer. Correcting a label should not require another image-generation call. Anchors follow image placement, but replacing the image requires another visual endpoint review.
+Create annotations with `callout` elements targeting the image's stable ID and normalized positions. Use separate text
+and geometry when a custom annotation shape is needed. All precise numbers, units, labels and equations should be in
+that layer. Correcting a label should not require another image-generation call. Anchors follow image placement, but
+replacing the image requires another visual endpoint review.
 
 ## Completed example
 
-In the runtime repository, `examples/windshield-frit` contains a local windshield cutaway, its recorded generation prompt and provenance, the editable scene, and SVG/PNG/PDF exports. The image establishes the physical structure; deterministic vectors explain the ceramic frit band, dot gradient and mounting zone.
+In the runtime repository, `examples/windshield-frit` contains a local windshield cutaway, its recorded generation
+prompt and provenance, the editable scene, and SVG/PNG/PDF exports. The image establishes the physical structure;
+deterministic vectors explain the ceramic frit band, dot gradient and mounting zone.
 
-To make a text-only correction, edit the annotation text in `scene.json`, rerender and compare the asset hash in `report.json`. The source image and embedded artwork should remain identical. `npm run examples` rerenders existing scenes without generating images.
+To make a text-only correction, edit the annotation text in `scene.json`, rerender and compare the asset hash in
+`report.json`. The source image and embedded artwork should remain identical. `npm run examples` rerenders existing
+scenes without generating images.
 
 ## References and rendering
 
-- Translate a reference into palette, line style, texture, density and composition decisions. Do not assume its scientific explanation is correct.
-- Keep illustration scale and direction consistent across panels. A technically meaningful arrow must start/end on the intended structure.
-- Use `contain` to preserve an entire image; `cover` fills a box and may crop it. Prefer transparent PNG for cutouts and inspect edge contrast.
-- The runtime accepts local PNG/JPEG files only. It does not load URLs, execute provider commands, or import raw SVG/XML. Use scene paths for editable vectors, or export an external SVG drawing to PNG when editability is not required.
+- Translate a reference into palette, line style, texture, density and composition decisions. Do not assume its
+  scientific explanation is correct.
+- Keep illustration scale and direction consistent across panels. A technically meaningful arrow must start/end on the
+  intended structure.
+- Use `contain` to preserve an entire image; `cover` fills a box and may crop it. Prefer transparent PNG for cutouts and
+  inspect edge contrast.
+- The runtime accepts local PNG/JPEG files only. It does not load URLs, execute provider commands, or import raw
+  SVG/XML. Use scene paths for editable vectors, or export an external SVG drawing to PNG when editability is not
+  required.
 - A missing image is a hard render error, never an invisible placeholder.
 
 ## Available integrations
 
-Infographic Studio is provider-neutral at the asset boundary. Image generation happens through the host agent's tools. draw.io, AntV and diagram-design can be used independently when installed, but they are not runtime dependencies or implemented backend adapters in v0.1. Do not describe them as connected without verifying the actual environment.
+Infographic Studio is provider-neutral at the asset boundary. Image generation
+happens through the host agent's tools.
 
-When an agent host imports only this skill folder, it still needs the separately installed CLI and a filesystem with Node.js 22+. Import into AgentOS is an integration path to verify in that deployment; it is not evidence of a tested AgentOS connector.
+Other design and diagram tools such as draw.io, AntV or diagram-design may be
+used only when the user explicitly requests them or when Infographic Studio is
+not the selected production workflow. They are not substitutes for
+Infographic Studio when this skill has been invoked.
+
+They are not runtime dependencies or implemented backend adapters in v0.1.
+Do not describe them as connected without verifying the actual environment.
