@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Sn4pe/infographic-studio/infographic.schema.json",
+  "title": "Infographic source v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "description", "structure"],
+  "properties": {
+    "title": {"type": "string", "minLength": 1},
+    "description": {"type": "string", "minLength": 1},
+    "width": {"type": "integer", "minimum": 600, "maximum": 4096},
+    "height": {"type": "integer", "minimum": 300, "maximum": 4096},
+    "fontSize": {"type": "number", "minimum": 16, "maximum": 48},
+    "theme": {"$ref": "scene.schema.json#/properties/theme"},
+    "palette": {"$ref": "scene.schema.json#/properties/palette"},
+    "sources": {"$ref": "scene.schema.json#/properties/sources"},
+    "structure": {"$ref": "#/definitions/structure"}
+  },
+  "definitions": {
+    "id": {"$ref": "scene.schema.json#/definitions/id"},
+    "item": {
+      "type": "object", "additionalProperties": false, "required": ["id", "component", "title"],
+      "properties": {
+        "id": {"$ref": "#/definitions/id"},
+        "component": {"enum": ["person", "organization", "document", "device", "container", "network", "plant", "grid"]},
+        "title": {"type": "string", "minLength": 1},
+        "description": {"type": "string", "minLength": 1},
+        "variant": {"type": "string"}
+      }
+    },
+    "relation": {
+      "type": "object", "additionalProperties": false, "required": ["id", "from", "to"],
+      "properties": {"id": {"$ref": "#/definitions/id"}, "from": {"$ref": "#/definitions/id"}, "to": {"$ref": "#/definitions/id"}, "label": {"type": "string", "minLength": 1, "maxLength": 80}}
+    },
+    "group": {
+      "type": "object", "additionalProperties": false, "required": ["id", "title", "items"],
+      "properties": {"id": {"$ref": "#/definitions/id"}, "title": {"type": "string", "minLength": 1}, "items": {"type": "array", "minItems": 1, "maxItems": 16, "items": {"$ref": "#/definitions/id"}}}
+    },
+    "comparisonSide": {
+      "type": "object", "additionalProperties": false, "required": ["id", "title", "items"],
+      "properties": {
+        "id": {"$ref": "#/definitions/id"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1},
+        "items": {"type": "array", "minItems": 1, "maxItems": 6, "items": {"type": "object", "additionalProperties": false, "required": ["id", "title"], "properties": {"id": {"$ref": "#/definitions/id"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}}}}
+      }
+    },
+    "timelineItem": {
+      "type": "object", "additionalProperties": false, "required": ["id", "title"],
+      "properties": {"id": {"$ref": "#/definitions/id"}, "date": {"type": "string", "minLength": 1, "maxLength": 80}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}}
+    },
+    "node": {
+      "type": "object", "additionalProperties": false, "required": ["id", "title"],
+      "properties": {"id": {"$ref": "#/definitions/id"}, "title": {"type": "string", "minLength": 1}, "context": {"type": "string", "minLength": 1, "maxLength": 80}, "description": {"type": "string", "minLength": 1}}
+    },
+    "neighborhoodNode": {
+      "type": "object", "additionalProperties": false, "required": ["id", "title", "context"],
+      "properties": {"id": {"$ref": "#/definitions/id"}, "title": {"type": "string", "minLength": 1}, "context": {"type": "string", "minLength": 1, "maxLength": 80}, "description": {"type": "string", "minLength": 1}}
+    },
+    "chartItem": {
+      "type": "object", "additionalProperties": false, "required": ["id", "label", "value"],
+      "properties": {"id": {"$ref": "#/definitions/id"}, "label": {"type": "string", "minLength": 1, "maxLength": 80}, "value": {"type": "number", "minimum": 0}}
+    },
+    "quadrant": {
+      "type": "object", "additionalProperties": false, "required": ["id", "title"],
+      "properties": {"id": {"$ref": "#/definitions/id"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}}
+    },
+    "structure": {
+      "oneOf": [
+        {"type": "object", "additionalProperties": false, "required": ["type", "items"], "properties": {"type": {"const": "sequence"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}, "items": {"type": "array", "minItems": 2, "maxItems": 5, "items": {"$ref": "#/definitions/item"}}, "relations": {"type": "array", "maxItems": 8, "items": {"$ref": "#/definitions/relation"}}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "items"], "properties": {"type": {"const": "timeline"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}, "items": {"type": "array", "minItems": 2, "maxItems": 8, "items": {"$ref": "#/definitions/timelineItem"}}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "items"], "properties": {"type": {"const": "feedback-loop"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}, "items": {"type": "array", "minItems": 3, "maxItems": 6, "items": {"$ref": "#/definitions/node"}}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "groups", "items"], "properties": {"type": {"enum": ["relationship", "hierarchy"]}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}, "columns": {"type": "integer", "minimum": 1, "maximum": 16}, "groups": {"type": "array", "minItems": 2, "maxItems": 4, "items": {"$ref": "#/definitions/group"}}, "items": {"type": "array", "minItems": 2, "maxItems": 16, "items": {"$ref": "#/definitions/item"}}, "relations": {"type": "array", "maxItems": 32, "items": {"$ref": "#/definitions/relation"}}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "focus", "neighbors"], "properties": {"type": {"const": "neighborhood"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}, "focus": {"$ref": "#/definitions/node"}, "neighbors": {"type": "array", "minItems": 2, "maxItems": 6, "items": {"$ref": "#/definitions/neighborhoodNode"}}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "root", "children"], "properties": {"type": {"const": "tree"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}, "root": {"$ref": "#/definitions/node"}, "children": {"type": "array", "minItems": 2, "maxItems": 6, "items": {"$ref": "#/definitions/node"}}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "groups", "items", "relations", "journey"], "properties": {"type": {"const": "architecture-overview"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}, "columns": {"type": "integer", "minimum": 1, "maximum": 16}, "groups": {"type": "array", "minItems": 2, "maxItems": 4, "items": {"$ref": "#/definitions/group"}}, "items": {"type": "array", "minItems": 2, "maxItems": 16, "items": {"$ref": "#/definitions/item"}}, "relations": {"type": "array", "minItems": 2, "maxItems": 32, "items": {"$ref": "#/definitions/relation"}}, "journey": {"type": "array", "minItems": 2, "maxItems": 8, "uniqueItems": true, "items": {"$ref": "#/definitions/id"}}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "xAxis", "yAxis", "quadrants"], "properties": {"type": {"const": "matrix"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}, "xAxis": {"type": "string", "minLength": 1, "maxLength": 80}, "yAxis": {"type": "string", "minLength": 1, "maxLength": 80}, "quadrants": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"$ref": "#/definitions/quadrant"}}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "yAxis", "items"], "properties": {"type": {"const": "bar-chart"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}, "yAxis": {"type": "string", "minLength": 1, "maxLength": 80}, "unit": {"type": "string", "maxLength": 24}, "items": {"type": "array", "minItems": 2, "maxItems": 8, "items": {"$ref": "#/definitions/chartItem"}}}},
+        {"type": "object", "additionalProperties": false, "required": ["type", "sides"], "properties": {"type": {"const": "comparison"}, "title": {"type": "string", "minLength": 1}, "description": {"type": "string", "minLength": 1}, "sides": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/definitions/comparisonSide"}}}}
+      ]
+    }
+  }
+}

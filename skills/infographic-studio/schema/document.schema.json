@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/Sn4pe/infographic-studio/document.schema.json",
+  "title": "Illustrated document",
+  "type": "object", "additionalProperties": false,
+  "required": ["title", "description", "sections"],
+  "properties": {
+    "title": {"type":"string","minLength":1}, "description": {"type":"string","minLength":1},
+    "width": {"type":"integer","minimum":600,"maximum":4096},
+    "height": {"type":"integer","minimum":300,"maximum":4096},
+    "fontSize": {"type":"number","minimum":16,"maximum":48},
+    "theme": {"$ref":"scene.schema.json#/properties/theme"},
+    "palette": {"$ref":"scene.schema.json#/properties/palette"},
+    "sources": {"$ref":"scene.schema.json#/properties/sources"},
+    "sections": {"type":"array","minItems":1,"maxItems":24,"items":{"$ref":"#/definitions/section"}}
+  },
+  "definitions": {
+    "id": {"$ref":"scene.schema.json#/definitions/id"},
+    "section": {
+      "type":"object","additionalProperties":false,"required":["id","title","items"],
+      "properties": {
+        "id":{"$ref":"#/definitions/id"}, "title":{"type":"string","minLength":1},
+        "description":{"type":"string","minLength":1},
+        "layout":{"enum":["row","column","grid","cycle","pipeline","architecture","architecture-overview"]},
+        "columns":{"type":"integer","minimum":1,"maximum":16},
+        "groups":{"type":"array","minItems":1,"maxItems":8,"items":{"$ref":"#/definitions/group"}},
+        "items":{"type":"array","minItems":1,"maxItems":16,"items":{"$ref":"#/definitions/item"}},
+        "relations":{"type":"array","maxItems":32,"items":{
+          "type":"object","additionalProperties":false,"required":["id","from","to"],
+          "properties":{"id":{"$ref":"#/definitions/id"},"from":{"$ref":"#/definitions/id"},"to":{"$ref":"#/definitions/id"},"label":{"type":"string","minLength":1,"maxLength":80}}
+        }},
+        "journey":{"type":"array","minItems":2,"maxItems":8,"uniqueItems":true,"items":{"$ref":"#/definitions/id"}}
+      },
+      "allOf":[
+        {"if":{"properties":{"layout":{"const":"architecture-overview"}},"required":["layout"]},"then":{"required":["groups","journey"]}},
+        {"if":{"required":["journey"]},"then":{"properties":{"layout":{"const":"architecture-overview"}}}}
+      ]
+    },
+    "group": {
+      "type":"object","additionalProperties":false,"required":["id","title","items"],
+      "properties": {
+        "id":{"$ref":"#/definitions/id"}, "title":{"type":"string","minLength":1},
+        "items":{"type":"array","minItems":1,"maxItems":16,"items":{"$ref":"#/definitions/id"}}
+      }
+    },
+    "item": {
+      "type":"object","additionalProperties":false,"required":["id","component","title"],
+      "properties":{
+        "id":{"$ref":"#/definitions/id"},
+        "component":{"enum":["person","organization","document","device","container","network","plant","grid"]},
+        "title":{"type":"string","minLength":1},"description":{"type":"string","minLength":1},
+        "variant":{"type":"string"}
+      },
+      "allOf":[
+        {"if":{"properties":{"component":{"const":"person"}}},"then":{"properties":{"variant":{"enum":["teal","warm","elder"]}}}},
+        {"if":{"properties":{"component":{"const":"device"}}},"then":{"properties":{"variant":{"enum":["teal","blank","sealed"]}}}},
+        {"if":{"properties":{"component":{"enum":["organization","document","container","network","plant","grid"]}}},"then":{"properties":{"variant":{"const":"teal"}}}}
+      ]
+    }
+  }
+}

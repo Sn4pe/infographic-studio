@@ -1,0 +1,8 @@
+{
+  "family": "tabler-outline",
+  "license": "MIT",
+  "author": "Paweł Kuna and Tabler contributors",
+  "revision": "55f87a73f45cf1d9eaf16d7da705065483a9e4f9",
+  "source": "https://github.com/tabler/tabler-icons",
+  "icons": ["users", "user", "robot", "shield-check", "scale", "building-bank", "id-badge-2", "wallet", "key", "cube", "leaf", "file-certificate", "network", "chart-line", "cash", "calendar", "lock"]
+}
