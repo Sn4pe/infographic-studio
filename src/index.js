@@ -29,6 +29,7 @@ export async function loadScene(file) {
 }
 
 export function renderPng(svg, scale = 2) {
+  if (!Resvg) throw new Error('PNG requires @resvg/resvg-js (native binary). In portable mode use --formats svg,pdf.');
   if (!Number.isFinite(scale) || scale < 0.25 || scale > 4) throw new Error('Scale must be between 0.25 and 4.');
   return new Resvg(svg, { font: { fontFiles: Object.values(fontPaths), loadSystemFonts: false }, fitTo: { mode: 'zoom', value: scale } }).render().asPng();
 }

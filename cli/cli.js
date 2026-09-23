@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { parseArgs } from 'node:util';
+import { existsSync } from 'node:fs';
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -59,6 +60,7 @@ try {
     const examples = { windshield: 'windshield-frit', kubernetes: 'architectures/kubernetes-cluster', jwst: 'space/jwst-deployment', 'heat-pump': 'physical/heat-pump', thermostat: 'physical/heat-pump', crispr: 'biology/crispr-cas9', ligo: 'physical/ligo-interferometer', kafka: 'architectures/apache-kafka' };
     if (!Object.hasOwn(examples, example)) throw new Error(`Example must be ${Object.keys(examples).join(', ')}.`);
     const source = fileURLToPath(new URL(`../examples/${examples[example]}/scene.json`, import.meta.url));
+    if (!existsSync(source)) throw new Error(`init requires bundled examples not present in this installation. Use the full runtime: npm install -g @sn4pe/infographic-studio`);
     const created = await createProject(await loadScene(source), { baseDir: dirname(source), outDir: file });
     console.log(`Created ${created}\nEdit the scene, then run: infographic-studio render "${created}"`);
   } else if (command === 'check') {
