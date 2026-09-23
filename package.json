@@ -26,9 +26,11 @@
   ],
   "scripts": {
     "test": "node --test",
+    "build:portable": "node scripts/build-portable.js",
     "examples": "node scripts/build-examples.js",
     "check": "node cli/cli.js check examples/windshield-frit/scene.json --strict",
-    "verify:package": "node scripts/verify-package.js"
+    "verify:package": "node scripts/verify-package.js",
+    "package:plugin": "node scripts/package-plugin.js"
   },
   "engines": {
     "node": ">=22"
@@ -54,6 +56,8 @@
     "svg-to-pdfkit": "^0.1.8"
   },
   "devDependencies": {
+    "adm-zip": "^0.6.1",
+    "esbuild": "^0.25.12",
     "pdfjs-dist": "^6.3.289"
   }
 }
