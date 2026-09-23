@@ -9,3 +9,8 @@ output/
 !.env.example
 .DS_Store
 Thumbs.db
+
+# Local tooling and build output
+.claude/settings.local.json
+.tmp/
+dist/
