@@ -10,7 +10,7 @@ An agent develops the explanation and authors the scene. The engine lays out tex
 
 [Editable Webb scene](examples/space/jwst-deployment/scene.json) · [PNG](examples/space/jwst-deployment/rendered/figure.png) · [PDF](examples/space/jwst-deployment/rendered/figure.pdf)
 
-**Alpha preview — 0.1.0-alpha.3.** Suitable for experimentation and reviewed figures. The API and layout contract may change before a stable release. Automatic checks do not establish scientific correctness or visual quality. See the [changelog](CHANGELOG.md) for scope and known limitations.
+**Alpha preview — 0.1.0-alpha.4.** Suitable for experimentation and reviewed figures. The API and layout contract may change before a stable release. Automatic checks do not establish scientific correctness or visual quality. See the [changelog](CHANGELOG.md) for scope and known limitations.
 
 ## Try it
 

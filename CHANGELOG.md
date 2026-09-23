@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.1.0-alpha.4 — 2026-09-23
+
+### Added
+
+- A portable runtime bundled with the skill at `skills/infographic-studio/scripts/portable-cli.mjs`, with its fonts, icons, schemas and PDF metrics. It renders SVG and PDF on Claude.ai and skill-only installations without `npm install`.
+- `npm run build:portable` to rebuild the portable runtime and `npm run package:plugin` to produce a validated `dist/infographic-studio.zip` for plugin upload.
+- Expanded infographic composition and a curated gallery of illustrated starters (Kubernetes, Webb, heat pump, CRISPR, LIGO and Kafka).
+
+### Changed
+
+- The skill resolves the runtime in a fixed order (PATH, plugin root, portable runtime, no runtime) and enforces Infographic Studio as the production pipeline for the final figure.
+- Infographics default to a hybrid workflow (generated text-free artwork plus editable composition) when image generation is available; geometry-driven figures stay vector-first.
+
+### Fixed
+
+- `init` reports clearly when bundled examples are not installed, and PNG export explains that it needs the native `@resvg/resvg-js` binary.
+
+### Known limitations
+
+- The portable runtime does not export PNG and does not provide `init`.
+
 ## 0.1.0-alpha.3 — 2026-09-11
 
 ### Fixed
